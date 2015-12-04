@@ -1,5 +1,6 @@
 @page { size: A4; }
 
+<<<<<<< HEAD
 body, .container {
 	position: static !important;
 	float: none !important;
@@ -40,3 +41,61 @@ h4 { font-size: 18pt !important; }
 }
 
 a[title="WhatsApp"]:after { content: ' 5215518388261'; }
+=======
+html 
+{
+    background-color: #ffffff;
+	color: #000;
+	font: 12pt Helvetica, sans-serif;
+}
+
+a { color: #444; font-weight: bold; text-decoration:  }
+
+i, #jonmircha, #mens-corpore, #hello-world>.title--sub { display: none; }
+
+.jon__about { font-size: 16pt; }
+
+.jon__about b { color: #F60; display: block; font-size: 20pt; }
+
+.title--info, .title--sub
+{
+	color: #F60;
+	font-size: 16pt;
+	margin-bottom: -8pt;
+}
+
+#i-am li, #skills li { display: inline; margin: 1cm auto }
+
+#i-am li:not(:last-child):after
+{
+	color: #F60;
+	content: " | ";
+	margin: auto .25cm;
+}
+
+#skills li:not(:last-child):after { content: ", "; }
+
+#experience h4, #experience ul
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 75%;
+}
+
+#experience h4 { width: 15%; }
+
+.jon__projects ul>li, .jon__contact li
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 45%;
+}
+
+.jon__contact li { width: 30%; }
+
+.jon__contact a:after { content:attr(title); }
+
+a[title="email"]:after { content: "j@bextlan.com"; }
+
+a[title="whats app"]:after { content: "5215518388261"; }
+>>>>>>> 9d202d7b472544d347cb55da7ae14a3f2500e2c0

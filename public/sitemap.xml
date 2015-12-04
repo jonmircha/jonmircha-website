@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -6,4 +7,11 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 	<url><loc>http://jonmircha.com</loc></url>
 	<url><loc>http://jonmircha.com/en</loc></url>
+=======
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+	<url><loc>http://jonmircha.com</loc></url>
+	<url><loc>http://jonmircha.com/en</loc></url>
+	<url><loc>http://jonmircha.com/vlog</loc></url>
+	<url><loc>http://jonmircha.com/Bryan</loc></url>
+>>>>>>> 9d202d7b472544d347cb55da7ae14a3f2500e2c0
 </urlset>

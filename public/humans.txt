@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /* JonMirCha - Instructor Web & Arquitecto Front end - http://jonmircha.com */
+=======
+/* JonMirCha - Instructor Web & Arquitecto de Frontend - http://jonmircha.com */
+>>>>>>> 9d202d7b472544d347cb55da7ae14a3f2500e2c0
 
 /* TEAM */
 	Diseño y programación: Jonathan MirCha
@@ -8,6 +12,7 @@
 
 /* THANKS */
 	Bryan. FUISTE, ERES y SIEMPRE SERÁS... LO MEJOR DE MÍ.
+<<<<<<< HEAD
 	@laflacaicc Irma Campos Cortés
 
 /* SITE */
@@ -15,4 +20,13 @@
 	Language: Español/English
 	Standars: HTML5, CSS3, JavaScript, Node.js
 	Components: Responsive Design, Flexbox, Atomic Design, FontAwesome, GoogleFonts, jQuery, Express, Jade, Ngnix, Ubuntu, Responsimple, ES6
+=======
+	@laflacaicc Irma Campos Cortés - irmacrea.com
+
+/* SITE */
+	Last update: 2015/05/19
+	Language: Español/English
+	Standars: HTML5, CSS3, JavaScript, NodeJS
+	Components: Responsive Design, Flexbox, FontAwesome, GoogleFonts, jQuery, Express, Jade, Ngnix, Ubuntu
+>>>>>>> 9d202d7b472544d347cb55da7ae14a3f2500e2c0
 	Software: SublimeText, Chrome, Fireworks
