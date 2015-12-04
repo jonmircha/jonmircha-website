@@ -1,0 +1,22 @@
+{
+  "name": "jonmircha-website",
+  "version": "2.0.0",
+  "description": "Web Instructor & Front end Architect. Bextlán Founder. Enthusiastic of education and web. Marathoner(x7). My inspiration: ♥ Bryan & My Family ♥",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js",
+    "restart": "supervisor -e node,js,json,css,jade -x node server.js"
+  },
+  "keywords": [
+    "web",
+    "portafolio",
+    "jonmircha"
+  ],
+  "author": "@jonmircha",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.13.3",
+    "jade": "^1.11.0"
+  }
+}

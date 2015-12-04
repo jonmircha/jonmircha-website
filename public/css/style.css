@@ -1,0 +1,159 @@
+html{
+	font-family: "Raleway", sans-serif;
+	font-weight: 400;
+	color: #FFF;
+	background-color: rgba(0, 0, 0, .9);
+	background-image: url("../img/fondo.png");
+	background-repeat: repeat;
+}
+
+a { 
+	color: #FF5700;
+	text-decoration: none;
+}
+
+a:hover { color: #CCC; }
+
+hr {
+	width: 80%;
+	border-color: #FF5700;
+}
+
+::selection { background: #FF5700; }
+
+::-moz-selection { background: #FF5700; }
+
+.item { font-size: 1.25rem; }
+
+.allvh { 
+	margin: 2rem auto;
+	padding-top: 4rem;
+	min-height: 100vh;
+}
+
+.bg-img {
+	margin-bottom: 0;
+	background-color: rgba(0, 0, 0, .75);
+}
+
+.br { margin: 1rem auto; }
+
+.jonmircha { padding-top: 0; }
+
+.main-title {
+	font-size: 10vw;
+	margin: 30vh auto 0; 
+}
+
+.main-title:after {
+	color: #FF5700;
+	content: '>';
+}
+
+.main-title:before {
+	color: #FF5700;
+	content: '<';
+}
+
+.slogan {
+	font-size: 2.4vw;
+	margin-left: 2.8vw;
+}
+
+.f-vw *, .menu .fa { font-size: 5vw; }
+
+.subtitle { 
+	font-size: 2.5rem;
+	text-align: center;
+	color: #FFF;
+}
+
+.menu {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	width: 100%;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.hello {
+	background-image: url("../img/hello.jpg");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: cover
+}
+
+.hello img { max-width: 200px; }
+
+.hello p { padding: .5rem; font-size: 1.25rem; }
+
+.hello li { list-style-position: inside; }
+
+.resume h4 { margin-top: 1rem; }
+
+.resume {
+	background-image: url("../img/resume.jpg");
+	background-repeat: no-repeat;
+	background-position: 40% center;
+	background-size: cover;
+}
+
+.projects {
+	background-image: url("../img/projects.jpg");
+	background-repeat: no-repeat;
+	background-position: 70%;
+	background-size: cover;
+}
+
+.customers img { 
+	max-width: 150px;
+	background-color: #FFF;
+}
+
+.customers img:hover { 
+	opacity: .75;
+	transition: all .5s ease-out;
+	transform: scale(.75, .75);
+}
+
+.marathons {
+	background-image: url("../img/marathons.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.marathons span {
+	display: block;
+	font-size: 1.25rem;
+	text-align: center;
+}
+
+@media screen and (min-width: 30em) {
+	/* html { background-color: #555; } */
+	
+	.f-vw *, .menu .fa { font-size: 4vw; }
+
+}
+
+@media screen and (min-width: 48em) {
+	/* html { background-color: #888; } */
+
+	.f-vw * { font-size: 3vw; }
+
+	.menu { font-weight: bold; }
+}
+
+@media screen and (min-width: 64em) {
+	/* html { background-color: #000; } */
+
+	.item { font-size: 1rem; }
+
+	.f-vw * { font-size: 2vw; }
+
+	.hello figcaption { font-size: 1.5rem; }
+
+	.resume, .projects, .marathons { background-position: center top; }
+}
