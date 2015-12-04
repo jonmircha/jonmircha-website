@@ -7,6 +7,11 @@
     "start": "node server.js",
     "restart": "supervisor -e node,js,json,css,jade -x node server.js"
   },
+  "homepage": "http://jonmircha.com",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jonmircha/jonmircha-website.git"
+  },
   "keywords": [
     "web",
     "portafolio",
