@@ -1,0 +1,18 @@
+/* JonMirCha - Instructor Web & Arquitecto de Frontend - http://jonmircha.com */
+
+/* TEAM */
+	Diseño y programación: Jonathan MirCha
+	Contact: jonmircha [at] bextlan.com
+	Twitter: @jonmircha
+	From: Mexico city, México
+
+/* THANKS */
+	Bryan. FUISTE, ERES y SIEMPRE SERÁS... LO MEJOR DE MÍ.
+	@laflacaicc Irma Campos Cortés - irmacrea.com
+
+/* SITE */
+	Last update: 2015/05/19
+	Language: Español/English
+	Standars: HTML5, CSS3, JavaScript, NodeJS
+	Components: Responsive Design, Flexbox, FontAwesome, GoogleFonts, jQuery, Express, Jade, Ngnix, Ubuntu
+	Software: SublimeText, Chrome, Fireworks

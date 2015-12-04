@@ -1,0 +1,19 @@
+{
+  "name": "JonMirCha-WebSite",
+  "version": "1.0.0",
+  "description": "Jonathan MirCha. Web Instructor & Consultant. Frontend Architect. Founder of Bextlan & Co-founder of Tecnómadas. Marathoner(x5). My inspiration: Bryan & My Family. Welcome to my website.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "web",
+    "portafolio"
+  ],
+  "author": "@jonmircha",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.12.2",
+    "jade": "^1.9.2"
+  }
+}
