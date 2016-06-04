@@ -1,10 +1,10 @@
 {
   "name": "jonmircha-website",
-  "version": "2.0.0",
-  "description": "Web Instructor & Front end Architect. Bextlán Founder. Enthusiastic of education and web. Marathoner(x7). My inspiration: ♥ Bryan & My Family ♥",
-  "main": "app.js",
+  "version": "3.0.0",
+  "description": "Web Instructor & Front end Architect. Creator of Bextlan & Responsimple. Enthusiastic of digital education. WebDev, Geek, Nerd, Teacher & Marathoner(x7)",
+  "main": "gulpfile.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "gulp start",
     "restart": "supervisor -e node,js,json,css,jade -x node server.js"
   },
   "homepage": "http://jonmircha.com",
@@ -17,11 +17,19 @@
     "portafolio",
     "jonmircha"
   ],
-  "author": "@jonmircha",
-  "license": "ISC",
-  "dependencies": {},
+  "author": "Jonathan MirCha <jonmircha@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
-    "express": "^4.13.3",
-    "jade": "^1.11.0"
+    "browser-sync": "^2.12.10",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.7",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.3",
+    "gulp-uncss": "^1.0.5",
+    "gulp-useref": "^3.1.0",
+    "gulp-watch": "^4.3.5"
   }
 }

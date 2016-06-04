@@ -1,0 +1,21 @@
+doctype html
+html( lang="#{lang}" )
+	head
+		meta( name="viewport", content="width=device-width, initial-scale=1" )
+		meta( charset="utf-8" )
+		meta( http-equiv="X-UA-Compatible", content="IE=edge,chrome=1" )
+		title= title
+		meta( name="description", content="#{description}" )
+		meta( name="apple-mobile-web-app-capable", content="yes" )
+		meta( name="apple-mobile-web-app-status-bar-style", content="black-translucent" )
+		link( rel="shortcut icon", type="image/x-icon", href="./img/favicon.ico" )
+		link( rel="shortcut icon", type="image/png", href="./img/favicon.png" )
+		link( rel="apple-touch-icon", href="./img/apple-touch-icon.png" )
+		link( rel="apple-touch-startup-image", href="./img/apple-touch-icon.png" )
+		link( rel="author", type="text/plain", href="./humans.txt" )
+		link( rel="sitemap", type="application/xml", title="Sitemap", href="./sitemap.xml" )
+		link( rel="stylesheet", href="./print.min.css", media="print" )
+		link( rel="stylesheet", href="./jonmircha.min.css", media="screen" )
+	body
+		block content
+		script( src="./jonmircha.min.js", defer )

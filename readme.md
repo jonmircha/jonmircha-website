@@ -1,4 +1,4 @@
-# Repositorio del sitio web personal de Jonathan MirCha
+# Repository of Jonathan Mircha's personal website
 
 [jonmircha.com](jonmircha.com)
 

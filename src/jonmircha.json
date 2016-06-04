@@ -1,0 +1,244 @@
+{
+	"langEs" : "es",
+	"langEn" : "en",
+	"alias" : "jonmircha",
+	"titleEs" : "JonMirCha - Instructor Web & Arquitecto Front end",
+	"titleEn" : "JonMirCha - Web Instructor & Front end Architect",
+	"descriptionEs" : "Instructor Web & Arquitecto Frontend. Creador de Bextlán & Responsimple. Entusiasta de la educación digital. WebDev, Geek, Nerd, Docente y Maratonista(x7)",
+	"descriptionEn" : "Web Instructor & Front end Architect. Creator of Bextlan & Responsimple. Enthusiastic of digital education. WebDev, Geek, Nerd, Teacher & Marathoner(x7)",
+	"sloganEs" : "Instructor Web & Arquitecto Front end",
+	"sloganEn" : "Web Instructor & Front end Architect",
+	"imageAvatar" : "img/jonmircha.jpg",
+	"socialMedia" : {
+		"twitter" : {
+			"name" : "Twitter",
+			"url" : "http://twitter.com/@jonmircha",
+			"class" : "fa-twitter"
+		},
+		"linkedin" : {
+			"name" : "Linkedin",
+			"url" : "http://linkedin.com/in/jonmircha/",
+			"class" : "fa-linkedin"
+		},
+		"github" : {
+			"name" : "Github",
+			"url" : "http://github.com/jonmircha",
+			"class" : "fa-github"
+		},
+		"instagram" : {
+			"name" : "Instagram",
+			"url" : "http://instagram.com/jonmircha",
+			"class" : "fa-instagram"
+		},
+		"youtube" : {
+			"name" : "Youtube",
+			"url" : "http://youtube.com/bextlancom",
+			"class" : "fa-youtube"
+		},
+		"email" : {
+			"name" : "Email",
+			"url" : "mailto:jonmircha@gmail.com",
+			"class" : "fa-envelope"
+		},
+		"whatsapp" : {
+			"name" : "WhatsApp",
+			"url" : "tel:5215518388261",
+			"class" : "fa-whatsapp"
+		}
+	},
+	"helloTitleEs" : "¡Hola!",
+	"helloTitleEn" : "Hello!",
+	"helloDescriptionEs" : "<p>Desde el 2004 tengo experiencia profesional en el área de diseño y programación web. Además imparto clases, charlas, conferencias, seminarios, diplomados y capacitación para diferentes empresas, instituciones educativas y comunidades en Internet.</p><p>Soy fan de CSS y JavaScript, de Batman y Flash, del buen café y los perros, tengo uno medio brabucón, se llama kEnAi.</p><p>Irma, mi esposa, es el CSS de mi HTML ( <i class=\"fa  fa-css3\"></i> <i class=\"fa  fa-heart\"></i> <i class=\"fa  fa-html5\"></i> ).</p><p><a href=\"http://bextlan.com/Bryan\" target= \"_blank\">Bryan</a>, mi inspiración.</p><p>Soy fiel creyente de dos frases:</p><ol><li>\"<em>Mens sana in corpore sano</em>\"</li><li>\"<em>Menos siempre es más</em>\"</li></ol><p>Disfruto de correr maratones, andar en bici, hacer ejercicio y bailar salsa.</p><p>Para conocerme más visita <a href=\"http://jonmircha.com\", target=\"_blank\">jonmircha.com</a></p><p>¿Quieres aprender del maravilloso mundo de la web? visita <a href=\"http://bextlan.com\", target=\"_blank\">bextlan.com</a></p>",
+	"helloDescriptionEn" : "<p>Since 2004 I have professional experience in web design and programming. I also give classes, lectures, conferences, seminars, courses and training for different companies, educational institutions and communities on the Internet.</p><p>I'm a fan of CSS and JavaScript, Batman and Flash, good coffee and dogs, I have one a little bit angry, called Kenai.</p><p>Irma, my wife, is the CSS of my HTML ( <i class=\"fa  fa-css3\"></i> <i class=\"fa  fa-heart\"></i> <i class=\"fa  fa-html5\"></i> ).</p><p><a href=\"http://bextlan.com/Bryan\" target= \"_blank\">Bryan</a>, my inspiration.</p><p>I'm faithful believer of two phrases:</p><ol><li>\"<em>Mens sana in corpore sano</em>\"</li><li>\"<em>Less is always more</em>\"</li></ol><p>I enjoy running marathons, cycling, exercising and dancing salsa.</p><p>To know more visit <a href=\"http://jonmircha.com\", target=\"_blank\">jonmircha.com</a></p><p>Do you want to learn of the wonderful world of the web? visit <a href=\"http://bextlan.com\", target=\"_blank\">bextlan.com</a></p>",
+	"resumeTitleEs" : "Currículum",
+	"resumeTitleEn" : "Resume",
+	"resumeIAmTitleEs" : "Soy",
+	"resumeIAmTitleEn" : "I am",
+	"resumeIAmEs" : [
+		"<i class=\"fa fa-user\"></i><span>Jonathan Ulises Miranda Charles</span>",
+		"<i class=\"fa fa-birthday-cake\"></i><span><time datatime=\"1984-05-23\">23 Mayo 84</time></span>",
+		"<i class=\"fa fa-globe\"></i><span>México</span>",
+		"<i class=\"fa fa-map-marker\"></i><span>Ciudad de México</span>",
+		"<i class=\"fa fa-graduation-cap\"></i><span>Ingeniero en Sistemas</span><span>Maestro en Comunicación con Medios Virtuales (Pasante)</span>"
+	],
+	"resumeIAmEn" : [
+		"<i class=\"fa fa-user\"></i><span>Jonathan Ulises Miranda Charles</span>",
+		"<i class=\"fa fa-birthday-cake\"></i><span><time datatime=\"1984-05-23\">May 23, 84</time></span>",
+		"<i class=\"fa fa-globe\"></i><span>México</span>",
+		"<i class=\"fa fa-map-marker\"></i><span>México City</span>",
+		"<i class=\"fa fa-graduation-cap\"></i><span>Systems Engineer</span><span>Master in Communication with Virtual Media</span>"
+	],
+	"resumeServicesTitleEs" : "Servicios",
+	"resumeServicesTitleEn" : "Services",
+	"resumeServicesEs" : [
+		"Instrucción y Capacitación Web",
+		"Diseño y Maquetación Web",
+		"Programación Front end & Back end",
+		"Consultoría UI/UX & WPO",
+		"Charlas y Conferencias"
+	],
+	"resumeServicesEn" : [
+		"Instruction & Training Web",
+		"Lectures and Conferences",
+		"Web Design and Layout",
+		"Front end & Back end Programming",
+		"UI/UX & WPO Consulting"
+	],
+	"resumeSkillsTitleEs" : "Conocimientos",
+	"resumeSkillsTitleEn" : "Skills",
+	"resumeSkills" : [
+		"Responsive & Adaptive Design",
+		"UI/UX & WPO",
+		"HTML5, CSS3 & JavaScript",
+		"jQuery, jQueryUI & jQueryMobile",
+		"PHP, MySQL & WordPress",
+		"Node.js, Express & MongoDB",
+		"NPM, Jade & Gulp",
+		"Markdown, Git & GitHub",
+		"Flash, AS2 & AS3"
+	],
+	"resumeExperienceTitleEs" : "Experiencia",
+	"resumeExperienceTitleEn" : "Experience",
+	"resumeExperienceTitleCurrentEs" : "Actualmente",
+	"resumeExperienceTitleCurrentEn" : "Current",
+	"resumeExperienceCurrentEs" : [
+		"<span>Fundador de <a href=\"http://bextlan.com\", target=\"_blank\">Bextlán</a></span><span>desde 2012</span>",
+		"<span>Arquitecto Front end Freelance</span><span>desde 2008</span>",
+		"<span>Instructor Web en <a href=\"http://centroadm.com\", target=\"_blank\">Centro ADM</a></span><span>desde 2015</span>",
+		"<span>Instructor Web en <a href=\"http://escuela.it/docentes/jonathan-mircha\", target=\"_blank\">Escuela IT</a></span><span>desde 2013</span>",
+		"<span>Colaborador de <a href=\"http://www.desarrolloweb.com/contacta/396.html\", target=\"_blank\">DesarrolloWeb.com</a></span><span>desde 2013</span>",
+		"<span>Docente de Posgrado y Licenciatura en <a href=\"http://iconos.edu.mx\", target=\"_blank\">ICONOS</a></span><span>desde 2011</span>"
+	],
+	"resumeExperienceCurrentEn" : [
+		"<span><a href=\"http://bextlan.com\", target=\"_blank\">Bextlan's</a> founder</span><span>since 2012</span>",
+		"Front end Architect (Freelance) since 2008",
+		"<span>Web Instructor at <a href=\"http://centroadm.com\", target=\"_blank\">Centro ADM</a></span><span>since 2015</span>",
+		"<span>Web Instructor at <a href=\"http://escuela.it/docentes/jonathan-mircha\", target=\"_blank\">Escuela IT</a></span><span>since 2013</span>",
+		"<span><a href=\"http://www.desarrolloweb.com/contacta/396.html\", target=\"_blank\">DesarrolloWeb.com</a> contributor</span><span>since 2013</span>",
+		"<span>College Teacher at <a href=\"http://iconos.edu.mx\", target=\"_blank\">ICONOS</a></span><span>since 2011</span>"
+	],
+	"resumeExperienceTitleAboveEs" : "Anteriormente",
+	"resumeExperienceTitleAboveEn" : "Above",
+	"resumeExperienceAboveEs" : [
+		"<span>Docente de Posgrado en <a href=\"http://usb.edu.mx\", target=\"_blank\">USB</a></span><span>(2015)</span>",
+		"<span>Instructor Web en <a href=\"http://mactrainee.com\", target=\"_blank\">MacTrainee</a></span><span>(2012-2014)</span>",
+		"<span>Docente de Bachillerato en <a href=\"http://universidaduvm.mx\", target=\"_blank\">UVM</a></span><span>(2009-2012)</span>",
+		"<span>Desarrollador Web en <a href=\"http://voit.com\", target=\"_blank\">Voit</a></span><span>(2009)</span>",
+		"<span>Docente de Licenciatura en <a href=\"http://www.univdep.edu.mx\", target=\"_blank\">UNIVDEP</a></span><span>(2009-2013)</span>",
+		"<span>Desarrollador Web en <a href=\"http://mvs.com\", target=\"_blank\">MVS</a></span><span>(2006-2008)</span>",
+		"<span>Diseñador y Desarrollador Flash Freelance</span><span>(2004-2008)</span>"
+	],
+	"resumeExperienceAboveEn" : [
+		"<span>College Teacher at <a href=\"http://usb.edu.mx\", target=\"_blank\">USB</a></span><span>(2015)</span>",
+		"<span>Web Instructor at <a href=\"http://mactrainee.com\", target=\"_blank\">MacTrainee</a></span><span>(2012-2014)</span>",
+		"<span>High School Teacher at <a href=\"http://universidaduvm.mx\", target=\"_blank\">UVM</a></span><span>(2009-2012)</span>",
+		"<span>Web Developer at <a href=\"http://voit.com\", target=\"_blank\">Voit</a></span><span>(2009)</span>",
+		"<span>College Teacher at <a href=\"http://www.univdep.edu.mx\", target=\"_blank\">UNIVDEP</a></span><span>(2009-2013)</span>",
+		"<span>Web Developer at <a href=\"http://mvs.com\", target=\"_blank\">MVS</a></span><span>(2006-2008)</span>",
+		"<span>Flash Designer and Developer (Freelance)</span><span>(2004-2008)</span>"
+	],
+	"worksTitleEs" : "Trabajos",
+	"worksTitleEn" : "Works",
+	"projectsTitleEs" : "Proyectos",
+	"projectsTitleEn" : "Projects",
+	"projectsEs" : [
+		[ "Responsimple", "http://jonmircha.github.io/responsimple/", "responsimple", "Un sistema de retícula CSS simple, flexible & responsive", "( desde 2015 )" ],
+		[ "Bextlán", "http://bextlan.com/", "bextlan", "Cursos y Tutoriales sobre el maravilloso mundo de la web", "( desde 2012 )" ],
+		[ "Café Latino", "#", "cafe-latino", "Mi primer gran fracaso como emprendedor, la apertura de un café y mis pininos como barista", "( 2008-2009 )" ]
+	],
+	"projectsEn" : [
+		[ "Responsimple", "http://jonmircha.github.io/responsimple/", "responsimple", "A simple, flexible & responsive CSS grid system", "( since 2015 )" ],
+		[ "Bextlán", "http://bextlan.com/", "bextlan", "Courses and tutorials about the wonderful world of the web", "( since 2012 )" ],
+		[ "Café Latino", "#", "cafe-latino", "My first big failure as an entrepreneur, opening a coffee and my first steps as a barista", "( 2008-2009 )" ]
+	],
+	"sitesTitleEs" : "Sitios & Apps",
+	"sitesTitleEn" : "Sites & Apps",
+	"sites" : [
+		[ "jonmircha.com", "http://jonmircha.com/" ],
+		[ "github slides", "https://github.com/jonmircha/my-slides" ],
+		[ "crea-creaciones.com", "http://crea-creaciones.com/" ],
+		[ "conacer.com.mx", "http://conacer.com.mx/" ],
+		[ "promoleasing.com.mx", "http://promoleasing.com.mx/" ],
+		[ "alinevaldes.com", "http://alinevaldes.com/" ],
+		[ "somms.mx", "http://somms.mx/" ],
+		[ "bextlan.com", "http://bextlan.com/" ],
+		[ "grupour.com", "http://grupour.com/" ]
+	],
+	"lecturesTitleEs" : "Charlas & Talleres",
+	"lecturesTitleEn" : "Lectures & Workshops",
+	"lectures" : [
+		[ "El Vlog de MirCha", "http://bextlan.com/tutoriales/vlog-de-mircha/" ],
+		[ "La Infrahistoria de Node.js 4", "https://www.youtube.com/watch?v=YBqOkE_UC6c&index=1&list=PLvq-jIkSeTUaourms9u_1KfoMtCWuLgvv" ],
+		[ "Diseño y Desarrollo Web 2015", "http://www.youtube.com/watch?v=vLkC-SUCYeQ;&list=PLvq-jIkSeTUaourms9u_1KfoMtCWuLgvv" ],
+		[ "Node.js es más que JS en el servidor", "https://www.youtube.com/watch?v=9kk1A5_IaQ0&list=PLvq-jIkSeTUaourms9u_1KfoMtCWuLgvv" ],
+		[ "Arquitectura de la Web con Node.js", "https://www.youtube.com/watch?v=M78gCRhqeUA&list=PLvq-jIkSeTUaourms9u_1KfoMtCWuLgvv" ],
+		[ "Editores de Código 2015", "https://www.youtube.com/watch?v=sdVh7nkUUG0&list=PLvq-jIkSeTUaourms9u_1KfoMtCWuLgvv" ],
+		[ "Dudas HTML5 2014", "https://www.youtube.com/watch?v=l098vHvkHxA&list=PLvq-jIkSeTUaourms9u_1KfoMtCWuLgvv" ],
+		[ "Diseño y Desarrollo Web 2013", "https://www.youtube.com/watch?v=ayy4yXnSyH8&list=PLvq-jIkSeTUaourms9u_1KfoMtCWuLgvv" ],
+		[ "Taller de Responsive Design 2012", "https://www.youtube.com/watch?v=7tlzzFSEJ4M&list=PLvq-jIkSeTUaourms9u_1KfoMtCWuLgvv" ],
+		[ "Taller de HTML5 2012", "https://www.youtube.com/watch?v=uOToJW4x2GE&list=PLvq-jIkSeTUaourms9u_1KfoMtCWuLgvv" ],
+		[ "La Web... pasado, presente y futuro", "https://www.youtube.com/watch?v=riXMb-A4niw&list=PLvq-jIkSeTUaourms9u_1KfoMtCWuLgvv" ]
+	],
+	"articlesTitleEs" : "Artículos & Medios",
+	"articlesTitleEn" : "Articles & Media",
+	"articles" : [
+		[ "La historia de Node.js 4", "http://desarrolloweb.com/articulos/el-futuro-de-nodejs4.html" ],
+		[ "Correr la Maratón de San Francisco", "https://medium.com/@jonmircha/la-experiencia-de-correr-una-marat%C3%B3n-con-10kg-y-2250m-menos-c639fc2fee9c" ],
+		[ "Bextlán en el Colombiano", "http://www.elcolombiano.com/redes-sociales/youtube-el-salon-de-clases-HB3003786" ],
+		[ "Bextlán en Tecnología7", "http://tecnologia7.net/bextlan-aprender-desarrollo-web-youtube/" ],
+		[ "Bextlán en Pulso Social", "http://pulsosocial.com/2012/12/21/bextlan-lugar-de-bits-vectores-y-pixeles/" ],
+		[ "Conferencia en Laureate", "https://my.laureate.net/Faculty/webinars/Pages/LaWebPasadoPresenteyFuturo.aspx" ]
+	],
+	"customersTitleEs" : "Clientes",
+	"customersTitleEn" : "Customers",
+	"customers" : [
+		[ "ICONOS", "http://iconos.edu.mx/", "iconos" ],
+		[ "Escuela IT", "http://escuela.it/", "escuela-it" ],
+		[ "desarrolloweb.com", "http://desarrolloweb.com/", "desarrollo-web" ],
+		[ "Centro ADM", "http://centroadm.com/", "adm" ],
+		[ "Codejobs", "https://www.codejobs.biz/", "codejobs" ],
+		[ "MacTrainee", "http://mactrainee.com/", "mactrainee" ],
+		[ "UNAM", "https://www.unam.mx/", "unam" ],
+		[ "UVM", "http://www.universidaduvm.mx/", "uvm" ],
+		[ "UNITEC", "http://www.unitec.mx/", "unitec" ],
+		[ "USB", "http://www.usb.edu.mx/", "usb" ],
+		[ "UNIVDEP", "https://www.univdep.edu.mx/", "univdep" ],
+		[ "Secretaría de Gobernación", "http://www.gobernacion.gob.mx/", "segob" ],
+		[ "Banco de México", "http://www.bancodemexico.gob.mx/", "banxico" ],
+		[ "Periódico Reforma", "http://www.reforma.com/", "reforma" ],
+		[ "COMEX", "http://www.comex.com.mx/", "comex" ],
+		[ "Liverpool", "http://www.liverpool.com.mx/", "liverpool" ],
+		[ "Asociación de Agentes Aduanales", "http://www.aaalac.mx/", "aaalac" ],
+		[ "American Cotton", "http://eurocotton.com.mx/", "american-cotton" ],
+		[ "Gamol", "http://www.gamol.com.mx/", "gamol" ],
+		[ "Voit", "http://voit.com/", "voit" ],
+		[ "MVS", "http://www.mvs.com/", "mvs" ]
+	],
+	"marathonsTitleEs" : "Maratones",
+	"marathonsTitleEn" : "Marathons",
+	"marathons" : [
+		[ "CDMX 2015", "3:43:04" ],
+		[ "San Francisco 2015", "3:33:38", true ],
+		[ "CDMX 2014", "4:26:47" ],
+		[ "UT-50km GDL 2014", "8:23:01" ],
+		[ "Lala 2014", "3:56:22" ],
+		[ "CDMX 2013", "3:58:14" ],
+		[ "CDMX 2012", "4:35:35" ]
+	],
+	"menuEs" : [
+		["jonmircha", "jonmircha", "fa-home"],
+		["hello", "hola", "fa-smile-o"],
+		["resume", "currículum", "fa-graduation-cap"],
+		["projects", "proyectos", "fa-briefcase"],
+		["customers", "clientes", "fa-users"],
+		["marathons", "maratones", "fa-trophy"]
+	],
+	"menuEn" : [
+		["jonmircha", "jonmircha", "fa-home"],
+		["hello", "hello", "fa-smile-o"],
+		["resume", "resume", "fa-graduation-cap"],
+		["projects", "projects", "fa-briefcase"],
+		["customers", "customers", "fa-users"],
+		["marathons", "marathons", "fa-trophy"]
+	]
+}
