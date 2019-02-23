@@ -1,0 +1,39 @@
+/* Custom Properties */
+:root {
+  --main-font: 'Raleway';
+  --alternate-font: sans-serif;
+  --font-size: 16px;
+
+  --text-color: #333;
+  --title-color: #222;
+  --border-color: #DDD;
+
+  --bg-color: #FFF;
+  --bg-poster-color: #F8F8F8;
+  --bg-modal-color: rgba(0, 0, 0, .25);
+
+  --main-color: #FE4918;
+  --main-modal-color: rgba(254,73,24, .5);
+
+  --link-color: var(--main-color);
+  --link-hover-color: var(--title-color);
+
+  --container-width: 1200px;
+  --header-height: 5rem;
+}
+
+$main-color: #FE4918;
+
+
+/* Helpers */
+@import './helpers/reset';
+@import './helpers/utilities';
+@import './helpers/pages';
+
+/* Components */
+@import './components/logo';
+@import './components/menu';
+@import './components/social_media';
+@import './components/subscriber_form';
+@import './components/filter_list';
+@import './components/material_card';

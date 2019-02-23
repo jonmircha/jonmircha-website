@@ -1,0 +1,85 @@
+.u-fullScreen {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.u-container {
+  max-width: var(--container-width);
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+.u-flexRowCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.u-flexRowSpaceAround {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.u-flexColumnCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+
+  100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    height: 0;
+  }
+}
+
+.u-hide { display: none; }
+
+.u-show { display: block; }
+
+.u-fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.u-fadeOut {
+  animation-name: fadeOut;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.u-online,
+.u-offline {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #1B5E20;
+  color: #FFF;
+}
+
+.u-offline {
+  background-color: #B71C1C;
+  color: #FFF;
+}
+
+.lozad-parent {
+  opacity: 0;
+  transition: opacity .3s ease-in;
+}

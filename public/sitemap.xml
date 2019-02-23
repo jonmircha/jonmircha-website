@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+	<url><loc>https://jonmircha.com</loc></url>
+	<url><loc>https://jonmircha.com/hola</loc></url>
+  <url><loc>https://jonmircha.com/cursos</loc></url>
+  <url><loc>https://jonmircha.com/proyectos</loc></url>
+  <url><loc>https://jonmircha.com/blog</loc></url>
+  <url><loc>https://jonmircha.com/bryan</loc></url>
+
+</urlset>

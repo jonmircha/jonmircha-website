@@ -1,0 +1,8 @@
+.Logo {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 15vw;
+  @media screen and (min-width: 64em) { font-size: 7.5vw; }
+  
+  & span { color: var(--main-color); }
+}

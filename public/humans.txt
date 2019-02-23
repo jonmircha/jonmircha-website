@@ -1,0 +1,34 @@
+/* jonmircha | #ProgramadorFitness - http://jonmircha.com */
+  Instructor Web & #ProgramadorFitness | Educación + Desarrollo Web + Deporte | Maratonista | #Celiaco por amor | Menos es más | Buscando lo esencial
+
+/* TEAM */
+	Design and Programming: Jonathan MirCha
+	Contact: hola [at] jonmircha.com
+	Twitter: @jonmircha
+	From: Mexico City, México
+
+/* THANKS */
+	Bryan. FUISTE, ERES y SIEMPRE SERAS... LO MEJOR DE MI
+	@laflacaicc Irma Campos Cortés
+
+/* INSPIRATION */
+  * http://evanyou.me/
+  * https://ethanmarcotte.com/
+  * http://bradfrost.com/
+  * http://melaniedaveid.com/
+  * https://mxb.at/
+  * https://lynnandtonic.com/
+  * https://christinaallan.com/
+
+/* RESOURCES */
+  * http://altorouter.com/
+  * http://www.heymeta.com/
+  * https://fonts.google.com/
+  * https://fontawesome.com/
+  * https://tinypng.com/
+  * https://github.com/marlenesco/material-cards
+  * https://coolors.co/
+  * https://codepen.io/AlvaroFelipe/pen/qmBXVj
+  * https://github.com/ApoorvSaxena/lozad.js
+  * https://github.com/lukeed/ganalytics
+  * https://website.grader.com/

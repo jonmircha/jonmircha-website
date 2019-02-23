@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+  font-family: var(--main-font), var(--alternate-font);
+  font-size: var(--font-size);
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body { overflow-x: hidden; }
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--link-color);
+  transition: all .3s ease-out;
+
+  &:hover {
+    color: var(--link-hover-color);
+  }
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  margin: {
+    top: 1rem;
+    bottom: 1rem;
+  }
+  padding: 0 1rem;
+}
+
+::selection {
+  background-color: var(--main-color);
+  color: var(--text-color);
+}

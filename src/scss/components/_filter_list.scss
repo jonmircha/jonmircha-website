@@ -1,0 +1,36 @@
+.FilterList {
+  margin: 1rem .25rem 0;
+
+  & input[type="search"] {
+    display: block;
+    padding: .5rem .25rem;
+    width: 100%;
+    border: thin solid var(--main-color);
+    outline: 0;
+    background-color: var(--bg-color);
+    color: var(--title-color);
+    font: {
+      family: var(--main-font);
+      size: 4.5vw;
+    }
+
+
+    @media screen and (min-width: 30em) { font-size: 3.75vw; }
+    @media screen and (min-width: 37.5em) { font-size: .85rem; }
+
+    &::placeholder {
+      color: var(--main-color);
+      text-align: center;
+      font: {
+        family: var(--main-font);
+        size: 4.5vw;
+      }
+
+      @media screen and (min-width: 30em) { font-size: 3.75vw; }
+      @media screen and (min-width: 37.5em) {
+        font-size: .85rem;
+        text-align: right;
+      }
+    }
+  }
+}
