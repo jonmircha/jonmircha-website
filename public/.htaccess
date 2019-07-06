@@ -1,7 +1,0 @@
-Options +FollowSymlinks
-RewriteEngine on
-
-# Rutas amigables de AltoRouter
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{SCRIPT_FILENAME} !-d
-RewriteRule . index.php [L]

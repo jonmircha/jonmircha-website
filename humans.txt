@@ -1,0 +1,13 @@
+/* jonmircha - https://jonmircha.com */
+
+/* TEAM */
+Diseño y Desarrollo: Jonathan MirCha
+Contacto: hola [at] jonmircha.com
+Twitter: @jonmircha
+Ubicación: CDMX, México
+
+/* THANKS */
+https://davidhellmann.com/
+https://sizovs.net
+https://www.marcomarino.design
+http://www.elliotdahl.com

@@ -1,105 +1,135 @@
 import gulp from 'gulp'
-import browserSync from 'browser-sync'
 import plumber from 'gulp-plumber'
-import minifyHTML from 'gulp-minify-html'
+import browserSync from 'browser-sync'
 import sass from 'gulp-sass'
-import sourcemaps from 'gulp-sourcemaps'
-import autoprefixer from 'gulp-autoprefixer'
-import cleanCSS from 'gulp-clean-css'
-import uncss from 'gulp-uncss'
+import tildeImporter from 'node-sass-tilde-importer'
+import postcss from 'gulp-postcss'
+import autoprefixer from 'autoprefixer'
+import cssnano from 'cssnano'
+import watch from 'gulp-watch'
 import browserify from 'browserify'
 import babelify from 'babelify'
 import source from 'vinyl-source-stream'
+import sourcemaps from 'gulp-sourcemaps'
 import buffer from 'vinyl-buffer'
-import jsmin from 'gulp-jsmin'
+import rename from 'gulp-rename'
+import minify from 'gulp-minify'
 import imagemin from 'gulp-imagemin'
+import cachebust from 'gulp-cache-bust'
 
-const server = browserSync,
-  serverOptions = {
-    server: {
-      baseDir: './public'
-    }
-  },
+const reload = browserSync.reload,
+  reloadFiles = [
+    './script.js',
+    './style.css',
+    './**/*.php'
+  ],
   proxyOptions = {
-    proxy: 'localhost/j/public',
-    serveStatic: ['./public']
+    proxy: 'localhost:8080/jonmircha',
+    notify: false,
+    port: 3000
   },
-  htmlOptions = {
-    comments: true,
-    spare: true
+  sassOptions = {
+    importer: tildeImporter,
+    sourceComments: true,
+    outputStyle: 'expanded'
   },
-  uncssOptions = {
-    html: ['./public/index.html']
+  postcssOptions = [
+    autoprefixer({
+      browsers: '> 1%, last 2 versions'
+    }),
+    cssnano({
+      core: true,
+      zindex: false
+    })
+  ],
+  babelifyOptions = {
+    /* permite importar desde afuera (como node_modules) */
+    global: true,
+    presets: ['@babel/preset-env']
+  },
+  minifyOptions = {
+    ext: {
+      src: '-debug.js',
+      min: '.js'
+    },
+    noSource: true
   },
   imageminOptions = {
-    optimizationLevel: 7,
-    progressive: true
+    progressive: true,
+    optimizationLevel: 3, // 0-7 low-high
+    interlaced: true,
+    svgoPlugins: [{ removeViewBox: false }]
   }
 
-gulp.task('html', () => {
-  gulp.src('./src/**/*.html')
-    .pipe(plumber())
-    .pipe(minifyHTML(htmlOptions))
-    .pipe(gulp.dest('./public/'))
-})
+gulp.task('server', () => browserSync.init(reloadFiles, proxyOptions))
 
-gulp.task('php', () => {
-  gulp.src('./src/**/*.php')
-    .pipe(plumber())
-    .pipe(gulp.dest('./public/'))
-})
-
-gulp.task('css', () => {
-  gulp.src('./src/scss/style.scss')
+gulp.task('styles-dev', () => {
+  gulp.src('./assets/styles/main.scss')
     .pipe(sourcemaps.init({ loadMaps: true }))
     .pipe(plumber())
-    .pipe(sass())
-    .pipe(autoprefixer({ browsers: ['last 2 versions'] }))
-    .pipe(cleanCSS())
-    .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest('./public/css/'))
-    .pipe(server.stream({ match: '**/*.css' }))
+    .pipe(sass(sassOptions))
+    .pipe(rename('style.css'))
+    .pipe(sourcemaps.write('./assets'))
+    .pipe(gulp.dest('./'))
+    .pipe(reload({ stream: true }))
 })
 
-gulp.task('js', () => {
-  browserify('./src/js/index.js')
-    .transform(babelify)
+gulp.task('styles-prod', () => {
+  gulp.src('./assets/styles/main.scss')
+    .pipe(plumber())
+    .pipe(sass(sassOptions))
+    .pipe(postcss(postcssOptions))
+    .pipe(rename('style.css'))
+    .pipe(gulp.dest('./'))
+    .pipe(reload({ stream: true }))
+})
+
+gulp.task('scripts-dev', () => {
+  browserify('./assets/scripts/index.js')
+    .transform(babelify, babelifyOptions)
     .bundle()
-    .on('error', err => console.log(err.message))
+    .on('error', function (err) {
+      console.error(err)
+      this.emit('end')
+    })
     .pipe(source('script.js'))
     .pipe(buffer())
     .pipe(sourcemaps.init({ loadMaps: true }))
-    .pipe(sourcemaps.write('./'))
-    .pipe(jsmin())
-    .pipe(gulp.dest('./public/js/'))
-    .pipe(server.stream({ match: '**/*.js' }))
+    .pipe(sourcemaps.write('./assets'))
+    .pipe(gulp.dest('./'))
+    .pipe(reload({ stream: true }))
 })
 
-gulp.task('media', () => {
-  gulp.src('./src/img/**/*.{png,jpg,jpeg,gif,svg,ico,webp,mp4,mp3}')
+gulp.task('scripts-prod', () => {
+  browserify('./assets/scripts/index.js')
+    .transform(babelify, babelifyOptions)
+    .bundle()
+    .on('error', function (err) {
+      console.error(err)
+      this.emit('end')
+    })
+    .pipe(source('script.js'))
+    .pipe(buffer())
+    .pipe(minify(minifyOptions))
+    .pipe(gulp.dest('./'))
+    .pipe(reload({ stream: true }))
+})
+
+gulp.task('images', () => {
+  gulp.src('./assets/img/**/**')
     .pipe(imagemin(imageminOptions))
-    .pipe(gulp.dest('./public/img'))
+    .pipe(gulp.dest('./img'))
 })
 
-gulp.task('uncss', () => {
-  gulp.src('./public/style.css')
-    .pipe(uncss(uncssOptions))
-    .pipe(gulp.dest('./public/css/'))
+gulp.task('cache', () => {
+  gulp.src('./app/components/html_+(header|footer).php')
+    .pipe(cachebust({ type: 'timestamp' }))
+    .pipe(gulp.dest('./app/components'))
 })
 
-gulp.task('default', () => {
-  server.init(serverOptions)
-  gulp.watch('./src/**/*.html', ['html'])
-  gulp.watch('./src/**/*.scss', ['css'])
-  gulp.watch('./src/**/*.js', ['js'])
-  gulp.watch('./public/**/*.html').on('change', server.reload)
+gulp.task('default', ['server', 'styles-dev', 'scripts-dev'], () => {
+  watch('./assets/styles/**/**', () => gulp.start('styles-dev'))
+  watch('./assets/scripts/**/**', () => gulp.start('scripts-dev'))
 })
 
-gulp.task('proxy', () => {
-  server.init(proxyOptions)
-  gulp.watch('./src/**/*.html', ['html'])
-  gulp.watch('./src/**/*.php', ['php'])
-  gulp.watch('./src/**/*.scss', ['css'])
-  gulp.watch('./src/**/*.js', ['js'])
-  gulp.watch('./public/**/*.+(html|php)').on('change', server.reload)
-})
+gulp.task('build', ['styles-prod', 'scripts-prod', 'cache'])
