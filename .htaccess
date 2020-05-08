@@ -1,38 +1,29 @@
-# Comentarios htaccess
+# URLs Amigables
+RewriteEngine On
 
-# Codificación UTF-8
-AddDefaultCharset UTF-8
-AddCharset UTF-8 .html .css .php .txt .js .json .xml
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
 
-# Idioma
-DefaultLanguage es-MX
+RewriteRule ^([^\.]+)$ $1.php [L]
+RewriteRule ^([^\.]+)$ notas.php?id=$1 [L]
+
+ErrorDocument 404 /404.php
+ErrorDocument 403 /403.php
 
 # De HTTP a HTTPS
+#RewriteEngine On
+#RewriteCond %{HTTPS} !on
+#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
 #<IfModule mod_rewrite.c>
   #RewriteCond %{HTTPS} off
   #RewriteRule (.*) https://jonmircha.com/$1 [R=301,L,QSA]
   #RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 #</IfModule>
 
-# URLs Amigables
-
-# Se permite mostrar contenido negociando diferentes valores
-Options +MultiViews
-<IfModule mod_rewrite.c>
-  # Seguir enlaces simbólicos
-  Options +FollowSymlinks
-  # Activar la sobreescritura
-  RewriteEngine On
-  # Se sobreescibren reglas condicionales
-  # Acceder a archivos que existan
-  RewriteCond %{REQUEST_FILENAME} !-f
-  # Acceder a directorios que existan
-  RewriteCond %{REQUEST_FILENAME} !-d
-  # Regla para crear URLs Amigables con archivos PHP y paso de variables
-  RewriteRule ^(.*)$ index.php?page=$1 [QSA,L]
-  # Regla para crear URLs Amigables con archivos HTML quitándole la extensión .html
-  RewriteRule ^([^\.]+)$ $1.html [NC,L]
-</IfModule>
+# Codificación UTF-8
+AddDefaultCharset UTF-8
+AddCharset UTF-8 .html .css .php .txt .js .json .xml
 
 # Deshabilitar la navegación de directorios
 Options All -Indexes

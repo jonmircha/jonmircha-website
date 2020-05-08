@@ -1,8 +1,8 @@
 {
   "name": "Jonathan MirCha",
   "short_name": "jonmircha",
-  "description": "Profesor & Programador Web · #Celiaco por ❤️ · Esencialista: Menos pero mejor · Maratonista 🏃 · Vivo Fitness 💪🤓 · EDteam Partner.",
-  "background_color": "#191919",
+  "description": "Profesor, Programador Web & Maratonista 🏃 · Celiaco por amor · Esencialista: Menos pero mejor.",
+  "background_color": "#1e2227",
   "theme_color": "#fe4918",
   "orientation": "portrait",
   "display": "standalone",
@@ -11,7 +11,29 @@
   "lang": "es",
   "icons": [
     {
-      "src": "./img/jonmircha-icon.png"
+      "src": "./img/jonmircha-icon.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "./img/jonmircha-icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./img/jonmircha-icon.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "./img/jonmircha-icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "./img/jonmircha-icon.png",
+      "type": "image/png",
+      "sizes": "1024x1024"
     }
   ]
 }
