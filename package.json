@@ -1,0 +1,30 @@
+{
+  "name": "jonmircha",
+  "version": "7.0.0",
+  "description": "Hola, soy tu amigo y docente digital... Jonathan MirCha",
+  "main": "pages/index.js",
+  "scripts": {
+    "start": "next",
+    "sitemap": "node helpers/sitemap.js",
+    "clean": "rm -rf out .next",
+    "prebuild": "npm run sitemap",
+    "build": "next build",
+    "postbuild": "next export",
+    "serve": "serve out"
+  },
+  "author": "Jonathan MirCha <jonmircha@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^9.3.4",
+    "next-pwa": "^2.3.3",
+    "prismjs": "^1.20.0",
+    "raw-loader": "^1.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "showdown": "^1.9.1"
+  },
+  "engines": {
+    "node": "^12.16.1",
+    "npm": "^6.13.4"
+  }
+}

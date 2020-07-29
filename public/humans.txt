@@ -1,0 +1,15 @@
+/* jonmircha - https://jonmircha.com */
+
+/* TEAM */
+Design & Develop: Jonathan MirCha
+Contact: hola [at] jonmircha.com
+Twitter: @jonmircha
+Location: CDMX, México
+
+/* RESOURCES */
+
+https://utopia.fyi/
+https://jeffhuang.com/designed_to_last/
+https://nextjs.org/
+https://vijayt.com/post/static-website-using-nextjs-and-markdown/
+https://www.svgrepo.com/svg/232740/fox
