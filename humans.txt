@@ -1,7 +1,0 @@
-/* jonmircha - https://jonmircha.com */
-
-/* TEAM */
-Diseño y Desarrollo: Jonathan MirCha
-Contacto: hola [at] jonmircha.com
-Twitter: @jonmircha
-Ubicación: CDMX, México

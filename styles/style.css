@@ -1,0 +1,202 @@
+/* ******************** My Reset ******************** */
+:root {
+  --dark: #1f1f1f;
+  --white: #fff;
+  --gray-light: #f2f2f2;
+  --orange: #fb6d43;
+  --blue: #08c;
+  --text-color: #333;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  color: var(--text-color);
+  background-color: var(--white-color);
+}
+
+a {
+  color: var(--orange);
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+a:hover {
+  box-shadow: inset 0 -2px 0 var(--orange);
+  opacity: 0.8;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* https://codepen.io/TechnoBishop/pen/LEVPJw */
+video,
+iframe {
+  width: 100%;
+  height: calc((100vw - 4rem) * (9 / 16));
+  max-height: calc(800px * 9 / 16);
+}
+
+summary {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  outline: 0;
+  cursor: pointer;
+}
+
+summary > h2 {
+  flex-grow: 1;
+  margin-bottom: 0;
+}
+
+/* ******************** My Classes ******************** */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.box-shadow-none:hover {
+  box-shadow: none;
+}
+
+.btn-pulse {
+  padding: calc(var(--fluid-0) / 2);
+  border-radius: calc(var(--fluid-0) / 4);
+  display: inline-block;
+  font-size: calc(var(--fluid-2) / 1.25);
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: var(--orange);
+  color: var(--white);
+  box-shadow: 0 0 25px var(--dark);
+}
+
+.btn-pulse:hover,
+.pulse:hover {
+  animation: pulse 1.5s infinite;
+  animation-timing-function: linear;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.btn-float-right {
+  float: right;
+}
+
+.dark-box {
+  padding: var(--fluid-2);
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+.flex-grid-center {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.flex-grid-center > * {
+  flex: 1 1 320px;
+}
+
+.flex-row-evenly-center {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.full-screen-center {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.icon {
+  width: var(--fluid-1);
+  height: var(--fluid-1);
+}
+
+.icon-x0 {
+  width: var(--fluid-0);
+  height: var(--fluid-0);
+}
+
+.icon-x2 {
+  width: var(--fluid-2);
+  height: var(--fluid-2);
+}
+
+.icon-x3 {
+  width: var(--fluid-3);
+  height: var(--fluid-3);
+}
+
+.icon-x4 {
+  width: var(--fluid-4);
+  height: var(--fluid-4);
+}
+
+.icon-x5 {
+  width: var(--fluid-5);
+  height: var(--fluid-5);
+}
+
+.img-half {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 50%;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+@media screen and (min-width: 992px) {
+  .super-title {
+    font-size: calc(var(--fluid-5) * 1);
+  }
+}

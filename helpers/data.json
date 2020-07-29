@@ -1,0 +1,295 @@
+{
+  "channelYears": "8",
+  "courses": [
+    {
+      "name": "Curso JavaScript",
+      "link": "https://www.youtube.com/playlist?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA",
+      "img": "https://i.ytimg.com/vi/2SetvwBV-SU/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDfTuHoZVNwk4TTk-aekyHdo3cw2w",
+      "excerpt": "Aprende <i>JavaScript</i> el lenguaje que domina la <i>web</i>: Sintaxis, Gramática, Lógica, <i>EcmaScript</i>, <i>POO</i>, Asincronía, <i>DOM</i>, <i>AJAX</i>, <i>JSON</i>, <i>API's</i>, <i>Node</i> y más."
+    },
+    {
+      "name": "Curso Flexbox CSS",
+      "link": "https://www.youtube.com/playlist?list=PLvq-jIkSeTUbQc3dGsssp8lxAi5npMrys",
+      "img": "https://i.ytimg.com/vi/AAtvnv6LNMk/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLB3Nqv34jRodephVv8by-392BUbPg",
+      "excerpt": "Aprende todo lo que necesitas saber sobre <i>Flexbox CSS</i> para maquetar interfaces <i>web</i>."
+    },
+    {
+      "name": "Progressive Web Apps",
+      "link": "https://www.youtube.com/playlist?list=PLvq-jIkSeTUYIw8CP2AP7QJs4GeeZdvs6",
+      "img": "https://i.ytimg.com/vi/9oQIylJ-JpU/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLB29A8OCPtg4zS2Ybk5ee6WdYjxdw",
+      "excerpt": "Aprende a convertir un sitio <i>web</i> en aplicación <i>web</i> progresiva (<i>PWA</i>)."
+    },
+    {
+      "name": "Curso Node.js",
+      "link": "https://www.youtube.com/playlist?list=PLvq-jIkSeTUY3gY-ptuqkNEXZHsNwlkND",
+      "img": "https://i.ytimg.com/vi/aWFUW4SDD4o/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLADasfOdfFUej0X89hjnFhdjsrabw",
+      "excerpt": "Aprende a crear aplicaciones <i>fullstack</i> con <i>JavaScript</i> y su ambiente de desarrollo <i>backend</i>: <i>Node.js</i> y el gestor de bases de datos <i>NoSQL</i>: <i>MongoDB</i>."
+    },
+    {
+      "name": "Curso POO con PHP",
+      "link": "https://www.youtube.com/playlist?list=PLvq-jIkSeTUZEHvKw7Gx3g5CjlcvA3jr1",
+      "img": "https://i.ytimg.com/vi/OminOd-O5r0/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLB6TWRE9HTQvC6ibTQ2mbNiPf0OeQ",
+      "excerpt": "Aprende Programación Orientada a Objetos, <i>MVC</i> y Bases de Datos con <i>PHP</i> y <i>MySQL</i>."
+    },
+    {
+      "name": "Tips CSS",
+      "link": "https://www.youtube.com/playlist?list=PLvq-jIkSeTUYVLwbW09GGgG2EOFJeNWmQ",
+      "img": "https://i.ytimg.com/vi/WF3iZvbCEXA/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLB--CQyY087P5qtXpzoFBSwgjg7MA",
+      "excerpt": "Aprende trucos y <i>tips</i> sobre <i>CSS</i> que te pueden servir en tu día a día como maquetador <i>web</i>."
+    },
+    {
+      "name": "Curso Desarrollo Web",
+      "link": "https://www.youtube.com/playlist?list=PLvq-jIkSeTUbxAO7uRoeNHH6ZCyjr7xq2",
+      "img": "https://i.ytimg.com/vi/HIEqCOI_1Ic/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBxWenmSoZr3KI9fkd5t2GFOYU36g",
+      "excerpt": "Aprende lo básico para iniciarte en el mundo de la <i>web</i>. De <i>frontend</i>: <i>HTML5</i>, <i>CSS3</i> y <i>JS</i>. De <i>backend</i>: <i>AJAX</i>, <i>PHP</i> y <i>MySQL</i>."
+    },
+    {
+      "name": "Curso WordPress",
+      "link": "https //www.youtube.com/playlist?list=PLvq-jIkSeTUZDOcKsQz79wnYlTvmAdLkj",
+      "img": "https://i.ytimg.com/vi/VbJZ4WEoA_k/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDlBTFs6M4tnkxoDhZro6GSi7BHmQ",
+      "excerpt": "Aprende a crear sitios y aplicaciones autogestionables, creando tus propias plantillas."
+    },
+
+    {
+      "name": "Responsive Design",
+      "link": "https://www.youtube.com/playlist?list=PLvq-jIkSeTUbFYbzpJFN1GLMBZnm9hX5G",
+      "img": "https://i.ytimg.com/vi/mqAYh7Lwxwk/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCER9T7BNEoJYvhK5zBDkBP68t4mA",
+      "excerpt": "Aprende a crear sitios con accesibilidad, usabilidad y optimización de contenido que se vean en cualquier dispositivo."
+    },
+    {
+      "name": "Tutoriales HTML5",
+      "link": "https://www.youtube.com/playlist?list=PL211E9DF848CA18FF",
+      "img": "https://i.ytimg.com/vi/2VKHklZl4-I/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCqlE5E9lv7ekFq2AQqdcNvfn9E4g",
+      "excerpt": "Aprende a realizar sitios <i>responsives</i> con los estándares de la <i>web</i>: <i>HTML5</i> y <i>CSS3</i>."
+    },
+    {
+      "name": "Tutoriales PHP",
+      "link": "https://www.youtube.com/playlist?list=PL469D93BF3AE1F84F",
+      "img": "https://i.ytimg.com/vi/ZNI7uyJvN6U/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBxKJgqrJVxmeq7t76DQMRQPQtfew",
+      "excerpt": "Aprende <i>PHP</i>, el lenguaje de programación <i>backend</i> más utilizado en la <i>web</i>, y el gestor de bases de datos <i>MySQL</i>."
+    },
+    {
+      "name": "KISS PHP",
+      "link": "https://www.youtube.com/playlist?list=PLvq-jIkSeTUZWYh18UN6Q9rfkoqy5A9Xn",
+      "img": "https://i.ytimg.com/vi/5ZtTHSmj884/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCP-wTQXo3W--ZJ8xyHRW7KuPhuJw",
+      "excerpt": "Aprende a usar <i>KISS PHP</i> un <i>mini framework web</i> para crear sitios estáticos con <i>PHP</i>."
+    },
+    {
+      "name": "Curso jQuery",
+      "link": "https://www.youtube.com/playlist?list=PLvq-jIkSeTUYvLDfVUXOhnZ6QSouIfQQ7",
+      "img": "https://i.ytimg.com/vi/aQ1Ql-Fp3aE/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLC_JTjpmU6FXqPqf6KG9rUU5NYQMQ",
+      "excerpt": "Aprende a crear sitios enriquecidos de efectos e interactividad compatibles con cualquier navegador."
+    },
+    {
+      "name": "Tutoriales AS3",
+      "link": "https://www.youtube.com/playlist?list=PLB9840C1696C1BC94",
+      "img": "https://i.ytimg.com/vi/sMloaEx_8xY/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLA8oV8_090nQJxZW_w71GUrwajdMQ",
+      "excerpt": "Aprende los fundamentos de <i>ActionScript 3</i> el lenguaje de programación de <i>Flash</i> útil para realidad aumentada, videojuegos, e interactivos."
+    }
+  ],
+  "marathons": [
+    {
+      "title": "Maratón de la Ciudad de México 2012",
+      "time": "4: 35: 35",
+      "date": "2012-09-02T00:00:00",
+      "altitude": "2250"
+    },
+    {
+      "title": "Maratón de la Ciudad de México 2013",
+      "time": "3: 58: 14",
+      "date": "2013-08-25T00:00:00",
+      "altitude": "2250"
+    },
+    {
+      "title": "Maratón Lala 2014",
+      "time": "3: 56: 22",
+      "date": "2014-03-02T00:00:00",
+      "altitude": "1120"
+    },
+    {
+      "title": "Ultra Trail 50K Guadalajara 2014",
+      "time": "8: 23: 01",
+      "date": "2014-03-30T00:00:00",
+      "altitude": "1800",
+      "extra": "🌲"
+    },
+    {
+      "title": "Maratón de la Ciudad de México 2014",
+      "time": "4: 26: 47",
+      "date": "2014-08-31T00:00:00",
+      "altitude": "2250"
+    },
+    {
+      "title": "San Francisco Marathon 2015",
+      "time": "3: 33: 38",
+      "date": "2015-07-26T00:00:00",
+      "altitude": "20"
+    },
+    {
+      "title": "Maratón de la Ciudad de México 2015",
+      "time": "3: 43: 04",
+      "date": "2015-08-30T00:00:00",
+      "altitude": "2250"
+    },
+    {
+      "title": "Maratón de la Ciudad de México 2016",
+      "time": "3: 51: 16",
+      "date": "2016-08-28T00:00:00",
+      "altitude": "2250"
+    },
+    {
+      "title": "Rock&Roll Querétaro Marathon 2016",
+      "time": "3: 46: 38",
+      "date": "2016-10-02T00:00:00",
+      "altitude": "1850"
+    },
+    {
+      "title": "Maratón Powerade Monterrey 2016",
+      "time": "3: 35: 59",
+      "date": "2016-12-11T00:00:00",
+      "altitude": "550"
+    },
+    {
+      "title": "Maratón de la Ciudad de México 2017",
+      "time": "3: 46: 52",
+      "date": "2017-08-27T00:00:00",
+      "altitude": "2250"
+    },
+    {
+      "title": "Spartan Race UltraBeast Mexico 2017",
+      "time": "10: 00: 32",
+      "date": "2017-12-03T00:00:00",
+      "altitude": "2700",
+      "extra": "🌲"
+    },
+    {
+      "title": "Maratón de la Ciudad de México 2018",
+      "time": "3: 47: 41",
+      "date": "2018-08-26T00:00:00",
+      "altitude": "2250"
+    },
+    {
+      "title": "Bank of America Chicago Marathon 2018",
+      "time": "3: 27: 13",
+      "date": "2018-10-07T00:00:00",
+      "altitude": "180",
+      "extra": "🏅"
+    },
+    {
+      "title": "Maratón de la Ciudad de México 2019",
+      "time": "3: 41: 39",
+      "date": "2019-08-25T00:00:00",
+      "altitude": "2250"
+    }
+  ],
+  "mecenas": [
+    {
+      "name": "Geo-san",
+      "link": "https://twitter.com/rincon_av"
+    }
+  ],
+  "metatags": {
+    "name": "jonmircha",
+    "color": "#fb6d43",
+    "site": "https://jonmircha.com",
+    "icon": "/img/favicon.png",
+    "title": "Hola, soy tu amigo y docente digital... Jonathan MirCha",
+    "description": "Profesor & Programador Web | Estoico: Menos pero mejor.",
+    "poster": "/img/posters/jonmircha.jpg",
+    "slug": "/"
+  },
+  "now": [
+    "Mi canal de <a href='https://youtube.com/jonmircha?sub_confirmation=1' target='_blank' rel='noopener'>YouTube</a> y mi <a href='/blog'>Blog</a>.",
+    "Mis clases en <a href='https://lasalle.mx/' target='_blank' rel='noopener'>La Salle</a> y <a href='https://centroadm.com/' target='_blank' rel='noopener'>Centro ADM</a>.",
+    "Desarrollo de Proyecto para COSTCO México.",
+    "¿Tienes un proyecto? escríbeme a..."
+  ],
+  "nowDate": "2020-07-09T21:19:00",
+  "pagesLikePost": [
+    {
+      "title": "Maratones 🏃🏻‍",
+      "description": "🏃🏻‍ Corre Jon Corre 🏃🏻‍",
+      "slug": "maratones",
+      "category": "fitness",
+      "date": "2019-08-25T20:00:00",
+      "poster": "/img/posters/maratones.jpg",
+      "page": true
+    }
+  ],
+  "projects": [
+    {
+      "name": "Herman Miller México",
+      "excerpt": "Cuestionario <i>online</i> para controlar el acceso a las oficinas ante la contingencia del <i>COVID-19</i> desarrollado en <i>React</i>.",
+      "img": "/img/projects/herman-miller.svg",
+      "link": "https://www.hermanmiller.com/es_mx/"
+    },
+    {
+      "name": "COSTCO México",
+      "excerpt": "Aplicación <i>web</i> que muestra lecturas, datos y gráficas de los transformadores eléctricos de todas las tiendas del país desarrollada en  <i>React</i>, <i>PHP</i> y <i>MySQL</i>.",
+      "img": "/img/projects/costco.svg",
+      "link": "https://www.costco.com.mx/"
+    },
+    {
+      "name": "SIEMENS México",
+      "excerpt": "Depuración de código <i>frontend</i> y Auditoría de contenido y <i>SEO</i> del sitio corporativo. Desarrollo de nuevas páginas y mejoras en el posicionamiento.",
+      "img": "/img/projects/siemens.svg",
+      "link": "https://new.siemens.com/mx/es.html"
+    },
+    {
+      "name": "Aeroméxico",
+      "excerpt": "Colaboración en el desarrollo <i>frontend</i> de <i>intranet</i> corporativa hecha con <i>React</i>.",
+      "img": "/img/projects/aeromexico.svg",
+      "link": "https://miaeromexico.com/"
+    },
+    {
+      "name": "Lucy Lara",
+      "excerpt": "Diseño, Desarrollo y <i>SEO</i> del sitio Lucy Lara.",
+      "img": "/img/projects/lucylara.svg",
+      "link": "https://lucylara.com/"
+    },
+    {
+      "name": "Malvestida",
+      "excerpt": "Diseño, Desarrollo y <i>SEO</i> del sitio Malvestida.",
+      "img": "/img/projects/malvestida.svg",
+      "link": "https://malvestida.com/"
+    },
+    {
+      "name": "Condé Nast",
+      "excerpt": "Diseño y desarrollo de <i>landing pages</i> y registros en línea para eventos de la revista <i>GLAMOUR</i> México.",
+      "img": "/img/projects/condenast.svg",
+      "link": "https://condenastmexico-latam.com/"
+    },
+    {
+      "name": "Voit",
+      "excerpt": "Rediseño de sitio corporativo. Desarrollo de catálogo y buscador de productos.",
+      "img": "/img/projects/voit.svg",
+      "link": "https://voit.com.mx/"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Patreon",
+      "icon": "/img/sponsors/patreon.svg",
+      "link": "https://www.patreon.com/jonmircha",
+      "color": "#f96854"
+    },
+    {
+      "name": "PayPal",
+      "icon": "/img/sponsors/paypal.svg",
+      "link": "https://www.paypal.me/jonmircha",
+      "color": "#00457c"
+    },
+    {
+      "name": "YouTube",
+      "icon": "/img/sponsors/youtube.svg",
+      "link": "https://www.youtube.com/jonmircha/join",
+      "color": "#f00"
+    }
+  ],
+  "youtube": {
+    "subscribers": "46,500",
+    "videos": "480",
+    "views": "3,750,000",
+    "date": "2020-07-02T09:24:00"
+  }
+}
