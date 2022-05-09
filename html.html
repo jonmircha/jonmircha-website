@@ -1,0 +1,1785 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="application-name" content="jonmircha">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@jonmircha">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#fb6d43">
+  <meta name="msapplication-TileColor" content="#fb6d43">
+  <meta name="msapplication-TileImage" content="https://jonmircha.com/img/favicon.png">
+  <link rel="apple-touch-icon" href="https://jonmircha.com/img/favicon.png">
+  <link rel="icon" type="image/png" href="https://jonmircha.com/img/favicon.png">
+  <link rel="author" type="text/plain" href="humans.txt">
+  <link rel="manifest" href="manifest.json">
+  <title>HTML & CSS | jonmircha</title>
+  <meta name="twitter:title" property="og:title" content="HTML & CSS | jonmircha">
+  <meta content="Este artículo es una guía rápida sobre HTML & CSS para no programadores" name="description">
+  <meta content="Este artículo es una guía rápida sobre HTML & CSS para no programadores" name="twitter:description"
+    property="og:description">
+  <meta property="og:image" content="https://jonmircha.com/img/blog/html-for-babies.jpg">
+  <meta name="twitter:image" content="https://jonmircha.com/img/blog/html-for-babies.jpg">
+  <meta content="https://jonmircha.com/html" property="og:url">
+  <meta content="https://jonmircha.com/html" property="twitter:url">
+  <link rel="canonical" href="https://jonmircha.com/html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+  <style>
+    :root {
+      --html-color: #E44D26;
+      --css-color: #1572B6;
+      /* background-color: rgba(228, 77, 38);
+      color: rgb(21, 114, 182); */
+    }
+
+    html {
+      box-sizing: border-box;
+      font-family: "Raleway", sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    *,
+    *::after,
+    *::before {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin: 0;
+      font-size: 125%;
+    }
+
+    a {
+      color: var(--css-color);
+      transition: color 0.3s ease-out, opacity 0.3s ease-in;
+    }
+
+    a:hover {
+      color: var(--html-color);
+      opacity: 0.75;
+    }
+
+    h1 {
+      display: block;
+      font-size: 2em;
+      margin-block-start: 0.67em;
+      margin-block-end: 0.67em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+    }
+
+    hr {
+      border: medium solid var(--css-color);
+      margin: 3rem auto;
+    }
+
+    iframe,
+    img,
+    audio,
+    video {
+      max-width: 100%;
+    }
+
+    img:not(.example img) {
+      border: medium solid var(--css-color);
+      margin: 1rem auto;
+      display: block;
+    }
+
+    main:not(.example main) {
+      padding: 2vw;
+    }
+
+    [id] {
+      scroll-margin-top: 2ex;
+    }
+
+    .btn-top {
+      position: fixed;
+      right: 2vw;
+      bottom: 2vw;
+      display: block;
+      width: 2rem;
+      height: 2rem;
+    }
+
+    .btn-sticky {
+      position: sticky;
+      margin-left: auto;
+      top: calc(100% - 5rem - 2vw);
+      display: block;
+      width: 2rem;
+      height: 2rem;
+    }
+
+    .btn-top svg,
+    .btn-sticky svg {
+      width: inherit;
+      height: inherit;
+    }
+
+    .container {
+      max-width: 992px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .example {
+      border: medium solid var(--html-color);
+      padding: 2vw;
+      margin: 2vw auto;
+    }
+
+    .full-screen {
+      min-height: 100vh;
+    }
+
+    .internal-link {
+      display: block;
+      width: 8ch;
+      margin: 2vh 0 2vh auto;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+      .btn-top {
+        right: calc(((100% - 992px) / 2) - 6rem);
+        bottom: 1vw;
+        width: 3rem;
+        height: 3rem;
+      }
+
+      .btn-sticky {
+        margin-left: calc(100% + 1vw);
+        top: calc(100% - 3rem - 1vw);
+        width: 3rem;
+        height: 3rem;
+      }
+
+      /*  .menu-sticky {
+        position: sticky;
+        top: 0;
+      }
+
+      .menu-sticky ul {
+        position: absolute;
+        width: 288px;
+        left: 992px;
+      } */
+    }
+  </style>
+</head>
+
+<body>
+  <header id="top" class="container full-screen">
+    <h1 class="text-center"><i>HTML</i> & <i>CSS</i></h1>
+    <h6 class="text-center">guía rápida para no programadores</h6>
+    <nav>
+      <ul>
+        <li><a href="#enlaces-recursos">Enlaces y Recursos</a>.</li>
+        <li><a href="#que-es-html">¿Qué es <i>HTML</i>?</a>.</li>
+        <li><a href="#estructura-html">Estructura básica</a>.</li>
+        <li><a href="#starter-template"><i>Template</i> inicial</a>.</li>
+        <li><a href="#comentarios">Comentarios</a>.</li>
+        <li><a href="#etiquetas">Etiquetas <i>HTML</i></a>.</li>
+        <li><a href="#que-es-css">¿Qué es <i>CSS</i>?</a>.</li>
+        <li><a href="#selectores-css">Selectores <i>CSS</i></a>.</li>
+        <li><a href="#variables-css">Variables <i>CSS</i></a>.</li>
+        <li><a href="#orden-codigo-css">Orden del <i>CSS</i></a>.</li>
+        <li><a href="#modelo-caja">Modelo de Caja</a>.</li>
+        <li><a href="#linea-vs-bloque">Línea <i>VS</i> Bloque</a>.</li>
+        <li><a href="#unidades-medida">Unidades de Medida</a>.</li>
+        <li><a href="#reticulas">Retículas</a>.</li>
+      </ul>
+    </nav>
+    <a class="btn-top" href="#top">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+        <path
+          d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+      </svg>
+    </a>
+  </header>
+  <hr>
+  <main class="container">
+    <article id="enlaces-recursos" class="full-screen">
+      <h2>Enlaces y Recursos</h2>
+      <p>En esta sección encontrarán todos los enlaces y recursos que vayamos viendo a lo largo de las clases:</p>
+      <ul>
+        <li>Presentación <a href="https://jonmircha.com/hablemos-de-programacion" target="_blank"><b>Hablemos de
+              Programación</b></a>.
+        </li>
+        <li>Lista de Cursos de <a href="https://www.youtube.com/playlist?list=PLvq-jIkSeTUZYcX9SYwVe7f66afwd9qk_"
+            target="_blank"><b><i>HTML &amp; CSS</i> en <i>YouTube</i></b></a>.
+        </li>
+        <li><a href="https://codesandbox.io/" target="_blank"><b><i>Code Sandbox</i></b></a>.</li>
+        <li><a href="https://htmlreference.io/" target="_blank"><b><i>HTML Reference</i></b></a>.</li>
+        <li><a href="https://cssreference.io/" target="_blank"><b><i>CSS Reference</i></b></a>.</li>
+        <li>
+          Sitios para comprimir y redimensionar imágenes:
+          <ul>
+            <li><a href="https://tinypng.com/" target="_blank"><b><i>TinyPNG</i></b></a>.</li>
+            <li><a href="https://www.iloveimg.com/" target="_blank"><b><i>iLoveIMG</i></b></a>.</li>
+          </ul>
+        </li>
+        <li><a href="https://fonts.google.com/" target="_blank"><b><i>Google Fonts</i></b></a>.</li>
+        <li><a href="https://htmlcolorcodes.com/es/" target="_blank"><b><i>HTML Color Codes</i></b>.</a>
+        </li>
+      </ul>
+    </article>
+    <hr>
+    <article id="que-es-html" class="full-screen">
+      <h2>¿Qué es <i>HTML</i>?</h2>
+      <p>
+        Significa <i>Hyper Text Markup Language</i>, Lenguaje de Marcado de Hiper Texto.
+      </p>
+      <p>
+        <i>HTML</i> es un lenguaje de marcado de etiquetas que define el contenido de la <i>web</i>.
+      </p>
+      <p>
+        Una <b>etiqueta</b> es cada elemento del documento y las vamos a reconocer por que están entre
+        <b>picoparéntesis</b>.
+      </p>
+      <pre><code class="language-html">
+  &lt;etiqueta&gt;Contenido de la etiqueta&lt;/etiqueta&gt;
+
+  &lt;p&gt;Hola Mundo&lt;/p&gt;
+      </code></pre>
+      <p>
+        Las etiquetas van a tener <b>atributos</b>, estos describen alguna característica de las etiqueta.
+      </p>
+      <p>
+        La sintaxis de los atributos es la siguiente:
+      </p>
+      <pre><code class="language-html">
+  &lt;etiqueta atributo="valor"&gt;Contenido de la etiqueta&lt;/etiqueta&gt;
+
+  &lt;html lang="es"&gt;&lt;/html&gt;
+        </code></pre>
+      <p>Hay dos tipos de etiquetas:</p>
+      <ol>
+        <li>
+          Las que abren y cierran en 2 etiquetas
+          <pre><code class="language-html">
+  &lt;head&gt;&lt;/head&gt;
+  
+  &lt;body&gt;&lt;/body&gt;
+          </code></pre>
+        </li>
+        <li>
+          Las que abren y cierran en 1 etiqueta
+          <pre><code class="language-html">
+  &lt;meta charset="UTF-8" /&gt;
+  
+  &lt;img src"" alt="" /&gt;
+          </code></pre>
+        </li>
+      </ol>
+    </article>
+    <hr>
+    <article id="estructura-html" class="full-screen">
+      <h2>Estructura básica del documento <i>HTML</i></h2>
+      <pre><code class="language-html">
+  &lt;!DOCTYPE html&gt;
+  &lt;html lang="en"&gt;
+    &lt;head&gt;
+      &lt;meta charset="UTF-8" /&gt;
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+      &lt;title&gt;Document&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;
+      </code></pre>
+      <ul>
+        <li>
+          <h3><code class="language-html">&lt;!DOCTYPE html&gt;</code></h3>
+          <p>Especifica el tipo de documento y define que está bajo el estándar de <i>HTML5</i>.</p>
+        </li>
+        <li>
+          <h3><code class="language-html">&lt;html lang="en"&gt;&lt;/html&gt;</code></h3>
+          <p>
+            La etiqueta <i>html</i> representa el nodo principal del documento, y tiene el atributo <i>lang</i>, que nos
+            indica el idioma en el que el contenido del documento estará escrito.
+          </p>
+          <p>
+            Por ejemplo: <i>en, es, jp, de, fr, pt,</i> etc.
+          </p>
+          <p>
+            Si quieres ser más específico en la declaración del idioma, en el que redactas tu documento, puedes agregar
+            el dominio del país al valor del atributo <i>lang</i>.
+          </p>
+          <p>
+            Por ejemplo <i>es-MX, es-CO, es-CL, es-AR, en-US, en-UK, en-AU, en-CA,</i> etc.
+          </p>
+          <p>
+            El documento <i>HTML</i> consta de 2 partes:
+          </p>
+          <ol>
+            <li>Cabeza ( <b><i>head</i></b> ) y</li>
+            <li>Cuerpo ( <b><i>body</i></b> ).</li>
+          </ol>
+        </li>
+        <li>
+          <h3><code class="language-html">&lt;head&gt;&lt;/head&gt;</code></h3>
+          <p>
+            En la cabeza, vamos a tener etiquetas que establecen ciertas configuraciones al documento, como el idioma,
+            el juego de carcactéres, el <i>viewport</i>, <i>favicon</i>, hojas de estilos, etc.
+          </p>
+          <p>
+            Adicionalmente definimos la meta información del documento, estos meta datos les sirven a los algoritmos de
+            <i>internet</i> para dar información del contenido del documento a los motores de búsqueda como el título y
+            la meta descripción.
+          </p>
+        </li>
+        <li>
+          <h3><code class="language-html">&lt;body&gt;&lt;/body&gt;</code></h3>
+          <p>
+            En el cuerpo, irá todo el contenido textual y multimedia que queremos mostrar en el documento (todo lo que
+            el usuario verá en el navegador).
+          </p>
+        </li>
+        <li>
+          <h3><code class="language-html">&lt;meta charset="UTF-8" /&gt;</code></h3>
+          <p>
+            El <i>charset</i> define el juego de caracteres que usará el documento, <i>UTF-8</i> es la codificación
+            universal para soportar
+            caracteres ajenos al inglés.
+          </p>
+        </li>
+        <li>
+          <h3><code
+              class="language-html">&lt;meta name="viewport" content="width=device-width,initial-scale=1.0" /&gt;</code>
+          </h3>
+          <p>
+            La meta etiqueta <i>viewport</i> define como se visualizará el contenido en cualquier dispositivo, sea
+            móvil, tableta,
+            computadora de escritorio. Esta etiqueta es fundamental cuando hacemos diseño responsivo.
+          </p>
+        </li>
+        <li>
+          <h3><code class="language-html">&lt;title&gt;Título del documento&lt;/title&gt;</code></h3>
+          <p>
+            La etiqueta <i>title</i> representa el título de nuestro documento, éste se ve en la pestaña del navegador,
+            también es el texto
+            que se ve en los resultados de motores de búsqueda, el título no debe exceder los 65 carácteres.
+          </p>
+        </li>
+      </ul>
+    </article>
+    <hr>
+    <article id="starter-template" class="full-screen">
+      <h2><i>Template</i> inicial <i>HTML</i></h2>
+      <p>Adicionalmente a la estructura básica agregaremos 3 etiquetas más:</p>
+      <ol>
+        <li>
+          <h3><code class="language-html">&lt;meta name="description"
+            content="Descripción del documento." /&gt;</code></h3>
+          <p>
+            La meta etiqueta <b><i>description</i></b>, es una breve descripción del contenido que se encontrará en el
+            documento, también aparece en los resultados de los motores de búsqueda, debajo del enlace del resultado, no
+            debe exceder los 165 caracteres.
+          </p>
+          <img src="https://jonmircha.com/img/blog/html-title-description.jpg" alt="Título y Meta Descripción">
+        </li>
+        <li>
+          <h3><code class="language-html">&lt;link rel="icon" href="img/favicon.png" /&gt;</code></h3>
+          <p>
+            Un <b><i>favicon</i></b> es la imagen que se ve al lado del título de nuestro HTML en la pestaña del
+            navegador, tiene
+            que ser una imagen de <b>dimensiones cuadradas</b> y en <b>formato <i>.png</i></b>
+            <img src="https://jonmircha.com/img/blog/html-favicon.jpg" alt="Favicon">
+          </p>
+        </li>
+        <li>
+          <h3><code class="language-html">&lt;link rel="stylesheet" href="css/style.css" /&gt;</code></h3>
+          <p>
+            Esta etiqueta <i>link</i> nos permite enlazar la hoja de estilos <i>CSS</i> al documento <i>HTML</i>.
+          </p>
+        </li>
+      </ol>
+      <p>Entonces agregando estas 3 etiquetas la estructura básica quedaría así:</p>
+      <pre><code class="language-html">
+  &lt;!DOCTYPE html&gt;
+  &lt;html lang="es"&gt;
+    &lt;head&gt;
+      &lt;meta charset="UTF-8" /&gt;
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+      &lt;title&gt;Título del documento&lt;/title&gt;
+      &lt;meta name="description" content="Descripción del documento." /&gt;
+      &lt;link rel="icon" href="img/favicon.png" /&gt;
+      &lt;link rel="stylesheet" href="css/style.css" /&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;
+      </code></pre>
+    </article>
+    <hr>
+    <article id="comentarios" class="full-screen">
+      <h2>Comentarios</h2>
+      <p>
+        Los comentarios son textos que son ignorados por el navegador. No se visualizarán. Sirven a los programadores
+        para dejar notas en el código.
+      </p>
+      <h3>Comentarios en <i>HTML</i></h3>
+      <pre><code class="language-html">
+  &lt;!-- Esto es un comentario html por lo cual no se verá --&gt;
+  &lt;!-- 
+    Esto es
+    otro comentario html, 
+    en varías
+    líneas de 
+    código
+  --&gt;
+      </code></pre>
+      <h3>Comentarios en <i>CSS</i></h3>
+      <pre><code class="language-css">
+  /* Esto es un comentario css por lo cual no se verá *;
+  /* 
+    Esto es
+    otro comentario css,
+    en varías
+    líneas de 
+    código
+  */
+            </code></pre>
+    </article>
+    <hr>
+    <article id="etiquetas" class="full-screen">
+      <h2>Etiquetas HTML</h2>
+      <nav>
+        <ul>
+          <li><a href="#encabezados">Encabezados</a></li>
+          <li><a href="#etiquetas-texto">Etiquetas de Texto</a></li>
+          <li><a href="#listas">Listas</a></li>
+          <li><a href="#tablas">Tablas</a></li>
+          <li><a href="#enlaces">Enlaces</a></li>
+          <li><a href="#imagenes">Imágenes</a></li>
+          <li><a href="#audio-video">Audio y Video</a></li>
+          <li><a href="#iframe">Iframe</a></li>
+          <li><a href="#etiquetas-semanticas">Etiquetas Semánticas</a></li>
+          <li><a href="#detalles">Detalles</a></li>
+        </ul>
+      </nav>
+      <a class="btn-sticky" href="#etiquetas">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-arrow-up-left-circle-fill" viewBox="0 0 16 16">
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-5.904 2.803a.5.5 0 1 0 .707-.707L6.707 6h2.768a.5.5 0 1 0 0-1H5.5a.5.5 0 0 0-.5.5v3.975a.5.5 0 0 0 1 0V6.707l4.096 4.096z" />
+        </svg>
+      </a>
+      <img src="https://jonmircha.com/img/blog/periodic-table-of-html-elements.png" alt="Etiquetas HTML">
+      <section id="encabezados">
+        <h3>Encabezados</h3>
+        <p>
+          Se utilizan para definir encabezados (títulos) de texto. El número indica la jerarquía, siendo <i>h1</i> el
+          título principal y <i>h6</i> el de menor importancia.
+        </p>
+        <p>
+          Se recomienda que sólo exista un título principal por documento como una buena práctica de <b><i>SEO</i></b>
+          (<i>Search Engine Optimization</i>).
+        </p>
+        <p>
+          Puedes tener tantos <i>h2, h3, h4, h5</i> y <i>h6</i> como requiera la jerarquía textual de tu contenido.
+        </p>
+        <pre><code class="language-html">
+  &lt;h1&gt;Encabezado 1&lt;/h1&gt;
+  &lt;h2&gt;Encabezado 2&lt;/h2&gt;
+  &lt;h3&gt;Encabezado 3&lt;/h3&gt;
+  &lt;h4&gt;Encabezado 4&lt;/h4&gt;
+  &lt;h5&gt;Encabezado 5&lt;/h5&gt;
+  &lt;h6&gt;Encabezado 6&lt;/h6&gt;
+          </code></pre>
+        <aside class="example">
+          <h1>Encabezado 1</h1>
+          <h2>Encabezado 2</h2>
+          <h3>Encabezado 3</h3>
+          <h4>Encabezado 4</h4>
+          <h5>Encabezado 5</h5>
+          <h6>Encabezado 6</h6>
+        </aside>
+      </section>
+      <section id="etiquetas-texto">
+        <h3>Etiquetas de Texto</h3>
+        <p>Son etiquetas que nos van a permitir visualizar y dar formato a los textos de nuestro documento:</p>
+        <ul>
+          <li><b><i>p</i></b>: define un párrafo.</li>
+          <li><b><i>b</i></b>: define texto en negritas.</li>
+          <li><b><i>i</i></b>: define texto en itálicas.</li>
+          <li><b><i>u</i></b>: define texto subrayado.</li>
+          <li><b><i>mark</i></b>: define texto remarcado.</li>
+          <li><b><i>small</i></b>: define letras pequeñas.</li>
+          <li><b><i>sub</i></b>: define un subíndice.</li>
+          <li><b><i>sup</i></b>: define un superíndice.</li>
+          <li><b><i>blockquote</i></b>: define una cita textual.</li>
+          <li><b><i>cite</i></b>: define la referencia de una cita textual.</li>
+          <li><b><i>span</i></b>: define un bloque de texto en línea, no tiene carga semántica.</li>
+          <li><b><i>br</i></b>: define un salto de línea ( dibuja un <i>enter</i> ).</li>
+          <li><b><i>hr</i></b>: define un salto semántico de contenido ( dibuja una línea horizontal ).</li>
+        </ul>
+        <pre><code class="language-html">
+  &lt;p&gt;
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea minus iusto hic aperiam ratione, reiciendis,
+    repellat sunt voluptatum deleniti inventore obcaecati, eaque ad! Quae excepturi sit unde, culpa
+    exercitationem nostrum?
+  &lt;/p&gt;
+  &lt;p&gt;
+    Todo este bloque de texto es un párrafo. &lt;b&gt;Este texto esta en negritas&lt;/b&gt;. &lt;i&gt;Este texto esta en
+      itálicas&lt;/i&gt;. &lt;u&gt;Este texto esta subrayado&lt;/u&gt;. &lt;mark&gt;Este texto esta remarcado&lt;/mark&gt;. &lt;small&gt;Este texto
+      esta en letras pequeñas.&lt;/small&gt;
+  &lt;/p&gt;
+  &lt;p&gt;
+    La fórmula de agua es &lt;b&gt;&lt;i&gt;H&lt;sub&gt;2&lt;/sub&gt;O&lt;/i&gt;&lt;/b&gt;.
+  &lt;/p&gt;
+  &lt;p&gt;
+    La fórmula de la relatividad introducida por &lt;i&gt;Einstein&lt;/i&gt; es &lt;b&gt;&lt;i&gt;E=mc&lt;sup&gt;2&lt;/sup&gt;&lt;/i&gt;&lt;/b&gt;.
+  &lt;/p&gt;
+  &lt;hr/&gt;
+  &lt;blockquote&gt;
+    "No hay necesidad de perturbar el alma por cosas que no puedes controlar".
+    &lt;br/&gt;
+    &lt;cite&gt;Marco Aurelio&lt;/cite&gt;
+  &lt;/blockquote&gt;
+  &lt;hr/&gt;
+  &lt;p&gt;
+    Esto es un &lt;span&gt;bloque génerico de texto en línea&lt;/span&gt;, que esta dentro de un párrafo que tiene más
+    texto.
+  &lt;/p&gt;
+  &lt;p&gt;
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. &lt;br/&gt; Aspernatur, aliquam. &lt;br/&gt;&lt;br/&gt;Eveniet beatae,
+    ullam repellendus molestias, et doloremque id dolorem omnis necessitatibus distinctio maxime magnam
+    perferendis quasi placeat rem harum provident.
+  &lt;/p&gt;
+        </code></pre>
+        <aside class="example">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea minus iusto hic aperiam ratione, reiciendis,
+            repellat sunt voluptatum deleniti inventore obcaecati, eaque ad! Quae excepturi sit unde, culpa
+            exercitationem nostrum?
+          </p>
+          <p>
+            Todo este bloque de texto es un párrafo. <b>Este texto esta en negritas</b>. <i>Este texto esta en
+              itálicas.</i>. <u>Este texto esta subrayado</u>. <mark>Este texto esta remarcado</mark>. <small>Este texto
+              esta en letras pequeñas.</small>
+          </p>
+          <p>
+            La fórmula de agua es <b><i>H<sub>2</sub>O</i></b>.
+          </p>
+          <p>
+            La fórmula de la relatividad introducida por <i>Einstein</i> es <b><i>E=mc<sup>2</sup></i></b>.
+          </p>
+          <hr>
+          <blockquote>
+            "No hay necesidad de perturbar el alma por cosas que no puedes controlar".
+            <br>
+            <cite>Marco Aurelio</cite>
+          </blockquote>
+          <hr>
+          <p>
+            Esto es un <span>bloque génerico de texto en línea</span>, que esta dentro de un párrafo que tiene más
+            texto.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Aspernatur, aliquam. <br><br>Eveniet beatae,
+            ullam repellendus molestias, et doloremque id dolorem omnis necessitatibus distinctio maxime magnam
+            perferendis quasi placeat rem harum provident.
+          </p>
+        </aside>
+      </section>
+      <section id="listas">
+        <h3>Listas</h3>
+        <p>
+          En <i>HTML</i> principalmente tenemos 2 tipos de listas:
+        </p>
+        <ol>
+          <li>Ordenadas ( <b><i>ol</i></b> - <i>order list</i> ): Los elementos están numerados.</li>
+          <li>Desordenadas ( <b><i>ul</i></b>- <i>unorder list</i> ): Los elementos están listados con viñetas.</li>
+        </ol>
+        <p>
+          Los elementos de ambas listas se llaman <i>list items</i> ( <b><i>li</i></b> ).
+        </p>
+        <p>
+          El atributo <b><i>type</i></b> permita cambiar la numeración o el estilo de la viñeta del <i>list item</i>.
+        </p>
+        <p>
+          El atributo <b><i>reversed</i></b> permite invertir el orden de los elementos de una lista ordenada.
+        </p>
+        <p>
+          El atributo <b><i>start</i></b> permite cambiar el valor inicial de los elementos de una lista ordenada.
+        </p>
+        <pre><code class="language-html">
+  &lt;ol&gt;
+    &lt;li&gt;Primavera&lt;/li&gt;
+    &lt;li&gt;Verano&lt;/li&gt;
+    &lt;li&gt;Otoño&lt;/li&gt;
+    &lt;li&gt;Invierno&lt;/li&gt;
+  &lt;/ol&gt;
+
+  &lt;ol type="i"&gt;
+    &lt;li&gt;Primavera&lt;/li&gt;
+    &lt;li&gt;Verano&lt;/li&gt;
+    &lt;li&gt;Otoño&lt;/li&gt;
+    &lt;li&gt;Invierno&lt;/li&gt;
+  &lt;/ol&gt;
+  
+  &lt;ol reversed&gt;
+    &lt;li&gt;Primavera&lt;/li&gt;
+    &lt;li&gt;Verano&lt;/li&gt;
+    &lt;li&gt;Otoño&lt;/li&gt;
+    &lt;li&gt;Invierno&lt;/li&gt;
+  &lt;/ol&gt;
+  
+  &lt;ol start="100"&gt;
+    &lt;li&gt;Primavera&lt;/li&gt;
+    &lt;li&gt;Verano&lt;/li&gt;
+    &lt;li&gt;Otoño&lt;/li&gt;
+    &lt;li&gt;Invierno&lt;/li&gt;
+  &lt;/ol&gt;
+  
+  &lt;ul&gt;
+    &lt;li&gt;Primavera&lt;/li&gt;
+    &lt;li&gt;Verano&lt;/li&gt;
+    &lt;li&gt;Otoño&lt;/li&gt;
+    &lt;li&gt;Invierno&lt;/li&gt;
+  &lt;/ul&gt;
+  
+  &lt;ul type="circle"&gt;
+    &lt;li&gt;Primavera&lt;/li&gt;
+    &lt;li&gt;Verano&lt;/li&gt;
+    &lt;li&gt;Otoño&lt;/li&gt;
+    &lt;li&gt;Invierno&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;ul type="square"&gt;
+    &lt;li&gt;Primavera&lt;/li&gt;
+    &lt;li&gt;Verano&lt;/li&gt;
+    &lt;li&gt;Otoño&lt;/li&gt;
+    &lt;li&gt;Invierno&lt;/li&gt;
+  &lt;/ul&gt;
+        </code></pre>
+        <aside class="example">
+          <ol>
+            <li>Primavera</li>
+            <li>Verano</li>
+            <li>Otoño</li>
+            <li>Invierno</li>
+          </ol>
+          <ol type="i">
+            <li>Primavera</li>
+            <li>Verano</li>
+            <li>Otoño</li>
+            <li>Invierno</li>
+          </ol>
+          <ol reversed>
+            <li>Primavera</li>
+            <li>Verano</li>
+            <li>Otoño</li>
+            <li>Invierno</li>
+          </ol>
+          <ol start="100">
+            <li>Primavera</li>
+            <li>Verano</li>
+            <li>Otoño</li>
+            <li>Invierno</li>
+          </ol>
+          <ul>
+            <li>Primavera</li>
+            <li>Verano</li>
+            <li>Otoño</li>
+            <li>Invierno</li>
+          </ul>
+          <ul type="circle">
+            <li>Primavera</li>
+            <li>Verano</li>
+            <li>Otoño</li>
+            <li>Invierno</li>
+          </ul>
+          <ul type="square">
+            <li>Primavera</li>
+            <li>Verano</li>
+            <li>Otoño</li>
+            <li>Invierno</li>
+          </ul>
+        </aside>
+      </section>
+      <section id="tablas">
+        <h3>Tablas</h3>
+        <p>
+          Las tablas nos permiten tabular datos, las etiquetas para dibujar una tabla son:
+        </p>
+        <ul>
+          <li><b><i>table</i></b>: Define la tabla en sí misma.</li>
+          <li><b><i>tr</i></b>: Define la filas ( <i>table row</i> ) de la tabla.</li>
+          <li><b><i>td</i></b>: Define las celdas ( <i>table data</i> ) dentro de las filas, lo que a su vez formará las
+          <li><b><i>th</i></b>: Define las celdas de cabecera ( <i>table header</i> ) dentro de la primer fila de la
+            tabla, suele ser la fila de títulos de nuestra tabla.</li>
+        </ul>
+        <pre><code class="language-html">
+  &lt;table border="1"&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Ciudad&lt;/th&gt;
+      &lt;th&gt;País&lt;/th&gt;
+      &lt;th&gt;Continente&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ciudad de México&lt;/td&gt;
+      &lt;td&gt;México&lt;/td&gt;
+      &lt;td&gt;América&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Tokyo&lt;/td&gt;
+      &lt;td&gt;Japón&lt;/td&gt;
+      &lt;td&gt;Asia&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Reikiavik&lt;/td&gt;
+      &lt;td&gt;Islandia&lt;/td&gt;
+      &lt;td&gt;Europa&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+        </code></pre>
+        <aside class="example">
+          <table border="1">
+            <tr>
+              <th>Ciudad</th>
+              <th>País</th>
+              <th>Continente</th>
+            </tr>
+            <tr>
+              <td>Ciudad de México</td>
+              <td>México</td>
+              <td>América</td>
+            </tr>
+            <tr>
+              <td>Tokyo</td>
+              <td>Japón</td>
+              <td>Asia</td>
+            </tr>
+            <tr>
+              <td>Reikiavik</td>
+              <td>Islandia</td>
+              <td>Europa</td>
+            </tr>
+          </table>
+        </aside>
+      </section>
+      <section id="enlaces">
+        <h3>Enlaces</h3>
+        <p>
+          Nos permiten enlazar documentos <i>HTML</i> entre sí, secciónes internas del propio documento o vincular hacia
+          sitios y aplicaciones externas.
+        </p>
+        <p>
+          En el atributo <b><i>href</i></b> colocamos la <i>url</i> del enlace que queremos vincular.
+        </p>
+        <p>
+          El atributo <b><i>target</i></b> con el valor <b><i>_blank</i></b> permite abrir el enlace en una nueva
+          pestaña, esto es muy útil cuando tenemos enlaces hacia sitios externos y redes sociales.
+        </p>
+        <pre><code class="language-html">
+  &lt;a href="cursos.html">Ir a la página Cursos&lt;/a&gt;
+  &lt;a href="https://youtube.com/jonmircha" target="_blank"&gt;Canal de YouTube&lt;/a&gt;
+  &lt;a href="#top"&gt;Regresar al Temario&lt;/a&gt;
+  &lt;a href="mailto:jonmircha@gmail.com"&gt;jonmircha@gmail.com&lt;/a&gt;
+        </code></pre>
+        <aside class="example">
+          <a href="cursos.html">Ir a la página Cursos</a>
+          <a href="https://youtube.com/jonmircha" target="_blank">Canal de YouTube</a>
+          <a href="#top">Regresar al Temario</a>
+          <a href="mailto:jonmircha@gmail.com">jonmircha@gmail.com</a>
+        </aside>
+      </section>
+      <section id="imagenes">
+        <h3>Imágenes</h3>
+        <p>
+          La etiqueta <b><i>img</i></b> nos permite incrustar imágenes en nuestro documento <i>html</i>.
+        </p>
+        <p>
+          En el atributo <b><i>src</i></b> se define la ruta donde se encuentra la imagen.
+        </p>
+        <p>
+          En el atributo <b><i>alt</i></b> se define un texto alternativo para la imagen, este texto no se visualiza,
+          pero es importante agregarlo por temas de accesibilidad ( este texto lo leerán los <i>screen readers</i> de
+          una
+          persona con discapacidad visual ).
+        </p>
+        <p>
+          Formatos de imágenes aceptados en la <i>web</i>:
+        </p>
+        <ol>
+          <li>jpg / jpeg</li>
+          <li>png</li>
+          <li>gif</li>
+          <li>svg</li>
+        </ol>
+        <pre><code class="language-html">
+  &lt;img src="img/hemisferios-cerebro.jpg" alt="Hemisferios del Cerebro" /&gt;
+  &lt;img src="img/diseno-interaccion.png" alt="Diseño de Interacción" /&gt;
+  &lt;img src="img/this-is-fine.gif" alt="This is Fine" /&gt;
+  &lt;img src="img/html5.svg" alt="HTML5" /&gt;
+        </code></pre>
+        <aside class="example">
+          <img src="https://jonmircha.com/img/blog/hemisferios-cerebro.jpg" alt="Hemisferios del Cerebro">
+          <img src="https://jonmircha.com/img/blog/diseno-interaccion.png" alt="Diseño de Interacción">
+          <img src="https://jonmircha.com/img/blog/this-is-fine.gif" alt="This is Fine">
+          <img src="https://jonmircha.com/img/category/html5.svg" alt="HTML5">
+        </aside>
+      </section>
+      <section id="audio-video">
+        <h3>Audio y Video</h3>
+        <p>
+          La etiqueta <b><i>audio</i></b> y <b><i>video</i></b> nos permite incrustar elementos multimedia en formato
+          <b><i>mp3</i></b> y <b><i>mp4</i></b> en nuestro documento <i>html</i>.
+        </p>
+        <p>
+          En el atributo <b><i>src</i></b> se define la ruta donde se encuentra el archivo multimedia.
+        </p>
+        <p>
+          El atributo <b><i>controls</i></b> permite visualizar los controles de reproducción del elemento
+          multimedia.
+        </p>
+        <p>
+          El atributo <b><i>preload</i></b> permite que se precargue el elemento multimedia, cuando se cargue el
+          documento
+          <i>html</i> en el navegador.
+        </p>
+        <p>
+          El atributo <b><i>poster</i></b> define una imagen previa que se visualizara antes de reproducir el video.
+        </p>
+        <pre><code class="language-html">
+  &lt;audio src="assets/feels-patrick-patrikios.mp3" controls preload&gt;&lt;/audio&gt;
+  &lt;video src="assets/kenai.mp4" poster="img/puesta-de-sol.jpg" controls preload&gt;&lt;/video&gt;
+        </code></pre>
+        <aside class="example">
+          <audio src="https://jonmircha.com/img/media/feels-patrick-patrikios.mp3" controls preload></audio>
+          <video src="https://jonmircha.com/img/media/kenai.mp4"
+            poster="https://jonmircha.com/img/blog/puesta-de-sol.jpg" controls preload></video>
+        </aside>
+      </section>
+      <section id="iframe">
+        <h3>Iframe</h3>
+        <p>
+          Permite cargar contenido externo que se encuentre en otro
+          sitio o plataforma, por ejemplo un video de <i>YouTube</i>, un mapa de <i>Google</i>, Documentos <i>PDFs</i>,
+          etc.
+        </p>
+        <pre><code class="language-html">
+  &lt;iframe width="100%" height="600px" src="media/emmet-cheat-sheet.pdf"&gt;&lt;/iframe&gt;
+        </code></pre>
+        <aside class="example">
+          <iframe width="100%" height="600px" src="https://jonmircha.com/img/media/emmet-cheat-sheet.pdf"></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/-oK6zL01fNM" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.175828102953!2d-99.20612398459593!3d19.40480754659592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201f6aad357f7%3A0x4310c21ddec6384d!2sCENTRO%20-%20Dise%C3%B1o%20Cine%20Televisi%C3%B3n!5e0!3m2!1ses-419!2smx!4v1628689757583!5m2!1ses-419!2smx"
+            width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+        </aside>
+      </section>
+      <section id="etiquetas-semanticas">
+        <h3>Etiquetas Semánticas</h3>
+        <p>
+          Definen la estructura semántica de las partes que conforman la interfaz del documento <i>html</i>, es decir,
+          proporcionan sentido y significado a cada una de las etiquetas con su contenido.
+        </p>
+        <img src="https://jonmircha.com/img/blog/html5-semantic-tags.png" alt="Etiquetas Semánticas HTML5">
+        <p>
+          Algunas de estas etiquetas son:
+        </p>
+        <ul>
+          <li><b><i>div</i></b>: Es una etiqueta contenedora de bloque que no tiene semántica.</li>
+          <li><b><i>header</i></b>: Representa la cabecera del sitio o de una sección.</li>
+          <li><b><i>nav</i></b>: Representa una navegación.</li>
+          <li><b><i>main</i></b>: Define la sección de contenido principal, se recomienda que sólo exista uno por
+            documento.</li>
+          <li><b><i>aside</i></b>: Representa una sección de contenido complementario o secundario.</li>
+          <li><b><i>article</i></b>: Representa una sección autocontenida (que por sí sola se explica o se entiende).
+          </li>
+          <li><b><i>section</i></b>: Representa una sección de contenido genérico.</li>
+          <li><b><i>footer</i></b>: Pié de página del sitio o de una sección.</li>
+        </ul>
+        <pre><code class="language-html">
+  &lt;div&gt;
+    Esto es una div
+  &lt;/div&gt;
+  &lt;header&gt;
+    Esto es un header
+  &lt;/header&gt;
+  &lt;nav&gt;
+    Esto es un nav
+  &lt;/nav&gt;
+  &lt;main&gt;
+    Esto es un main
+  &lt;/main&gt;
+  &lt;aside&gt;
+    Esto es un aside
+  &lt;/aside&gt;
+  &lt;article&gt;
+    Esto es un article
+  &lt;/article&gt;
+  &lt;section&gt;
+    Esto es una section
+  &lt;/section&gt;
+  &lt;footer&gt;
+    Esto es un footer
+  &lt;/footer&gt;
+        </code></pre>
+        <aside class="example">
+          <div>
+            Esto es una div
+          </div>
+          <header>
+            Esto es un header
+          </header>
+          <nav>
+            Esto es un nav
+          </nav>
+          <main>
+            Esto es un main
+          </main>
+          <aside>
+            Esto es un aside
+          </aside>
+          <article>
+            Esto es un article
+          </article>
+          <section>
+            Esto es una section
+          </section>
+          <footer>
+            Esto es un footer
+          </footer>
+        </aside>
+      </section>
+      <section id="detalles">
+        <h3>Detalles</h3>
+        <p>
+          Un detalle es un bloque de contenido que puede alternar su visualización a manera de acordeón.
+        </p>
+        <p>
+          La etiqueta <b><i>details</i></b>, es el contenedor del acordeón completo.
+        </p>
+        <p>
+          La etiqueta <b><i>summary</i></b>, es el resumen que siempre se verá del acordeón.
+        </p>
+        <p>
+          El contenido restante que este dentro del <b><i>details</i></b>, se mantendrá oculto hasta que el usuario de
+          clic al <b><i>summary</i></b>.
+        </p>
+        <p>
+          El atributo <b><i>open</i></b> hace que el contenido del detalle permanezca visible cuando el documento carga.
+        </p>
+        <pre><code class="language-html">
+  &lt;details&gt;
+    &lt;summary&gt;Resumen del Detalle&lt;/summary&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Contenido oculto del detalle
+      &lt;/p&gt;
+      &lt;img src="img/this-is-fine.gif" alt="This is Fine"&gt;
+      &lt;p&gt;
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, quasi quo! Autem, mollitia voluptate
+        necessitatibus optio quam, nisi dolorum ducimus magni unde illum perspiciatis soluta ipsa vitae fuga
+        inventore reprehenderit!
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/details&gt;
+  &lt;details open&gt;
+    &lt;summary&gt;Resumen del Detalle&lt;/summary&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Este detalle tiene el atributo &lt;b&gt;&lt;i&gt;open&lt;/i&gt;&lt;/b&gt;, por lo que comienza abierto al cargar el documento.
+      &lt;/p&gt;
+      &lt;img src="img/this-is-fine.gif" alt="This is Fine"&gt;
+      &lt;p&gt;
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, quasi quo! Autem, mollitia voluptate
+        necessitatibus optio quam, nisi dolorum ducimus magni unde illum perspiciatis soluta ipsa vitae fuga
+        inventore reprehenderit!
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/details&gt;
+        </code></pre>
+        <aside class="example">
+          <details>
+            <summary>Resumen del Detalle</summary>
+            <div>
+              <p>
+                Contenido oculto del detalle
+              </p>
+              <img src="https://jonmircha.com/img/blog/this-is-fine.gif" alt="This is Fine">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, quasi quo! Autem, mollitia voluptate
+                necessitatibus optio quam, nisi dolorum ducimus magni unde illum perspiciatis soluta ipsa vitae fuga
+                inventore reprehenderit!
+              </p>
+            </div>
+          </details>
+          <details open>
+            <summary>Resumen del Detalle</summary>
+            <div>
+              <p>
+                Este detalle tiene el atributo <b><i>open</i></b>, por lo que comienza abierto al cargar el documento.
+              </p>
+              <img src="https://jonmircha.com/img/blog/this-is-fine.gif" alt="This is Fine">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, quasi quo! Autem, mollitia voluptate
+                necessitatibus optio quam, nisi dolorum ducimus magni unde illum perspiciatis soluta ipsa vitae fuga
+                inventore reprehenderit!
+              </p>
+            </div>
+          </details>
+        </aside>
+      </section>
+    </article>
+    <hr>
+    <article id="que-es-css" class="full-screen">
+      <h2>¿Qué es <i>CSS</i>?</h2>
+      <p>
+        Significa <i>Cascading Style Sheet</i>, Hojas de Estilo en Cascada.
+      </p>
+      <p>
+        <i>CSS</i> es un lenguaje de definición de estilos que provee diseño y presentación a la <i>web</i>.
+      </p>
+      <p>
+        Una hoja de estilos se invoca con la etiqueta <b><i>link</i></b>:
+      </p>
+      <pre><code class="language-html">&lt;link rel="stylesheet" href="css/style.css" /&gt;</code></pre>
+      <h3>Sintaxis CSS</h3>
+      <p>
+        El código <i>CSS</i> se escribe en reglas de estilos, una regla se compone de 2 partes:
+      </p>
+      <ol>
+        <li>El <b>selector</b> al que se aplica la regla y,</li>
+        <li>El <b>bloque de declaraciones</b> de estilos.</li>
+      </ol>
+      <pre><code class="language-css">
+  selector {
+    propiedad: valor;
+    otra-propiedad: otro-valor;
+  }
+      </code></pre>
+      <p>Por ejemplo:</p>
+      <pre><code class="language-css">
+  html {
+    font-family: sans-serif;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+  }
+      </code></pre>
+    </article>
+    <hr>
+    <article id="selectores-css" class="full-screen">
+      <h2>Selectores <i>CSS</i></h2>
+      <p>
+        Un selector, es cualquier etiqueta <i>HTML</i> a la que se le aplica una regla <i>CSS</i>.
+      </p>
+      <p>
+        Existen diferentes tipos de selectores:
+      </p>
+      <nav>
+        <ul>
+          <li><a href="#selector-etiquetas">Selector de Etiquetas</a></li>
+          <li><a href="#selector-id">Selector de Identificador</a></li>
+          <li><a href="#selector-class">Selector de Clases</a></li>
+          <li><a href="#selector-universal">Selector Universal</a></li>
+          <li><a href="#pseudo-clases">Pseudo Clases</a></li>
+          <li><a href="#selector-descendiente">Selector Descendiente</a></li>
+        </ul>
+      </nav>
+      <a class="btn-sticky" href="#selectores-css">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-arrow-up-left-circle-fill" viewBox="0 0 16 16">
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-5.904 2.803a.5.5 0 1 0 .707-.707L6.707 6h2.768a.5.5 0 1 0 0-1H5.5a.5.5 0 0 0-.5.5v3.975a.5.5 0 0 0 1 0V6.707l4.096 4.096z" />
+        </svg>
+      </a>
+      <section id="selector-etiquetas">
+        <h3>Selectores de Etiquetas</h3>
+        <p>Es cualquier etiqueta <i>HTML</i>.</p>
+        <pre><code class="language-css">
+  /* En el CSS */
+  li {
+    background-color: lavender;
+    color: deeppink;
+  }
+        </code></pre>
+        <pre><code class="language-html">
+  &lt;!-- En el HTML --&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Primavera&lt;/li&gt;
+    &lt;li&gt;Verano&lt;/li&gt;
+    &lt;li&gt;Otoño&lt;/li&gt;
+    &lt;li&gt;Invierno&lt;/li&gt;
+  &lt;/ul&gt;
+        </code></pre>
+        <aside class="example">
+          <style>
+            .example-tag li {
+              background-color: lavender;
+              color: deeppink;
+            }
+          </style>
+          <ul class="example-tag">
+            <li>Primavera</li>
+            <li>Verano</li>
+            <li>Otoño</li>
+            <li>Invierno</li>
+          </ul>
+        </aside>
+      </section>
+      <section id="selector-id">
+        <h3>Selector de Identificador</h3>
+        <p>
+          Es cualquier etiqueta <i>HTML</i> que tiene asignado un valor en el atributo <b><i>id</i></b>.
+        </p>
+        <p>
+          En la hoja de estilos para definir un identificador se antepone el símbolo del
+          <b><i>#</i></b> antes de su nombre.
+        </p>
+        <pre><code class="language-css">
+  /* En el CSS */
+  #titulo-principal {
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: center;
+    background-color: teal;
+    color: springgreen;
+  }
+        </code></pre>
+        <pre><code class="language-html">
+  &lt;!-- En el HTML --&gt;
+  &lt;h1 id="titulo-principal"&gt;
+    Título Principal
+  &lt;/h1&gt;
+        </code></pre>
+        <aside class="example">
+          <style>
+            #titulo-principal {
+              font-family: sans-serif;
+              font-size: 30px;
+              text-align: center;
+              background-color: teal;
+              color: springgreen;
+            }
+          </style>
+          <h1 id="titulo-principal">
+            Hola Mundo
+          </h1>
+        </aside>
+      </section>
+      <section id="selector-class">
+        <h3>Selectores de Clases</h3>
+        <p>
+          Es cualquier etiqueta <i>HTML</i> que tiene asignado un valor en el atributo <b><i>class</i></b>.
+        </p>
+        <p>
+          En la hoja de estilos para definir una clase se antepone el símbolo del <b><i>.</i></b> antes de su nombre.
+        </p>
+        <pre><code class="language-css">
+  /* En el CSS */
+  .bg-khaki {
+    background-color: khaki;
+  }
+
+  .text-chocolte {
+    color: chocolate;
+  }
+
+  .text-right {
+    text-align: right;
+  }
+        </code></pre>
+        <pre><code class="language-html">
+  &lt;!-- En el HTML --&gt;
+  &lt;p class="bg-khaki text-chocolte text-right"&gt;
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt quaerat iure error est perferendis,
+    consectetur nesciunt dignissimos molestias voluptates molestiae ex! Provident voluptates quasi dolor magni eum
+    minus quis quae.
+  &lt;/p&gt;
+              </code></pre>
+        <aside class="example">
+          <style>
+            .bg-khaki {
+              background-color: khaki;
+            }
+
+            .text-chocolte {
+              color: chocolate;
+            }
+
+            .text-right {
+              text-align: right;
+            }
+          </style>
+          <p class="bg-khaki text-chocolte text-right">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt quaerat iure error est perferendis,
+            consectetur nesciunt dignissimos molestias voluptates molestiae ex! Provident voluptates quasi dolor magni
+            eum
+            minus quis quae.
+          </p>
+        </aside>
+      </section>
+      <section id="selector-universal">
+        <h3>Selector Universal</h3>
+        <p>Aplica los estilos a todas las etiquetas del documento <i>HTML</i>.</p>
+        <pre><code class="language-css">
+  /* En el CSS */
+  * {
+    box-sizing: border-box;
+  }
+        </code></pre>
+      </section>
+      <section id="pseudo-clases">
+        <h3>Pseudo Clases</h3>
+        <p>
+          Son estados especiales de las etiquetas <i>HTML</i>, por ejemplo:
+        </p>
+        <ul>
+          <li>Cuando tenemos el puntero del ratón sobre la etiqueta ( <b><i>hover</i></b> ).</li>
+          <li>Cuando el elemento es el primero descendiente del contendor ( <b><i>first-child</i></b> ).</li>
+          <li>Cuando el elemento es el último descendiente del contendor ( <b><i>last-child</i></b> ).</li>
+          <li>Cuando el elemento es el <i>enésimo</i> descendiente del contendor ( <b><i>nth-child</i></b> ).</li>
+        </ul>
+        <pre><code class="language-css">
+  /* En el CSS */
+  a {
+  color: dodgerblue;
+  }
+
+  a:hover {
+  color: orangered;
+  }
+
+  li:first-child {
+  background-color: turquoise;
+  }
+
+  li:last-child {
+  background-color: powderblue;
+  }
+
+  li:nth-child(3) {
+  background-color: skyblue;
+  }
+        </code></pre>
+        <pre><code class="language-html">
+  &lt;!-- En el HTML --&gt;
+  &lt;a href="https://youtube.com/jonmircha" target="_blank"&gt;Ir a &lt;i&gt;YouTube&lt;/i&gt;&lt;/a&gt;
+  &lt;ol&gt;
+    &lt;li&gt;Primavera&lt;/li&gt;
+    &lt;li&gt;Verano&lt;/li&gt;
+    &lt;li&gt;Otoño&lt;/li&gt;
+    &lt;li&gt;Invierno&lt;/li&gt;
+  &lt;/ol&gt;
+        </code></pre>
+        <aside class="example">
+          <style>
+            a.pseudo-link {
+              color: dodgerblue;
+              transition: none;
+            }
+
+            a.pseudo-link:hover {
+              color: orangered;
+            }
+
+            .seasons li:first-child {
+              background-color: turquoise;
+            }
+
+            .seasons li:last-child {
+              background-color: powderblue;
+            }
+
+            .seasons li:nth-child(3) {
+              background-color: skyblue;
+            }
+          </style>
+          <a class="pseudo-link" href="https://youtube.com/jonmircha" target="_blank">Ir a <i>YouTube</i></a>
+          <ol class="seasons">
+            <li>Primavera</li>
+            <li>Verano</li>
+            <li>Otoño</li>
+            <li>Invierno</li>
+          </ol>
+        </aside>
+      </section>
+      <section id="selector-descendiente">
+        <h3>Selector Descendiente</h3>
+        <p>El <b>espacio en blanco</b> en <i>CSS</i> es el selector de hijos descendientes.</p>
+        <p>
+          Aplica los estilos al segundo selector, que es descendiente del primer selector, es decir el segundo se
+          encuentra contenido dentro del primero, en la estructura del documento <i>HTML</i>.
+        </p>
+        <pre><code class="language-css">
+  /* En el CSS */
+  .seasons h4 {
+    background-color: yellowgreen;
+  }
+  
+  .seasons li:first-child {
+    background-color: springgreen;
+  }
+  
+  .seasons li:last-child {
+    background-color: palegreen;
+  }
+  
+  .seasons li:nth-child(3) {
+    background-color: darkseagreen;
+  }
+        </code></pre>
+        <pre><code class="language-html">
+  &lt;!-- En el HTML --&gt;
+  &lt;div class="seasons"&gt;
+    &lt;h4&gt;Las Estaciones del Año&lt;/h4&gt;
+    &lt;ol&gt;
+      &lt;li&gt;Primavera&lt;/li&gt;
+      &lt;li&gt;Verano&lt;/li&gt;
+      &lt;li&gt;Otoño&lt;/li&gt;
+      &lt;li&gt;Invierno&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/div&gt;
+              </code></pre>
+        <aside class="example">
+          <style>
+            .seasons h4 {
+              background-color: yellowgreen;
+            }
+
+            .seasons li:first-child {
+              background-color: springgreen;
+            }
+
+            .seasons li:last-child {
+              background-color: palegreen;
+            }
+
+            .seasons li:nth-child(3) {
+              background-color: darkseagreen;
+            }
+          </style>
+          <div class="seasons">
+            <h4>Las Estaciones del Año</h4>
+            <ol>
+              <li>Primavera</li>
+              <li>Verano</li>
+              <li>Otoño</li>
+              <li>Invierno</li>
+            </ol>
+          </div>
+        </aside>
+      </section>
+    </article>
+    <hr>
+    <article id="variables-css" class="full-screen">
+      <h2>Variables CSS</h2>
+      <p>
+        Una <b>variable</b> es un espacio donde podemos almacenar información. En <i>CSS</i> una variable empieza por
+        dos guiones medios "<b><i>--</i></b>".
+      </p>
+      <p>
+        Si queremos que la variable este disponible para todo el documento <i>HTML</i>, debemos definirla en el selector
+        <b><i>:root</i></b>, éste hace referencia a la raíz del documento, que es la etiqueta <i>html</i>.
+      </p>
+      <p>
+        Para usar una variable se hace uso de la función <b><i>var()</i></b>.
+      </p>
+      <pre><code class="language-css">
+  /* En el CSS */
+  :root {
+    --first-color: rgb(40, 167, 226);
+    --second-color: rgb(23, 18, 38);
+    --black-color: rgb(0, 0, 0);
+    --white-color: rgb(255, 255, 255);
+  }
+
+  html {
+    background-color: var(--black-color);
+    color: var(--white-color);
+  }
+
+  .bg-first-color {
+    background-color: var(--first-color);
+  }
+    
+  .bg-second-color {
+    background-color: var(--second-color);
+  }
+      </code></pre>
+    </article>
+    <hr>
+    <article id="orden-codigo-css" class="full-screen">
+      <h2>Orden del Código <i>CSS</i></h2>
+      <p>
+        Es importante mantener un orden en nuestro código <i>CSS</i>, para que se aplique de forma correcta y evitemos
+        tener problemas de cascáda o especificidad.
+      </p>
+      <p>
+        El orden que te sugiero es el siguiente:
+      </p>
+      <ol>
+        <li>Definición de <b>variables</b>.</li>
+        <li>Definición de estilos de <b>etiquetas <i>html</i></b></li>
+        <li>Definición de estilos de <b>secciones</b> o <b>componentes</b> de tu interfaz de usuario.</li>
+        <li>Definición de estilos de <b>clases utilitarias</b>.</li>
+      </ol>
+      <p>Por ejemplo:</p>
+      <pre><code class="language-css">
+  /* ********** VARIBLES ********** */
+  :root {
+    --first-color: rgb(40, 167, 226);
+    --second-color: rgb(23, 18, 38);
+    --black-color: rgb(0, 0, 0);
+    --white-color: rgb(255, 255, 255);
+  }
+
+  /* ********** ETIQUETAS HTML ********** */
+  html {
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+
+  a {
+    color: var(--first-color);
+  }
+
+  a:hover {
+    color: var(--second-color);
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  /* ********** SECCIONES o COMPONENTES de UI ********** */
+  .logo {
+    width: 200px;
+    height: auto;
+    background-color: var(--second-color);
+    border: 5px solid var(--first-color);
+    border-radius: 50%;
+  }
+
+  /* ********** CLASES UTILITARIAS ********** */
+  .bg-first-color {
+    background-color: var(--first-color);
+  }
+
+  .bg-second-color {
+    background-color: var(--second-color);
+  }
+
+  .border-first-color {
+    border: 5px solid var(--first-color);
+  }
+
+  .border-second-color {
+    border: 5px solid var(--second-color);
+  }
+
+  .rounded {
+    border-radius: 50%;
+  }
+      </code></pre>
+    </article>
+    <hr>
+    <article id="modelo-caja" class="full-screen">
+      <h2>Modelo de Caja</h2>
+      <p>
+        Es la forma en que <i>CSS</i> visualiza a las etiquetas <i>HTML</i>, y ¿cómo las ve?, cómo si fueran cajas.
+      </p>
+      <p>
+        Dentro del modelo de caja intervienen las siguientes propiedades <i>CSS</i>:
+      </p>
+      <img src="https://jonmircha.com/img/blog/box-model.jpg" alt="Modelo de Caja CSS">
+      <ol>
+        <li><b><i>width</i></b>: Define el ancho del <b>contenido</b> de la caja.</li>
+        <li><b><i>height</i></b>: Define el alto del <b>contenido</b> de la caja.</li>
+        <li><b><i>border</i></b>: Define el borde que delimita cada caja <i>HTML</i>.</li>
+        <li><b><i>padding</i></b>: Define el relleno de la caja. Es el <b>espaciado interno </b> entre el borde y el
+          contenido de la caja.</li>
+        <li><b><i>margin</i></b>: Define el margen de la caja. Es el <b>espaciado externo</b> entre el borde la caja y
+          el resto de los elementos <i>HTML</i>.</li>
+        <li><b><i>box-sizing</i></b>: Define desde dónde empieza el <b>tamaño de la caja</b>. El valor por defecto es
+          <b><i>content-box</i></b>. Pero el valor que vamos a aplicar a todas nuestras cajas es
+          <b><i>border-box</i></b>.
+        </li>
+      </ol>
+      <p>
+        Dentro del modelo de caja hay que considerar que una caja tendrá 4 lados:
+      </p>
+      <ol>
+        <li>Arriba ( <b><i>top</i></b> ).</li>
+        <li>Abajo ( <b><i>bottom</i></b> ).</li>
+        <li>Izquierda ( <b><i>left</i></b> ).</li>
+        <li>Derecho ( <b><i>right</i></b> ).</li>
+      </ol>
+    </article>
+    <hr>
+    <article id="linea-vs-bloque" class="full-screen">
+      <h2>Etiquetas de Línea <i>VS</i> Etiquetas de Bloque</h2>
+      <h3><i>display: inline; vs display: block;</i></h3>
+      <h4>Etiquetas de Línea</h4>
+      <p>
+        Son etiquetas que sólo ocupan el espacio que requieren, ignoran las propiedades <b><i>width</i></b> y
+        <b><i>height</i></b>.
+      </p>
+      <p>
+        Etiquetas que son de naturaleza de línea, son:
+      </p>
+      <ul>
+        <li>Todas las que dan formato al texto como <b><i>span, b, i, u, sup, sub, mark, small, a,</i></b> etc.</li>
+        <li>Todas las etiquetas de contenido multimedia como <b><i>img, audio, video, iframe,</i></b> etc.</li>
+      </ul>
+      <h4>Etiquetas de Bloque</h4>
+      <p>
+        Son etiquetas que ocupan todo el ancho de la línea en que han sido colocadas, lo que generará saltos de línea (
+        <i>enters</i> ) para las etiquetas que tiene antes y después.
+      </p>
+      <p>
+        Ejemplos de etiquetas de bloque son:
+      </p>
+      <ul>
+        <li>Los encabezados <b><i>h1, h2, h3, h4, h5, h6</i></b>.</li>
+        <li>Etiquetas contenedoras como <b><i>div, p, details, summary, ul, ol, li, table</i></b>.</li>
+        <li>Etiquetas de salto como <b><i>hr, br</i></b>.</li>
+        <li>Etiquetas semánticas como <b><i>header, nav, main, article, section, aside, footer</i></b>.</li>
+      </ul>
+      <h4>Valores de la propiedad <i>display</i></h4>
+      <ul>
+        <li><b><i>inline</i></b>: Ocupa sólo el espacio que requiere, ignora las propiedades de <i>width</i> y
+          <i>height</i>.
+        </li>
+        <li><b><i>block</i></b>: Ocupa todo el espacio a lo ancho, genera saltos de línea, para los elementos que lo
+          rodean.</li>
+        <li><b><i>inline-block</i></b>: Es una mezcla de <i>inline</i> y <i>block</i>, ocupa sólo el espacio que
+          requieren pero acepta las propiedades de <i>width</i> y <i>height</i>.</li>
+        <li><b><i>none</i></b>: Oculta el elemento de la visualización en el navegador, es decir, si carga el contenido
+          pero no se ve.</li>
+      </ul>
+      <aside class="example">
+        <style>
+          .d-inline {
+            background-color: palegreen;
+            display: inline;
+          }
+
+          .d-block {
+            background-color: palegreen;
+            display: block;
+          }
+
+          .d-inline-block {
+            background-color: palegreen;
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+          }
+
+          .d-none {
+            background-color: palegreen;
+            display: none;
+          }
+        </style>
+        <h5><i>display: inline;</i></h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="d-inline">Hola Mundo</span> Eius
+          voluptatum
+          quia necessitatibus blanditiis earum quas, libero neque laborum suscipit similique nostrum accusamus eaque
+          magnam inventore doloremque corporis vel molestiae fuga?
+        </p>
+        <h5><i>display: block;</i></h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="d-block">Hola Mundo</span> Eius
+          voluptatum
+          quia necessitatibus blanditiis earum quas, libero neque laborum suscipit similique nostrum accusamus eaque
+          magnam inventore doloremque corporis vel molestiae fuga?
+        </p>
+        <h5><i>display: inline-block;</i></h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="d-inline-block">Hola Mundo</span> Eius
+          voluptatum
+          quia necessitatibus blanditiis earum quas, libero neque laborum suscipit similique nostrum accusamus eaque
+          magnam inventore doloremque corporis vel molestiae fuga?
+        </p>
+        <h5><i>display: none;</i></h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="d-none">Hola Mundo</span> Eius
+          voluptatum
+          quia necessitatibus blanditiis earum quas, libero neque laborum suscipit similique nostrum accusamus eaque
+          magnam inventore doloremque corporis vel molestiae fuga?
+        </p>
+      </aside>
+    </article>
+    <hr>
+    <article id="unidades-medida" class="full-screen">
+      <h2>Unidades de Medida</h2>
+      <p>
+        En <i>CSS</i> tenemos dos tipos de unidades de medida:
+      </p>
+      <ol>
+        <li>Absolutas y</li>
+        <li>Relativas</li>
+      </ol>
+      <h3>Medidas Absolutas</h3>
+      <p>
+        Su valor no cambia, son unidades del mundo real. Por ejemplo: <b><i>pc, cm, mm, in, Q, pt, px</i>.</b>
+      </p>
+      <p>
+        Las unidades absolutas más usadas en <i>CSS</i> son los puntos y los pixeles:
+      </p>
+      <ul>
+        <li><b><i>1pt = 1/72in</i></b>.</li>
+        <li><b><i>1px = 1/96in</i></b>.</li>
+      </ul>
+      <h3>Medidas Relativas</h3>
+      <p>
+        Su valor es relativo a un contexto. Algunas medidas son:
+      </p>
+      <ul>
+        <li><b>Porcentajes ( <i>%</i> )</b>: Su valor es relativo al tamaño de su contenedor. Los valores van de 0 a
+          100.</li>
+        <li><b>Unidades del <i>Viewport</i> ( <i>vw, vh</i> )</b>: Su valor es relativo al tamaño de la pantalla. Los
+          valores van de 0 a
+          100.</li>
+        <li><b><i>Root EM</i> ( <i>rem</i> )</b>: Su valor hace referencia al tamaño de fuente ( <b><i>font-size</i></b>
+          ) de la etiqueta <b><i>html</i></b> Sí <i>html</i> tiene un valor de <i>16px</i>, entonces esa será la
+          equivalencia de <i>1rem</i>. <b><i>16px = 1rem</i></b>.</li>
+        <li><b>Caracteres ( <i>ch</i> )</b>: Su valor hace referencia a la anchura de los caracteres. Por ejemplo un
+          valor de <i>5ch</i>, significa que tendrá un tamaño de 5 caracteres.
+      </ul>
+    </article>
+    <hr>
+    <article id="reticulas" class="full-screen">
+      <h2>Retículas</h2>
+      <h3><i>Grid System</i></h3>
+      <h4>Filas y Columnas</h4>
+      <p>
+        En <i>CSS</i> podemos generar sistemas de retículas mediante un módulo que se llama <b><i>Grid</i></b>, que nos
+        permite generar filas y columnas para maquetar el contenido de nuestras interfaces <i>web</i>.
+      </p>
+      <p>
+        Si quieres aprender más sobre <i>Grid CSS</i> te dejo mi <a
+          href="https://www.youtube.com/playlist?list=PLvq-jIkSeTUY628cyd9LVbXSXi2xG9mUl" target="_blank"><b>curso en
+            <i>YouTube</i></b></a>.
+      </p>
+      <pre><code class="language-css">
+  /* En CSS */
+  .grid-3 {
+    display: grid;
+    grid-template-columns: 20% 30% 50%;
+  }
+  
+  .col {
+    border: thin solid black;
+    padding: 1rem;
+  }
+      </code></pre>
+      <pre><code class="language-html">
+  &lt;!-- En HTML --&gt;
+  &lt;section class="grid-3"&gt;
+    &lt;div class="col"&gt;
+      &lt;h4&gt;Columna 1&lt;/h4&gt;
+      &lt;p&gt;
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nobis unde ullam modi non quae voluptatum placeat!
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="col"&gt;
+      &lt;h4&gt;Columna 2&lt;/h4&gt;
+      &lt;p&gt;
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nobis unde ullam modi non quae voluptatum placeat!
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="col"&gt;
+      &lt;h4&gt;Columna 3&lt;/h4&gt;
+      &lt;p&gt;
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nobis unde ullam modi non quae voluptatum placeat!
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="col"&gt;
+      &lt;h4&gt;Columna 4&lt;/h4&gt;
+      &lt;p&gt;
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nobis unde ullam modi non quae voluptatum placeat!
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="col"&gt;
+      &lt;h4&gt;Columna 5&lt;/h4&gt;
+      &lt;p&gt;
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nobis unde ullam modi non quae voluptatum placeat!
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+      </code></pre>
+      <aside class="example">
+        <style>
+          .grid-3 {
+            display: grid;
+            grid-template-columns: 20% 30% 50%;
+          }
+
+          .col {
+            border: thin solid black;
+            padding: 1rem;
+          }
+        </style>
+        <section class="grid-3">
+          <div class="col">
+            <h4>Columna 1</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nobis unde ullam modi non quae
+              voluptatum placeat!
+            </p>
+          </div>
+          <div class="col">
+            <h4>Columna 2</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nobis unde ullam modi non quae
+              voluptatum placeat!
+            </p>
+          </div>
+          <div class="col">
+            <h4>Columna 3</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nobis unde ullam modi non quae
+              voluptatum placeat!
+            </p>
+          </div>
+          <div class="col">
+            <h4>Columna 4</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nobis unde ullam modi non quae
+              voluptatum placeat!
+            </p>
+          </div>
+          <div class="col">
+            <h4>Columna 5</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nobis unde ullam modi non quae
+              voluptatum placeat!
+            </p>
+          </div>
+        </section>
+      </aside>
+    </article>
+    <hr>
+  </main>
+  <footer></footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+</body>
+
+</html>

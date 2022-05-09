@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <sergey-import src="metas/statics" />
+  <sergey-import src="metas/titles">Figma | jonmircha</sergey-import>
+  <sergey-import src="metas/descriptions">En esta nota te comparto mis apuntes y videotutoriales sobre Figma
+  </sergey-import>
+  <sergey-import src="metas/urls">https://jonmircha.com/figma</sergey-import>
+  <sergey-import src="metas/images">https://jonmircha.com/img/blog/figma-poster.jpg</sergey-import>
+  <style>
+    @media only screen and (max-width: 779px),
+    (min-device-width: 768px) and (max-device-width: 992px) {
+      td {
+        padding-left: 15%;
+      }
+
+      td:before {
+        width: 10%;
+      }
+
+      td:nth-of-type(1):before {
+        content: "⌨️";
+      }
+
+      td:nth-of-type(2):before {
+        content: "🍏";
+      }
+
+      td:nth-of-type(3):before {
+        content: "🛠️";
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <sergey-import src="components/header.html" />
+  <sergey-import src="components/template-blog.html">figma</sergey-import>
+  <sergey-import src="components/footer.html" />
+</body>
+
+</html>

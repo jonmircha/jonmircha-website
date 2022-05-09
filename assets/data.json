@@ -1,0 +1,716 @@
+{
+  "courses": [
+    {
+      "name": "Curso React",
+      "link": "https://www.youtube.com/playlist?list=PLvq-jIkSeTUZ5XcUw8fJPTBKEHEKPMTKk",
+      "img": "https://i.ytimg.com/vi/MPLN1ahXgcs/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBQTIJagBTX_ux75bmkmujpRS-Q-Q",
+      "excerpt": "Aprende a programar en la librería <i>Frontend</i> más popular y usada en la industria: <i>React</i>.",
+      "codes": "https://github.com/jonmircha/youtube-react",
+      "publish": true,
+      "category": "js",
+      "deprecated": false,
+      "inHome": true
+    },
+    {
+      "name": "Curso Webpack",
+      "link": "https://www.youtube.com/playlist?list=PLvq-jIkSeTUaPCCQLLE9d2E-LbkG6ax4i",
+      "img": "https://i.ytimg.com/vi/-bp3q-YTr4Q/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLC8rLqw2uMjbZuQdzHRwc-h-j_TrQ",
+      "excerpt": "Aprende  configurar <i>Webpack</i> el empaquetador de archivos para aplicaciones <i>JavaScript</i> modernas más popular y usado.",
+      "codes": "https://github.com/jonmircha/youtube-webpack",
+      "publish": true,
+      "category": "js",
+      "deprecated": false,
+      "inHome": false
+    },
+    {
+      "name": "Progressive Web Apps",
+      "link": "https://www.youtube.com/playlist?list=PLvq-jIkSeTUYIw8CP2AP7QJs4GeeZdvs6",
+      "img": "https://i.ytimg.com/vi/9oQIylJ-JpU/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLB29A8OCPtg4zS2Ybk5ee6WdYjxdw",
+      "excerpt": "Aprende a convertir un sitio <i>web</i> en aplicación <i>web</i> progresiva (<i>PWA</i>).",
+      "codes": "https://github.com/jonmircha/youtube-pwa",
+      "publish": true,
+      "category": "js",
+      "deprecated": false,
+      "inHome": false
+    },
+    {
+      "name": "Curso Node.js",
+      "link": "https://www.youtube.com/playlist?list=PLvq-jIkSeTUY3gY-ptuqkNEXZHsNwlkND",
+      "img": "https://i.ytimg.com/vi/aWFUW4SDD4o/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLADasfOdfFUej0X89hjnFhdjsrabw",
+      "excerpt": "Aprende a crear aplicaciones <i>fullstack</i> con <i>JavaScript</i> y su ambiente de desarrollo <i>backend</i>: <i>Node.js</i>.",
+      "codes": "https://github.com/jonmircha/youtube-nodejs",
+      "publish": true,
+      "category": "js",
+      "deprecated": false
+    },
+    {
+      "name": "Curso JavaScript",
+      "link": "https://www.youtube.com/playlist?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA",
+      "img": "https://i.ytimg.com/vi/2SetvwBV-SU/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDfTuHoZVNwk4TTk-aekyHdo3cw2w",
+      "excerpt": "Aprende <i>JavaScript</i> el lenguaje que domina la <i>web</i>: Sintaxis, Lógica, <i>ESNext</i>, <i>POO</i>, Asincronía, <i>DOM</i>, <i>AJAX</i>, <i>JSON</i>, <i>API's</i> y más.",
+      "codes": "https://github.com/jonmircha/youtube-js",
+      "publish": true,
+      "category": "js",
+      "deprecated": false,
+      "inHome": true
+    },
+    {
+      "name": "Tips CSS",
+      "link": "https://www.youtube.com/playlist?list=PLvq-jIkSeTUYVLwbW09GGgG2EOFJeNWmQ",
+      "img": "https://i.ytimg.com/vi/clmdNFwkJOo/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAHndAyY0pFXQOmx_0FyyUebWAcfw",
+      "excerpt": "Aprende trucos y <i>tips</i> sobre <i>CSS</i> que te pueden servir en tu día a día como maquetador <i>web</i>.",
+      "codes": null,
+      "publish": false,
+      "category": "",
+      "deprecated": false
+    },
+    {
+      "name": "Taller de Maquetación",
+      "link": "https://www.youtube.com/playlist?list=PLvq-jIkSeTUbf3LXzO2QQa3P-oRMcrTAp",
+      "img": "https://i.ytimg.com/vi/ErtR07GLq54/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLB_0SoC-LHezR314O1vTcAL4CmYAA",
+      "excerpt": "Aprende a maquetar interfaces <i>web</i> de proyectos reales con <i>CSS</i> Artesanal y con <i>Frameworks Frontends</i>.",
+      "codes": "https://github.com/jonmircha/youtube-taller-maquetacion",
+      "publish": true,
+      "category": "frontend",
+      "deprecated": false,
+      "inHome": false
+    },
+    {
+      "name": "Curso Figma",
+      "link": "https://www.youtube.com/playlist?list=PLvq-jIkSeTUbpfewvbKLhHctdkgadAy-K",
+      "img": "https://i.ytimg.com/vi/_c26Fyi7RFA/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBjItf0aQly86LzaUH9r8fBQ2yg5w",
+      "excerpt": "Aprende <i>Figma</i> la aplicación <i>web</i> que te permite crear diseños y prototipos de <i>UI</i> y <i>UX</i>.",
+      "codes": "https://github.com/jonmircha/youtube-figma",
+      "publish": true,
+      "category": "frontend",
+      "deprecated": false,
+      "inHome": true
+    },
+    {
+      "name": "Curso Grid CSS",
+      "link": "https://www.youtube.com/playlist?list=PLvq-jIkSeTUY628cyd9LVbXSXi2xG9mUl",
+      "img": "https://i.ytimg.com/vi/gCox2CqYvto/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDdBfQa7oO5lXIeQy75mj54iiBzXg",
+      "excerpt": "Aprende todo lo que necesitas saber sobre <i>Grid CSS</i> para maquetar interfaces <i>web</i>.",
+      "codes": "https://github.com/jonmircha/youtube-grid",
+      "publish": true,
+      "category": "frontend",
+      "deprecated": false,
+      "inHome": true
+    },
+    {
+      "name": "Curso Flexbox CSS",
+      "link": "https://www.youtube.com/playlist?list=PLvq-jIkSeTUbQc3dGsssp8lxAi5npMrys",
+      "img": "https://i.ytimg.com/vi/AAtvnv6LNMk/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLB3Nqv34jRodephVv8by-392BUbPg",
+      "excerpt": "Aprende todo lo que necesitas saber sobre <i>Flexbox CSS</i> para maquetar interfaces <i>web</i>.",
+      "codes": "https://github.com/jonmircha/youtube-flexbox",
+      "publish": true,
+      "category": "frontend",
+      "deprecated": false,
+      "inHome": true
+    },
+    {
+      "name": "Curso HTML & CSS",
+      "link": "https://www.youtube.com/playlist?list=PLvq-jIkSeTUZYcX9SYwVe7f66afwd9qk_",
+      "img": "https://i.ytimg.com/vi/-oK6zL01fNM/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBspLsddOaCu200ASZf1Ncufob33g",
+      "excerpt": "Aprende <i>HTML</i> & <i>CSS</i>, los lenguajes de marcado y estilos que definen contenido y presentación a la <i>web</i>.",
+      "codes": "https://github.com/jonmircha/youtube-html-css",
+      "publish": true,
+      "category": "frontend",
+      "deprecated": false,
+      "inHome": true
+    },
+    {
+      "name": "Curso WordPress",
+      "link": "https://www.youtube.com/playlist?list=PLvq-jIkSeTUZDOcKsQz79wnYlTvmAdLkj",
+      "img": "https://i.ytimg.com/vi/VbJZ4WEoA_k/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDlBTFs6M4tnkxoDhZro6GSi7BHmQ",
+      "excerpt": "Aprende a crear sitios y aplicaciones autogestionables, creando tus propias plantillas.",
+      "codes": "https://github.com/jonmircha/youtube-wordpress",
+      "publish": true,
+      "category": "php",
+      "deprecated": false
+    },
+    {
+      "name": "KISS PHP",
+      "link": "https://www.youtube.com/playlist?list=PLvq-jIkSeTUZWYh18UN6Q9rfkoqy5A9Xn",
+      "img": "https://i.ytimg.com/vi/5ZtTHSmj884/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCP-wTQXo3W--ZJ8xyHRW7KuPhuJw",
+      "excerpt": "Aprende a usar <i>KISS PHP</i> un <i>mini framework web</i> para crear sitios estáticos con <i>PHP</i>.",
+      "codes": "https://github.com/jonmircha/kiss-php",
+      "publish": true,
+      "category": "php",
+      "deprecated": false
+    },
+    {
+      "name": "Curso POO con PHP",
+      "link": "https://www.youtube.com/playlist?list=PLvq-jIkSeTUZEHvKw7Gx3g5CjlcvA3jr1",
+      "img": "https://i.ytimg.com/vi/OminOd-O5r0/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLB6TWRE9HTQvC6ibTQ2mbNiPf0OeQ",
+      "excerpt": "Aprende Programación Orientada a Objetos, <i>MVC</i>, Bases de Datos con <i>PHP</i> y <i>MySQL</i>.",
+      "codes": "https://github.com/jonmircha/youtube-poo-php-mysql",
+      "publish": true,
+      "category": "php",
+      "deprecated": false
+    },
+    {
+      "name": "Curso PHP Básico",
+      "link": "https://www.youtube.com/playlist?list=PL469D93BF3AE1F84F",
+      "img": "https://i.ytimg.com/vi/ZNI7uyJvN6U/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBxKJgqrJVxmeq7t76DQMRQPQtfew",
+      "excerpt": "Aprende <i>PHP</i>, el lenguaje de programación <i>backend</i> más utilizado en la <i>web</i>, y el gestor de bases de datos <i>MySQL</i>.",
+      "codes": "https://github.com/jonmircha/youtube-php",
+      "publish": true,
+      "category": "php",
+      "deprecated": false
+    },
+    {
+      "name": "Software para la Web",
+      "link": "https://www.youtube.com/playlist?list=PLvq-jIkSeTUY7b6mTNigrfZxXNkk0aJd2",
+      "img": "https://i.ytimg.com/vi/twrKk-2vRbU/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLD3oP7D5VPUbNaQQsONYgOqoMSPag",
+      "excerpt": "Te comparto mi experiencia instalando y configurando <i>software</i> que uso en mi día a día como programador <i>web</i>.",
+      "codes": null,
+      "publish": true,
+      "category": "none",
+      "deprecated": false
+    },
+    {
+      "name": "Responsive Design",
+      "link": "https://www.youtube.com/playlist?list=PLvq-jIkSeTUbFYbzpJFN1GLMBZnm9hX5G",
+      "img": "https://i.ytimg.com/vi/mqAYh7Lwxwk/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCER9T7BNEoJYvhK5zBDkBP68t4mA",
+      "excerpt": "Aprende a crear sitios con accesibilidad, usabilidad y optimización de contenido que se vean en cualquier dispositivo.",
+      "codes": "https://github.com/jonmircha/youtube-responsive-design",
+      "publish": false,
+      "category": "",
+      "deprecated": false
+    },
+    {
+      "name": "Curso jQuery",
+      "link": "https://www.youtube.com/playlist?list=PLvq-jIkSeTUYvLDfVUXOhnZ6QSouIfQQ7",
+      "img": "https://i.ytimg.com/vi/aQ1Ql-Fp3aE/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLC_JTjpmU6FXqPqf6KG9rUU5NYQMQ",
+      "excerpt": "Aprende a crear sitios enriquecidos de efectos e interactividad compatibles con cualquier navegador.",
+      "codes": "https://github.com/jonmircha/youtube-jquery",
+      "publish": false,
+      "category": "",
+      "deprecated": false
+    },
+    {
+      "name": "Curso Desarrollo Web",
+      "link": "https://www.youtube.com/playlist?list=PLvq-jIkSeTUbxAO7uRoeNHH6ZCyjr7xq2",
+      "img": "https://i.ytimg.com/vi/HIEqCOI_1Ic/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBxWenmSoZr3KI9fkd5t2GFOYU36g",
+      "excerpt": "Aprende lo básico para iniciarte en el mundo de la <i>web</i>. De <i>frontend</i>: <i>HTML5</i>, <i>CSS3</i> y <i>JS</i>. De <i>backend</i>: <i>AJAX</i>, <i>PHP</i> y <i>MySQL</i>.",
+      "codes": "https://github.com/jonmircha/youtube-web",
+      "publish": false,
+      "category": "",
+      "deprecated": false
+    },
+    {
+      "name": "Tutoriales HTML5",
+      "link": "https://www.youtube.com/playlist?list=PL211E9DF848CA18FF",
+      "img": "https://i.ytimg.com/vi/2VKHklZl4-I/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCqlE5E9lv7ekFq2AQqdcNvfn9E4g",
+      "excerpt": "Aprende a realizar sitios <i>responsives</i> con los estándares de la <i>web</i>: <i>HTML5</i> y <i>CSS3</i>.",
+      "codes": "https://github.com/jonmircha/youtube-html5",
+      "publish": false,
+      "category": "",
+      "deprecated": false
+    },
+    {
+      "name": "Curso ActionScript 3",
+      "link": "https://www.youtube.com/playlist?list=PLB9840C1696C1BC94",
+      "img": "https://i.ytimg.com/vi/sMloaEx_8xY/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLA8oV8_090nQJxZW_w71GUrwajdMQ",
+      "excerpt": "Aprende <i>ActionScript 3</i> el lenguaje de <i>Flash</i> útil para realidad aumentada, videojuegos, e interactivos.",
+      "codes": "https://github.com/jonmircha/youtube-as3",
+      "publish": false,
+      "category": "",
+      "deprecated": false
+    }
+  ],
+  "marathons": [
+    {
+      "title": "Maratón de la Ciudad de México 2012",
+      "time": "4: 35: 35",
+      "date": "2012-09-02",
+      "altitude": "2250"
+    },
+    {
+      "title": "Maratón de la Ciudad de México 2013",
+      "time": "3: 58: 14",
+      "date": "2013-08-25",
+      "altitude": "2250"
+    },
+    {
+      "title": "Maratón Lala 2014",
+      "time": "3: 56: 22",
+      "date": "2014-03-02",
+      "altitude": "1120"
+    },
+    {
+      "title": "Ultra Trail 50K Guadalajara 2014",
+      "time": "8: 23: 01",
+      "date": "2014-03-30",
+      "altitude": "1800",
+      "extra": "🌲"
+    },
+    {
+      "title": "Maratón de la Ciudad de México 2014",
+      "time": "4: 26: 47",
+      "date": "2014-08-31",
+      "altitude": "2250"
+    },
+    {
+      "title": "San Francisco Marathon 2015",
+      "time": "3: 33: 38",
+      "date": "2015-07-26",
+      "altitude": "20"
+    },
+    {
+      "title": "Maratón de la Ciudad de México 2015",
+      "time": "3: 43: 04",
+      "date": "2015-08-30",
+      "altitude": "2250"
+    },
+    {
+      "title": "Maratón de la Ciudad de México 2016",
+      "time": "3: 51: 16",
+      "date": "2016-08-28",
+      "altitude": "2250"
+    },
+    {
+      "title": "Rock&Roll Querétaro Marathon 2016",
+      "time": "3: 46: 38",
+      "date": "2016-10-02",
+      "altitude": "1850"
+    },
+    {
+      "title": "Maratón Powerade Monterrey 2016",
+      "time": "3: 35: 59",
+      "date": "2016-12-11",
+      "altitude": "550"
+    },
+    {
+      "title": "Maratón de la Ciudad de México 2017",
+      "time": "3: 46: 52",
+      "date": "2017-08-27",
+      "altitude": "2250"
+    },
+    {
+      "title": "Spartan Race UltraBeast Mexico 2017",
+      "time": "10: 00: 32",
+      "date": "2017-12-03",
+      "altitude": "2700",
+      "extra": "🌲"
+    },
+    {
+      "title": "Maratón de la Ciudad de México 2018",
+      "time": "3: 47: 41",
+      "date": "2018-08-26",
+      "altitude": "2250"
+    },
+    {
+      "title": "Bank of America Chicago Marathon 2018",
+      "time": "3: 27: 13",
+      "date": "2018-10-07",
+      "altitude": "180",
+      "extra": "🏅"
+    },
+    {
+      "title": "Maratón de la Ciudad de México 2019",
+      "time": "3: 41: 39",
+      "date": "2019-08-25",
+      "altitude": "2250"
+    }
+  ],
+  "mecenas": [
+    {
+      "name": "Geo-san",
+      "link": "https://twitter.com/rincon_av"
+    },
+    {
+      "name": "Richard Allcca",
+      "link": "https://www.facebook.com/profile.php?id=591496099"
+    },
+    {
+      "name": "Jesús Olazagoitia",
+      "link": "https://goiblas.com/"
+    }
+  ],
+  "notes": [
+    {
+      "title": "Hablemos de Programación",
+      "slug": "hablemos-de-programacion",
+      "category": "desarrollo-personal",
+      "publish": true,
+      "date": "2021-08-02"
+    },
+    {
+      "title": "Programar es un Arte",
+      "slug": "programar-es-un-arte",
+      "category": "desarrollo-personal",
+      "publish": true,
+      "date": "2021-02-02"
+    },
+    {
+      "title": "Proyectos La Salle",
+      "slug": "lasalle",
+      "category": "lasalle",
+      "publish": true,
+      "date": "2021-01-20"
+    },
+    {
+      "title": "Estoicismo",
+      "slug": "estoicismo",
+      "category": "filosofia",
+      "publish": true,
+      "date": "2020-12-11"
+    },
+    {
+      "title": "Los 7 hábitos de la gente altamente efectiva",
+      "slug": "7-habitos",
+      "category": "libros",
+      "publish": true,
+      "date": "2020-12-07"
+    },
+    {
+      "title": "Hablar en público‍",
+      "slug": "hablar-en-publico",
+      "category": "desarrollo-personal",
+      "publish": true,
+      "date": "2020-07-20"
+    },
+    {
+      "title": "Maratones 🏃🏻‍",
+      "slug": "maratones",
+      "category": "fitness",
+      "publish": true,
+      "date": "2019-08-25"
+    }
+  ],
+  "now": [
+    "Mis proyectos: <a href='https://youtube.com/jonmircha?sub_confirmation=1'>jonmircha</a> y <a href='https://youtube.com/channel/UC6fw8XSwuEat0gzxeqZGzXA?sub_confirmation=1'>ResilienteSoy</a>.",
+    "Mis clases académicas.",
+    "¿Tienes un proyecto? escríbeme a..."
+  ],
+  "nowDate": "2021-04-01",
+  "posts": [
+    {
+      "title": "Mi config. de VS Code",
+      "slug": "vscode",
+      "category": "vscode",
+      "publish": true,
+      "date": "2021-04-01"
+    },
+    {
+      "title": "React",
+      "slug": "react",
+      "category": "react",
+      "publish": true,
+      "date": "2021-02-08"
+    },
+    {
+      "title": "Webpack",
+      "slug": "webpack",
+      "category": "webpack",
+      "publish": true,
+      "date": "2021-02-04"
+    },
+    {
+      "title": "Reactividad en JavaScript",
+      "slug": "reactividad-javascript",
+      "category": "javascript",
+      "publish": true,
+      "date": "2021-01-13"
+    },
+    {
+      "title": "Grid CSS",
+      "slug": "grid",
+      "category": "css",
+      "publish": true,
+      "date": "2020-11-25"
+    },
+    {
+      "title": "Flexbox CSS",
+      "slug": "flexbox",
+      "category": "css",
+      "publish": true,
+      "date": "2020-11-24"
+    },
+    {
+      "title": "Figma",
+      "slug": "figma",
+      "category": "ux-ui",
+      "publish": true,
+      "date": "2020-10-28"
+    },
+    {
+      "title": "Diseño UX - UI",
+      "slug": "diseno-ux-ui",
+      "category": "ux-ui",
+      "publish": true,
+      "date": "2020-10-27"
+    },
+    {
+      "title": "SPA",
+      "slug": "spa",
+      "category": "javascript",
+      "publish": true,
+      "date": "2020-11-19"
+    },
+    {
+      "title": "API REST",
+      "slug": "api-rest",
+      "category": "javascript",
+      "publish": true,
+      "date": "2020-08-09"
+    },
+    {
+      "title": "AJAX",
+      "slug": "ajax",
+      "category": "javascript",
+      "publish": true,
+      "date": "2020-07-09"
+    },
+    {
+      "title": "DOM",
+      "slug": "dom",
+      "category": "javascript",
+      "publish": true,
+      "date": "2020-05-27"
+    },
+    {
+      "title": "JSON",
+      "slug": "json",
+      "category": "javascript",
+      "publish": true,
+      "date": "2020-04-29"
+    },
+    {
+      "title": "JavaScript Asíncrono",
+      "slug": "javascript-asincrono",
+      "category": "javascript",
+      "publish": true,
+      "date": "2020-04-15"
+    },
+    {
+      "title": "ECMAScript",
+      "slug": "ecmascript",
+      "category": "javascript",
+      "publish": true,
+      "date": "2020-09-16"
+    },
+    {
+      "title": "JavaScript",
+      "slug": "javascript",
+      "category": "javascript",
+      "publish": true,
+      "date": "2020-02-07"
+    },
+    {
+      "title": "XAMPP",
+      "slug": "xampp",
+      "category": "php",
+      "publish": true,
+      "date": "2019-10-14"
+    }
+  ],
+  "projects": [
+    {
+      "name": "La Fábrica Play",
+      "excerpt": "Sistema de pagos <i>online</i> con las pasarelas <i>Stripe</i> y <i>Paypal</i> que se integró al modelo de suscripciones de la plataforma <i>Vimeo OTT</i> del cliente. Desarrollado en <i>Vanilla JS</i> y <i>PHP</i>.",
+      "img": "img/projects/la-fabrica-play.svg",
+      "link": "https://www.lafabricaplay.com/",
+      "date": "2020"
+    },
+    {
+      "name": "Herman Miller México",
+      "excerpt": "Cuestionario <i>online</i> para controlar el acceso a las oficinas ante la contingencia del <i>COVID-19</i> desarrollado en <i>React</i>.",
+      "img": "img/projects/herman-miller.svg",
+      "link": "https://www.hermanmiller.com/es_mx/",
+      "date": "2020"
+    },
+    {
+      "name": "COSTCO México",
+      "excerpt": "Aplicación <i>web</i> que muestra lecturas, datos y gráficas de los transformadores eléctricos de todas las tiendas del país desarrollada en  <i>React</i>, <i>PHP</i> y <i>MySQL</i>.",
+      "img": "img/projects/costco.svg",
+      "link": "https://www.costco.com.mx/",
+      "date": "2020"
+    },
+    {
+      "name": "SIEMENS México",
+      "excerpt": "Depuración de código <i>frontend</i> y Auditoría de contenido y <i>SEO</i> del sitio corporativo. Desarrollo de nuevas páginas y mejoras en el posicionamiento.",
+      "img": "img/projects/siemens.svg",
+      "link": "https://new.siemens.com/mx/es.html",
+      "date": "2019"
+    },
+    {
+      "name": "Aeroméxico",
+      "excerpt": "Colaboración en el desarrollo <i>frontend</i> de <i>intranet</i> corporativa hecha con <i>React</i>.",
+      "img": "img/projects/aeromexico.svg",
+      "link": "https://miaeromexico.com/",
+      "date": "2019"
+    },
+    {
+      "name": "Lucy Lara",
+      "excerpt": "Diseño, Desarrollo y <i>SEO</i> del sitio Lucy Lara.",
+      "img": "img/projects/lucylara.svg",
+      "link": "https://lucylara.com/",
+      "date": "2018"
+    },
+    {
+      "name": "Malvestida",
+      "excerpt": "Diseño, Desarrollo y <i>SEO</i> del sitio Malvestida.",
+      "img": "img/projects/malvestida.svg",
+      "link": "https://malvestida.com/",
+      "date": "2016"
+    },
+    {
+      "name": "SOLCOM",
+      "excerpt": "Diseño y Desarrollo de sitios y temas en <i>WordPress</i> para clientes de la agencia.",
+      "img": "img/projects/solcom.svg",
+      "link": "https://solucionesdecomunicacion.mx/",
+      "date": "2016 y 2019"
+    },
+    {
+      "name": "Condé Nast",
+      "excerpt": "Diseño y desarrollo de <i>landing pages</i> y registros en línea para eventos de la revista <i>GLAMOUR</i> México.",
+      "img": "img/projects/condenast.svg",
+      "link": "https://condenastmexico-latam.com/",
+      "date": "2015"
+    },
+    {
+      "name": "Gamol",
+      "excerpt": "Diseño y Desarrollo de <i>landing pages</i>, interactivos en <i>jQuery</i> y sitios en <i>WordPress</i> para clientes de la agencia.",
+      "img": "img/projects/gamol.svg",
+      "link": "https://www.gamol.com.mx/",
+      "date": "2013 - 2014"
+    },
+    {
+      "name": "Bextlán",
+      "excerpt": "Fundador y Programador de plataforma de educación en línea de cursos de diseño y desarrollo <i>web</i>.",
+      "img": "img/projects/bextlan.svg",
+      "link": "https://bextlan.com/",
+      "date": "2012 - 2017"
+    },
+    {
+      "name": "Voit",
+      "excerpt": "Rediseño de sitio corporativo. Desarrollo de catálogo y buscador de productos.",
+      "img": "img/projects/voit.svg",
+      "link": "https://voit.com.mx/",
+      "date": "2009"
+    },
+    {
+      "name": "<i>e&middot;go</i>  de Grupo MVS",
+      "excerpt": "Administración y desarrollo de sitio e <i>intranet</i> corporativa, aplicaciones <i>web</i> para <i>marketing</i> y ventas en línea. Administración de servidores <i>Windows Server</i> 2003.",
+      "img": "img/projects/ego.svg",
+      "link": "https://mvs.com/inicio",
+      "date": "2006 - 2008"
+    },
+    {
+      "name": "Colegio Alemán Alexander von Humboldt",
+      "excerpt": "Ingeniero de soporte técnico en el <i>campus</i> Lomas Verdes.",
+      "img": "img/projects/humboldt.svg",
+      "link": "https://humboldt.edu.mx/",
+      "date": "2005 - 2006"
+    },
+    {
+      "name": "Telmex",
+      "excerpt": "Ingeniero de soporte técnico telefónico del servicio de <i>internet</i>: <i>prodigy infinitum</i>.",
+      "img": "img/projects/telmex.svg",
+      "link": "https://telmex.com/",
+      "date": "2004 - 2005"
+    },
+    {
+      "name": "Desarrollador <i>Flash</i>",
+      "excerpt": "De 2004 a 2010 desarrollé diferentes sitios e interactivos hechos con <i>Flash</i> y <i>ActionScript</i> (versión 2 y 3).",
+      "img": "img/projects/flash.svg",
+      "link": "",
+      "date": "2004 - 2010"
+    }
+  ],
+  "schools": [
+    {
+      "name": "CENTRO",
+      "excerpt": "Profesor de la asignatura Medios Digitales que forma parte del tronco común de todas las licenciaturas.",
+      "img": "img/schools/centro.svg",
+      "link": "https://www3.centro.edu.mx/",
+      "date": "2021 - Actual"
+    },
+    {
+      "name": "Universidad La Salle",
+      "excerpt": "Profesor de asignaturas de corte digital en <i>FAMADyC</i>, la Facultad Mexicana de Arquitectura, Diseño y Comunicación.",
+      "img": "img/schools/lasalle.svg",
+      "link": "https://lasalle.mx/",
+      "date": "2020 - Actual"
+    },
+    {
+      "name": "ICONOS",
+      "excerpt": "Profesor de asignaturas sobre desarrollo <i>web</i> en licenciaturas, diplomados, especialidades y maestrías.",
+      "img": "img/schools/iconos.svg",
+      "link": "https://www.iconos.edu.mx/",
+      "date": "2011 - Actual"
+    },
+    {
+      "name": "TEKDI",
+      "excerpt": "Instructor de micro cursos en línea sobre diseño y desarrollo <i>web</i>.",
+      "img": "img/schools/tekdi.svg",
+      "link": "https://tekdi.education/",
+      "date": "2020 - 2021"
+    },
+    {
+      "name": "Centro ADM",
+      "excerpt": "Instructor en cursos y diplomados sobre diseño <i>web</i>.",
+      "img": "img/schools/centro-adm.svg",
+      "link": "https://centroadm.com/",
+      "date": "2015 - 2020"
+    },
+    {
+      "name": "Escuela IT",
+      "excerpt": "Instructor de cursos en línea sobre desarrollo <i>web</i>.",
+      "img": "img/schools/escuela-it.svg",
+      "link": "https://escuela.it/",
+      "date": "2013 - 2020"
+    },
+    {
+      "name": "EDteam",
+      "excerpt": "Instructor de cursos en línea sobre desarrollo <i>web</i>. Coordinador Académico de la plataforma los últimos 6 meses.",
+      "img": "img/schools/edteam.svg",
+      "link": "https://ed.team/",
+      "date": "2016 - 2019"
+    },
+    {
+      "name": "Bextlán",
+      "excerpt": "Instructor de cursos en línea sobre diseño y desarrollo <i>web</i>. Coordinador Académico de la plataforma.",
+      "img": "img/schools/bextlan.svg",
+      "link": "https://bextlan.com/",
+      "date": "2012 - 2017"
+    },
+    {
+      "name": "MacTrainee",
+      "excerpt": "Instructor de cursos y diplomados sobre desarrollo <i>web</i>.",
+      "img": "img/schools/mactrainee.svg",
+      "link": "https://mactrainee.com/",
+      "date": "2012 - 2014"
+    },
+    {
+      "name": "UNIVDEP",
+      "excerpt": "Profesor de asignaturas sobre desarrollo <i>web</i> en las licenciaturas de Informática, Ingeniería y Diseño en el <i>campus</i> Del Valle.",
+      "img": "img/schools/univdep.svg",
+      "link": "https://www.univdep.edu.mx/",
+      "date": "2009 - 2013"
+    },
+    {
+      "name": "UVM",
+      "excerpt": "Profesor de informática a nivel bachillerato en el <i>campus</i> Roma.",
+      "img": "img/schools/uvm.svg",
+      "link": "https://uvm.mx/",
+      "date": "2009 - 2012"
+    },
+    {
+      "name": "Liceo Español de México",
+      "excerpt": "Profesor de computación a nivel secundaria y bachillerato. Coordinador del centro de cómputo del colegio.",
+      "img": "img/schools/lem.svg",
+      "link": "https://liceoespanoldemexico.com/",
+      "date": "2003 - 2004"
+    }
+  ],
+  "youtube": {
+    "date": "2022-05-09",
+    "subscribers": "117,323",
+    "videos": "561",
+    "views": "7,197,055"
+  }
+}
