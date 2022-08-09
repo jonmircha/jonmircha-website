@@ -23,5 +23,5 @@ Tengo un canal en <a href="https://www.youtube.com/jonmircha?sub_confirmation=1"
 Si te gusta mi contenido puedes invitarme un taco 🌮 por <a href="https://jonmircha.com/taco" target="_blank" rel="noopener"> _**Paypal**_</a>.
 
 <a href="https://www.youtube.com/jonmircha?sub_confirmation=1" target="_blank" rel="noopener">
-  <img align="center" src="https://yt3.ggpht.com/Oo8PoXfzFwgtchLM4le_3VAkJmaDrFw65cWUMXWtFO8RMjBvbdJCRoCiOyypAMbyC2OnlyrZWw=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj">
+  <img align="center" src="https://jonmircha.com/img/youtube-banner.jpg">
 </a>
