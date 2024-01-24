@@ -2,11 +2,14 @@
 <html lang="es">
 
 <head>
-  <sergey-import src="metas/statics" />
-  <sergey-import src="metas/titles">Maratones 🏃🏻 | jonmircha</sergey-import>
-  <sergey-import src="metas/descriptions">🏃🏻‍ Corre Jon Corre 🏃🏻</sergey-import>
-  <sergey-import src="metas/urls">https://jonmircha.com/maratones</sergey-import>
-  <sergey-import src="metas/images">https://jonmircha.com/img/blog/maratones.jpg</sergey-import>
+  <sergey-import src="components/metatags">
+    <sergey-template name="title">Maratones 🏃🏻 🦊 jonmircha</sergey-template>
+    <sergey-template name="metatitle">"Maratones 🏃🏻 🦊 jonmircha"</sergey-template>
+    <sergey-template name="description">"🏃🏻‍ Corre Jon Corre 🏃🏻"</sergey-template>
+    <sergey-template name="url">"https://jonmircha.com/maratones"</sergey-template>
+    <sergey-template name="image">"https://jonmircha.com/img/blog/maratones.jpg"</sergey-template>
+  </sergey-import>
+  <link rel="stylesheet" href="assets/style.css">
   <style>
     td,
     th {
@@ -57,9 +60,9 @@
 </head>
 
 <body>
-  <sergey-import src="components/header.html" />
-  <sergey-import src="components/template-notes.html">maratones</sergey-import>
-  <sergey-import src="components/footer.html" />
+  <sergey-import src="components/header" />
+  <sergey-import src="components/post">maratones</sergey-import>
+  <script src="assets/index.js"></script>
 </body>
 
 </html>

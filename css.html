@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <sergey-import src="components/metatags">
+    <sergey-template name="title">Arquitectura CSS 🦊 jonmircha</sergey-template>
+    <sergey-template name="metatitle">"Arquitectura CSS 🦊 jonmircha"</sergey-template>
+    <sergey-template name="description">"En esta presentación te expongo el tema de la Arquitectura CSS"
+    </sergey-template>
+    <sergey-template name="url">"https://jonmircha.com/css"</sergey-template>
+    <sergey-template name="image"></sergey-template>
+  </sergey-import>
+  <link rel="stylesheet" href="assets/prism.css">
+  <link rel="stylesheet" href="assets/slides.css">
+</head>
+
+<body>
+  <main class="slides">
+    <section class="slide">
+      <article class="slide-container">
+        <h1>Arquitectura <i>CSS</i></h1>
+        <img src="img/blog/arquitectura-css.png" alt="Arquitectura CSS">
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h3>Escribir <i>CSS</i> es fácil,<br>escalarlo y mantenerlo no tanto</h3>
+        <img src="img/blog/mantener-css.webp" alt="Manteniendo CSS">
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <p>Para mantener organizado nuestro código necesitamos un plan</p>
+        <h2>La Arquitectura <i>CSS</i></h2>
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h2>¿Qué es la Arquitectura?</h2>
+        <p>Según <cite>Wikipedia</cite></p>
+        <blockquote>
+          Arte y técnica de diseñar, proyectar y construir edificios y espacios públicos.
+        </blockquote>
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h2>Aplicando el concepto a <i>CSS</i></h2>
+        <p>
+          Técnicas que nos ayudan a organizar y mantener nuestro código ordenado, óptimo y escalable.
+        </p>
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h3>Una buena Arquitectura <i>CSS</i> debe ser:</h3>
+        <ol class="w-50">
+          <li>Predecible</li>
+          <!-- Significa que las reglas se comportan como se esperan que hagan. Al añadir una nueva regla, no debería afectar a otras partes de tu sitio web en las que no hay intención de que afectara. Un ejemplo de esto sería usar una clase llamaba “text-color-primary” para lo cual no debería modificar el tamaño de una imagen. -->
+          <li>Reutilizable</li>
+          <!-- Si una regla es reutilizable significa que se puede utilizar en distintas secciones rápidamente sin tener que afectar a secciones inesperadas. Como ejemplo puede ser “button-big”, que permitirá añadir un tamaño mayor a un button. -->
+          <li>Estable</li>
+          <!-- Para que sea estable significa que deberíamos poder actualizar o modificar con facilidad sin afectar a otras reglas. De la misma forma ocurrirá al añadir una nueva regla. Un ejemplo de esto podría ser modificar o añadir alguna propiedad a una clase llamada”img-thumbnail” y no afectar a las que tengan “img-profile” o crear una clase “img-profile-customer” no afecte a ninguna de las anteriores. -->
+          <li>Escalable</li>
+          <!-- Cuando el sitio crece se dice que es escalable si puede ser mantenido fácilmente sin aumentar excesivamente el grado de complejidad en nuestras normas y pueda ser mantenido por una persona o un equipo. Un CSS escalable no requiere una enorme curva de aprendizaje. -->
+        </ol>
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h3>Debemos diseñar SISTEMAS, no PÁGINAS</h3>
+        <img src="img/blog/sistemas-css.png" alt="Diseñamos SISTEMAS, no PÁGINAS">
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h2>COMPONENTES</h2>
+        <blockquote>
+          <cite>
+            “It's a repeating visual pattern, that can be abstracted into an independent snippet of HTML, CSS and
+            possibly JavaScript.”
+          </cite>
+          <br>
+          <cite><a href="https://vimeo.com/72759139" target="_blank">Nicole Sullivan</a></cite>
+        </blockquote>
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h2>Divide y vencerás</h2>
+        <h3><i>D.R.Y. - Don't Repeat Yourself</i></h3>
+        <div class="grid-2">
+          <aside>
+            <ul>
+              <li>Cumplen una sóla función.</li>
+              <li>Son independientes.
+                <!-- tanto de su contexto como del resto de componentes -->
+              </li>
+              <li>Son autocontenidos.
+                <!-- no filtran estilos a otros componentes -->
+              </li>
+              <li>Son reutilizables.</li>
+              <!-- DRY (Don't Repeat Yourself) -->
+            </ul>
+          </aside>
+          <aside>
+            <img src="img/blog/componentes-css.png" alt="Componentes CSS">
+          </aside>
+        </div>
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h3>Herramientas <i>CSS</i> para crear sistemas</h3>
+        <ol class="w-50">
+          <li>Metodologías</li>
+          <li><i>Frameworks</i></li>
+          <li>Procesadores</li>
+          <li>Guías de Estilos</li>
+        </ol>
+        <br>
+        <a class="font-small" href="https://2020.stateofcss.com/es-ES/technologies/" target="_blank">Más información</a>
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h2>Metodologías <i>CSS</i></h2>
+        <p class="font-big">Nos permiten organizar y nombrar el código.</p>
+        <!--
+            Reducir el esfuerzo para leer y entender el código fuente.
+            Mejorar la claridad y apariencia del código fuente.
+            Ayuda a evitar conflictos de nombres.
+            Mejora la comprensión en la reutilización de código.
+          -->
+        <div class="grid-2">
+          <ul class="font-big">
+            <li><a href="https://en.bem.info/" target="_blank"><i>BEM</i></a></li>
+            <li><a href="http://smacss.com/" target="_blank"><i>SMACSS</i></a></li>
+            <li><a href="http://oocss.org/" target="_blank"><i>OOCSS</i></a></li>
+            <li><a href="https://itcss.io/" target="_blank"><i>ITCSS</i></a></li>
+            <li><a href="https://amcss.github.io/" target="_blank"><i>AMCSS</i></a></li>
+          </ul>
+          <ul class="font-big">
+            <li><a href="https://suitcss.github.io/" target="_blank"><i>SUITCSS</i></a></li>
+            <li>
+              <a href="https://bradfrost.com/blog/post/atomic-web-design/" target="_blank"><i>Atomic Design</i></a>
+              <ul>
+                <li><a href="https://patternlab.io/" target="_blank"><i>Pattern Lab</i></a></li>
+                <li><a href="https://demo.patternlab.io/" target="_blank">Demos</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h2><i>Frameworks CSS</i></h2>
+        <p class="font-big">Son marcos de trabajo que nos ofrecen componentes y utilidades de <i>UI</i>.</p>
+        <div class="grid-2">
+          <ul class="font-big">
+            <li><a href="https://960.gs/" target="_blank"><i>960 Grid System</i></a></li>
+            <li><a href="http://getskeleton.com/" target="_blank"><i>Skeleton</i></a></li>
+            <li><a href="https://purecss.io/" target="_blank"><i>Pure CSS</i></a></li>
+            <li><a href="https://ink.sapo.pt/" target="_blank"><i>Ink</i></a></li>
+            <li><a href="https://www.muicss.com/" target="_blank"><i>MUI</i></a></li>
+            <li><a href="https://semantic-ui.com/" target="_blank"><i>Semantic UI</i></a></li>
+          </ul>
+          <ul class="font-big">
+            <li><a href="https://getbootstrap.com/" target="_blank"><i>Bootstrap</i></a></li>
+            <li><a href="https://tailwindcss.com/" target="_blank"><i>Tailwind CSS</i></a></li>
+            <li><a href="https://foundation.zurb.com/" target="_blank"><i>Foundation</i></a></li>
+            <li><a href="https://materializecss.com/" target="_blank"><i>Materialize</i></a></li>
+            <li><a href="https://getuikit.com/" target="_blank"><i>UI kit</i></a></li>
+            <li><a href="https://bulma.io/" target="_blank"><i>Bulma</i></a></li>
+          </ul>
+        </div>
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h2>Procesadores <i>CSS</i></h2>
+        <div class="grid-2">
+          <aside class="font-small">
+            <h3>Pre procesadores</h3>
+            <p>Son herramientas que toman un lenguaje y lo transforman en <i>CSS</i>.</p>
+            <ul class="font-big">
+              <li><a href="https://sass-lang.com/" target="_blank"><i>Sass</i></a></li>
+              <li><a href="https://lesscss.org/" target="_blank"><i>Less</i></a></li>
+              <li><a href="https://stylus-lang.com/" target="_blank"><i>Stylus</i></a></li>
+            </ul>
+          </aside>
+          <aside class="font-small">
+            <h3>Post procesadores</h3>
+            <p>Son herramientas que procesan el <i>CSS</i> y lo optimizan y automatizan.</p>
+            <ul class="font-big">
+              <li><a href="https://postcss.org/" target="_blank"><i>Post CSS</i></a></li>
+              <li><a href="https://cssnext.github.io/" target="_blank"><i>CSS Next</i></a></li>
+              <li><a href="https://cssinjs.org/" target="_blank"><i>CSS in JS</i></a></li>
+            </ul>
+          </aside>
+        </div>
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h2>Herramientas de Automatización</h2>
+        <div class="grid-2">
+          <aside>
+            <h3><i>Build Tools</i></h3>
+            <ul>
+              <li><a href="https://nodejs.org/" target="_blank"><i>Node.js</i></a></li>
+              <li><a href="https://gruntjs.com/" target="_blank"><i>Grunt</i></a></li>
+              <li><a href="https://gulpjs.com/" target="_blank"><i>Gulp</i></a></li>
+              <li><a href="https://webpack.js.org/" target="_blank"><i>Webpack</i></a></li>
+            </ul>
+          </aside>
+          <aside>
+            <h3><i>Online Tools</i></h3>
+            <ul>
+              <li><a href="https://codepen.io/" target="_blank"><i>Code Pen</i></a></li>
+              <li><a href="https://jsbin.com/" target="_blank"><i>JS Bin</i></a></li>
+              <li><a href="https://autoprefixer.github.io/" target="_blank"><i>Autoprefixer CSS</i></a></li>
+              <li><a href="https://cssminifier.com/" target="_blank"><i>CSS Minifier</i></a></li>
+            </ul>
+          </aside>
+        </div>
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h2>Guías de Estilos</h2>
+        <p class="font-big">
+          Colección de elemento y reglas pre establecidas que aseguran la consistencia y coherencia de nuestro código.
+        </p>
+        <ul class="w-50 font-big">
+          <li><a href="https://codeguide.co/" target="_blank"><i>Code Guide</i></a></li>
+          <li><a href="https://design-system.w3.org/" target="_blank"><i>W3C Design System</i></a></li>
+          <li><a href="http://styleguides.io/" target="_blank"><i>Website Style Guide</i></a></li>
+          <li><a href="https://github.com/airbnb/css" target="_blank"><i>Airbnb CSS / Sass Styleguide</i></a></li>
+          <li><a href="https://github.com/necolas/idiomatic-css" target="_blank"><i>Idiomatic CSS</i></a></li>
+          <li><a href="https://cssguidelin.es/" target="_blank"><i>CSS Guidelines</i></a></li>
+        </ul>
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h2>¿Qué herramientas uso?</h2>
+        <img src="img/blog/confused.gif" alt="Confundido">
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h2>Arquitectura Minimalista</h2>
+        <pre><code class="language-css">/* ********** Custom Properties ********** */
+/* ********** Reset ********** */
+/* ********** Components ********** */
+/* ********** Utilities ********** */
+/* ********** Site Styles ********** */</code></pre>
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h2>Muchas gracias</h2>
+        <a href="https://jonmircha.com">
+          <img src="img/kEnAi.svg" alt="kEnAi">
+        </a>
+      </article>
+    </section>
+  </main>
+  <script src="assets/prism.js"></script>
+</body>
+
+</html>

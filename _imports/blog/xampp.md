@@ -22,6 +22,4 @@ En la siguiente serie de videos te explico la instación y algunas configuracion
 
 [Ver Video](https://www.youtube.com/watch?v=bW3fHwU13go)
 
-Tienes alguna otra configuración que quieras que agregue a esta serie de videos sobre la configuración de _XAMPP_, no olvides dejarme tus comentarios.
-
-![Instalación y Configuración de XAMPP](https://jonmircha.com/img/blog/xampp.png)
+---

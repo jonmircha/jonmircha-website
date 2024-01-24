@@ -4,7 +4,7 @@ Puede enviar y recibir información en varios formatos, incluidos _JSON_, _XML_,
 
 El atractivo de _**AJAX**_ es su naturaleza _"asíncrona"_, lo que significa que puede comunicarse con el servidor, intercambiar datos y actualizar la página sin tener que recargar el navegador.
 
-![Modelo AJAX](https://jonmircha.com/img/blog/ajax.png)
+![Modelo AJAX](img/blog/ajax.png)
 
 ---
 
@@ -238,3 +238,5 @@ getData();
 ```
 
 [Ver Video](https://www.youtube.com/watch?v=SBr_EVNErPk&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=110)
+
+---

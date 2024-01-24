@@ -9,7 +9,7 @@ _Flexbox CSS_ es un sistema de maquetación **unidimensional**, pensado principa
 - Eje Principal ( _**Main Axis**_ )
 - Eje Transversal ( _**Cross Axis**_ ).
 
-![Conceptos Básicos Flexbox](https://jonmircha.com/img/blog/flex-conceptos.png)
+![Conceptos Básicos Flexbox](img/blog/flex-conceptos.png)
 
 [Ver Video](https://www.youtube.com/watch?v=1NBMqQkcZ9Y)
 
@@ -35,7 +35,7 @@ display: flex | inline-flex;
 flex-direction: row | row-reverse | column | column-reverse;
 ```
 
-![flex-direction](https://jonmircha.com/img/blog/flex-direction.png)
+![flex-direction](img/blog/flex-direction.png)
 
 **_flex-wrap_**: Define si la caja _flexbox_ envuelve o **NO** a sus hijos.
 
@@ -43,7 +43,7 @@ flex-direction: row | row-reverse | column | column-reverse;
 flex-wrap: nowrap | wrap | wrap-reverse;
 ```
 
-![flex-wrap](https://jonmircha.com/img/blog/flex-wrap.png)
+![flex-wrap](img/blog/flex-wrap.png)
 
 **flex-flow**: Es un _shorthand_ de _flex-direction_ y _flex-wrap_.
 
@@ -60,7 +60,7 @@ justify-content: flex-start | center | flex-end | space-between | space-around |
   space-evenly;
 ```
 
-![justify-content](https://jonmircha.com/img/blog/justify-content.png)
+![justify-content](img/blog/justify-content.png)
 
 [Ver Video](https://www.youtube.com/watch?v=4eHB6O8d1R0)
 
@@ -70,7 +70,7 @@ justify-content: flex-start | center | flex-end | space-between | space-around |
 align-items: stretch | flex-start | flex-end | center | baseline;
 ```
 
-![align-items](https://jonmircha.com/img/blog/align-items.png)
+![align-items](img/blog/align-items.png)
 
 **_align-content_**: Define la alineación de los hijos en el eje transversal (_cross axis_), **NO** funciona cuando los hijos están en **UNA** sóla línea (es decir cuando _flex-wrap_ tiene el valor de _nowrap_, **NO FUNCIONA**).
 
@@ -133,7 +133,7 @@ order: 0 | 1 | 2 | -3 | etc...;
 align-self: stretch | flex-start | flex-end | center | baseline;
 ```
 
-![align-self](https://jonmircha.com/img/blog/align-self.png)
+![align-self](img/blog/align-self.png)
 
 [Ver Video](https://www.youtube.com/watch?v=u-k1kPtOA5o)
 
@@ -191,3 +191,5 @@ Aquí te dejo algunos enlaces interesantes para que puedas aprender más sobre _
 [Ver Curso](https://www.youtube.com/playlist?list=PLvq-jIkSeTUbQc3dGsssp8lxAi5npMrys)
 
 Adicionalmente al contenido sobre _Flexbox CSS_ que puedes encontrar en mi sitio y canal de _YouTube_, también te invito a ver mi [artículo](/grid) y [curso](https://youtube.com/playlist?list=PLvq-jIkSeTUY628cyd9LVbXSXi2xG9mUl) sobre _Grid CSS_ que es el modelo de maquetación que complementa a _Flexbox CSS_, con ambas herramientas serás una poderosa y afilada navaja suiza 😎🪒 en términos de maquetación web.
+
+---

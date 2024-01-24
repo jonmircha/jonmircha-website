@@ -60,3 +60,5 @@ A continuación encontrarás una lista de videos donde te enseño a implementar 
 Esta lista de videos forma parte de mi [Curso de _JavaScript_](https://youtube.com/playlist?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA) en _YouTube_.
 
 Si quieres aprender _JavaScript_ de una forma más estructurada, a tu propio ritmo y totalmente gratis, te sugiero vayas a mi iniciativa [Aprende*JavaScript*.org](https://aprendejavascript.org) y comienza ya tu carrera profesional como desarrollador _web_ 🤓💛.
+
+---

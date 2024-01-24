@@ -1,4 +1,6 @@
-## Temas a tratar
+<aside class="post-menu">
+
+## Temas
 
 - [Introducción](#introducción)
 - [Sin configuración](#sin-configuración)
@@ -10,6 +12,8 @@
 - [Aprende más](#aprende-más)
 
 <hr>
+
+</aside>
 
 ## Introducción
 
@@ -33,9 +37,9 @@ Aprende más sobre _Webpack_:
 - [_Plugins_](https://webpack.js.org/plugins/)
 - [_Dev Server_](https://webpack.js.org/configuration/dev-server/)
 
-[🔼](#temas-a-tratar)
+[🔼 Regresar](#temas)
 
-<hr>
+---
 
 ## Sin configuración
 
@@ -91,9 +95,9 @@ console.log("Hola mundo sin configuración con Webpack");
 
 Ejecuta nuevamente el comando **_build_** y _Webpack_ en automático nos habrá generado el archivo de salida **_./dist/main,js_** 😱😱😱
 
-[🔼](#temas-a-tratar)
+[🔼 Regresar](#temas)
 
-<hr>
+---
 
 ## Modos
 
@@ -138,9 +142,9 @@ Modificando puntos de entrada y salida predeterminados:
 }
 ```
 
-[🔼](#temas-a-tratar)
+[🔼 Regresar](#temas)
 
-<hr>
+---
 
 ## Transpilando _JS_ con _Babel_
 
@@ -192,9 +196,9 @@ Ejecutemos los comandos **_dev_** y **_build_** y miremos el archivo **_./dist/m
 - **_npm run dev_** transpiló el archivo con sintaxis _ESNext_ a _ES5_ indentado y con comentarios, gracias a la configuración del archivo **_webpack.config.js_**.
 - **_npm run build_** transpiló el archivo con sintaxis _ESNext_ a _ES5_ minificado y sin comentarios, gracias a la configuración del archivo **_webpack.config.js_**.
 
-[🔼](#temas-a-tratar)
+[🔼 Regresar](#temas)
 
-<hr>
+---
 
 ## Inyección de _JS_ en _HTML_
 
@@ -261,9 +265,9 @@ Ejecutemos los comandos **_dev_** o **_build_** y miremos el archivo **_./dist/i
 
 No es necesario incluir el _JavaScript_ dentro del archivo _HTML_, _Webpack_ lo ha inyectado automáticamente y ha minificado el código 😎.
 
-[🔼](#temas-a-tratar)
+[🔼 Regresar](#temas)
 
-<hr>
+---
 
 ## Extracción de _CSS_
 
@@ -338,9 +342,9 @@ Ejecutemos los comandos **_dev_** o **_build_** y miremos el archivo **_./dist/i
 
 No es necesario incluir el _CSS_ dentro del archivo _HTML_, _Webpack_ lo ha inyectado automáticamente y ha creado el archivo de estilos **_main.css_** 😎.
 
-[🔼](#temas-a-tratar)
+[🔼 Regresar](#temas)
 
-<hr>
+---
 
 ## Servidor Web de Desarrollo
 
@@ -368,12 +372,14 @@ Al ejecutarlo, _Webpack_ abrirá la aplicación en una ventana del navegador.
 npm start
 ```
 
-[🔼](#temas-a-tratar)
+[🔼 Regresar](#temas)
 
-<hr>
+---
 
 ## Aprende más
 
 [Ve mi Curso](https://www.youtube.com/watch?v=-bp3q-YTr4Q)
 
-[🔼](#temas-a-tratar)
+[🔼 Regresar](#temas)
+
+---

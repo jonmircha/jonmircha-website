@@ -2,8 +2,8 @@
   "name": "Jonathan MirCha",
   "short_name": "jonmircha",
   "description": "Hola, soy tu amigo y docente digital... Jonathan MirCha",
-  "background_color": "#1f1f1f",
-  "theme_color": "#fb6d43",
+  "background_color": "#f9fafb",
+  "theme_color": "#e7562e",
   "orientation": "portrait",
   "display": "standalone",
   "start_url": "./",
@@ -13,7 +13,7 @@
     {
       "src": "./img/favicon.png",
       "type": "image/png",
-      "sizes": "1024x1024",
+      "sizes": "512x512",
       "purpose": "any maskable"
     }
   ]

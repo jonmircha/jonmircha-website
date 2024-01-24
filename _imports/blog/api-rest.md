@@ -29,7 +29,7 @@ Si creas aplicaciones _web_ con _JavaScript_, las _API REST_ probablemente será
 
 Así que... ...sí las _API REST_, son el nuevo _CRUD_ del desarrollo moderno, con la ventaja de que puedes desacoplar tu la lógica de tu cliente de la del servidor y la base de datos.
 
-![CRUD](https://jonmircha.com/img/blog/crud.png)
+![CRUD](img/blog/crud.png)
 
 <div class="container-sm table-crud-rest">
 
@@ -42,11 +42,11 @@ Así que... ...sí las _API REST_, son el nuevo _CRUD_ del desarrollo moderno, c
 
 </div>
 
-![REST - CRUD](https://jonmircha.com/img/blog/rest-crud.png)
+![REST - CRUD](img/blog/rest-crud.png)
 
 Otra ventaja de este modelo de desarrollo es que puedes usar un mismo origen de datos para distintos clientes, por ejemplo un cliente nativo (_iOS_, _Android_), un cliente de escritorio (_Windows_) o un cliente _web_ (Navegadores).
 
-![Arquitectura REST](https://jonmircha.com/img/blog/rest-arquitectura.jpg)
+![Arquitectura REST](img/blog/rest-arquitectura.jpg)
 
 [Ver Video](https://www.youtube.com/watch?v=wzoUu6rcQ4c&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA)
 
@@ -653,3 +653,5 @@ Otra ventaja de este modelo de desarrollo es que puedes usar un mismo origen de 
 [Ver Video (parte 1)](https://www.youtube.com/watch?v=uvTgSMYbV8c&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=119)
 
 [Ver Video (parte 2)](https://www.youtube.com/watch?v=Z535sOcIaMA&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=120)
+
+---

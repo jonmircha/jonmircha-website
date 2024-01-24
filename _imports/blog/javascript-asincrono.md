@@ -1,3 +1,18 @@
+<aside class="post-menu">
+
+## Temas
+
+- [Asincronía](#asincronía)
+- [_JavaScript_ Síncrono](#javascript-síncrono)
+- [_JavaScript_ Asíncrono](#javascript-asíncrono)
+- [_Callbacks_](#callbacks)
+- [_Promises_](#promises)
+- [_Async / Await_](#async--await)
+
+---
+
+</aside>
+
 ## Asincronía
 
 La asincronía es uno de los pilares fundamentales de _Javascript_, ya que es un lenguaje de programación de un sólo subproceso o hilo (_single thread_), lo que significa que sólo puede ejecutar una cosa a la vez.
@@ -14,7 +29,7 @@ _JavaScript_ fue diseñado para ser ejecutado en navegadores, trabajar con petic
 
 Gracias a esta solución, _Javascript_ es áltamente concurrente a pesar de emplear un sólo hilo.
 
-![Event Loop JavaScript](https://jonmircha.com/img/blog/event-loop.png)
+![Event Loop JavaScript](img/blog/event-loop.png)
 
 ---
 
@@ -59,6 +74,8 @@ Con lo anterior en _JavaScript_ podemos tener:
 - Código síncrono y bloqueante o
 - Código asíncrono y no bloquenate
 
+[🔼 Regresar](#temas)
+
 ---
 
 ### _JavaScript_ Síncrono
@@ -91,6 +108,8 @@ Dos
 Tres
 Fin
 ```
+
+[🔼 Regresar](#temas)
 
 ---
 
@@ -130,6 +149,8 @@ Dos
 ```
 
 [Ver Video](https://www.youtube.com/watch?v=m7AgxJSCMVw&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA)
+
+[🔼 Regresar](#temas)
 
 ---
 
@@ -183,6 +204,8 @@ cuadradoCallback(0, (value, result) => {
 ```
 
 [Ver Video](https://www.youtube.com/watch?v=TYG2_iUr8XY&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA)
+
+[🔼 Regresar](#temas)
 
 ---
 
@@ -247,6 +270,8 @@ cuadradoPromise(0)
 ```
 
 [Ver Video](https://www.youtube.com/watch?v=ppzrpTjwEC8&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA)
+
+[🔼 Regresar](#temas)
 
 ---
 
@@ -339,3 +364,7 @@ funcionAsincronaExpresada();
 ```
 
 [Ver Video](https://www.youtube.com/watch?v=PbI5EEpodPM&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA)
+
+[🔼 Regresar](#temas)
+
+---

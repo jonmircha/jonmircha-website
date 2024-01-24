@@ -1,3 +1,20 @@
+<aside class="post-menu">
+
+## Temas
+
+- [Isomorfismo](#isomorfismo)
+- [_JavaScript_ NO es _JAVA_](#javascript-no-es-java)
+- [Características](#características)
+- [Escritura de código](#escritura-de-código)
+- [Palabras reservadas](#palabras-reservadas)
+- [Ordenamiento de código](#ordenamiento-de-código)
+- [Tipos de datos en _JavaScript_](#tipos-de-datos-en-javascript)
+- [Aprende JavaScript GRATIS](#aprende-javascript-gratis)
+
+---
+
+</aside>
+
 ## Isomorfismo
 
 Hoy _JavaScript_, es el único lenguaje capaz de ejecutarse en las 3 capas de una aplicación:
@@ -16,13 +33,17 @@ Con JavaScript puedes:
 - Aprendizaje Automático.
 - etc.
 
+[🔼 Regresar](#temas)
+
 ---
 
 ## _JavaScript_ NO es _JAVA_
 
-![Esto es JavaScript](https://jonmircha.com/img/blog/this-is-javascript.jpg)
-![JavaScript vs JAVA](https://jonmircha.com/img/blog/jsvsjava.jpg)
-![JavaScript vs JAVA](https://jonmircha.com/img/blog/java-vs-javascript.jpg)
+![Esto es JavaScript](img/blog/this-is-javascript.jpg)
+![JavaScript vs JAVA](img/blog/jsvsjava.jpg)
+![JavaScript vs JAVA](img/blog/java-vs-javascript.jpg)
+
+[🔼 Regresar](#temas)
 
 ---
 
@@ -35,6 +56,8 @@ Con JavaScript puedes:
 - Multi paradigma.
 - Sensible a MAYÚSCULAS y minúsculas.
 - No necesitas los puntos y comas al final de cada línea.
+
+[🔼 Regresar](#temas)
 
 ---
 
@@ -116,6 +139,8 @@ const ajax = new XMLHttpRequest(),
   jon = new SerHumano("Jonathan", "Hombre");
 ```
 
+[🔼 Regresar](#temas)
+
 ---
 
 ## Palabras reservadas
@@ -139,6 +164,8 @@ V: var, volatile, void
 W: while, with
 ```
 
+[🔼 Regresar](#temas)
+
 ---
 
 ## Ordenamiento de código
@@ -147,6 +174,8 @@ W: while, with
 1. **DECLARACIÓN DE VARIABLES.**
 1. **DECLARACIÓN DE FUNCIONES.**
 1. **EJECUCIÓN DE CÓDIGO.**
+
+[🔼 Regresar](#temas)
 
 ---
 
@@ -169,9 +198,11 @@ W: while, with
 - Class {}
 - etc.
 
+[🔼 Regresar](#temas)
+
 ---
 
-## Aprende _JavaScript_ ¡GRATIS!
+## Aprende _JavaScript_ GRATIS
 
 Si estás interesado en aprender _JavaScript_ desde las bases hasta un nivel que te permita obtener tu primer trabajo o empleo como programador _web_ te invito a que veas mi **Curso de _JavaScript_** totalmente **gratuito** en mi [canal de _YouTube_](https://youtube.com/jonmircha?sub_confirmation=1).
 
@@ -184,3 +215,7 @@ En mi curso aprenderás: Sintaxis, Gramática, Lógica, _EcmaScript_, Programaci
 Si no quieres perderte de las últimas novedades de este curso como: nuevos videos, artículos de _blog_, códigos y recursos para estudiar. Entra ya al sitio oficial:
 
 [**Aprende*JavaScript*.org**](https://aprendejavascript.org/)
+
+[🔼 Regresar](#temas)
+
+---

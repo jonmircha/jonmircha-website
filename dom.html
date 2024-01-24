@@ -2,18 +2,23 @@
 <html lang="es">
 
 <head>
-  <sergey-import src="metas/statics" />
-  <sergey-import src="metas/titles">DOM | jonmircha</sergey-import>
-  <sergey-import src="metas/descriptions">En esta nota te comparto algunos conceptos importantes sobre el DOM de
-    JavaScript</sergey-import>
-  <sergey-import src="metas/urls">https://jonmircha.com/dom</sergey-import>
-  <sergey-import src="metas/images">https://jonmircha.com/img/blog/dom.png</sergey-import>
+  <sergey-import src="components/metatags">
+    <sergey-template name="title">DOM 🦊 jonmircha</sergey-template>
+    <sergey-template name="metatitle">"DOM 🦊 jonmircha"</sergey-template>
+    <sergey-template name="description">"En esta nota te comparto algunos conceptos importantes sobre el DOM de
+      JavaScript"</sergey-template>
+    <sergey-template name="url">"https://jonmircha.com/dom"</sergey-template>
+    <sergey-template name="image"></sergey-template>
+  </sergey-import>
+  <link rel="stylesheet" href="assets/prism.css">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
-  <sergey-import src="components/header.html" />
-  <sergey-import src="components/template-blog.html">dom</sergey-import>
-  <sergey-import src="components/footer.html" />
+  <sergey-import src="components/header" />
+  <sergey-import src="components/post-menu">dom</sergey-import>
+  <script src="assets/prism.js"></script>
+  <script src="assets/index.js"></script>
 </body>
 
 </html>

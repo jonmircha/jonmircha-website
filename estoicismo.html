@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <sergey-import src="components/metatags">
+      <sergey-template name="title">Estoicismo 🦊 jonmircha</sergey-template>
+      <sergey-template name="metatitle"
+        >"Estoicismo 🦊 jonmircha"</sergey-template
+      >
+      <sergey-template name="description"
+        >"En esta nota te comparto mi visión sobre el estoicismo una forma
+        resiliente de vivir"</sergey-template
+      >
+      <sergey-template name="url"
+        >"https://jonmircha.com/estoicismo"</sergey-template
+      >
+      <sergey-template name="image"></sergey-template>
+    </sergey-import>
+    <link rel="stylesheet" href="assets/prism.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
 
-<head>
-  <sergey-import src="metas/statics" />
-  <sergey-import src="metas/titles">Estoicismo | jonmircha</sergey-import>
-  <sergey-import src="metas/descriptions">En esta nota te comparto mi visión sobre el estoicismo una forma resiliente de
-    vivir</sergey-import>
-  <sergey-import src="metas/urls">https://jonmircha.com/estoicismo</sergey-import>
-  <sergey-import src="metas/images">https://jonmircha.com/img/blog/estoicismo.jpg</sergey-import>
-</head>
-
-<body>
-  <sergey-import src="components/header.html" />
-  <sergey-import src="components/template-notes.html">estoicismo</sergey-import>
-  <sergey-import src="components/footer.html" />
-</body>
-
+  <body>
+    <sergey-import src="components/header" />
+    <sergey-import src="components/post">estoicismo</sergey-import>
+    <script src="assets/prism.js"></script>
+    <script src="assets/index.js"></script>
+  </body>
 </html>

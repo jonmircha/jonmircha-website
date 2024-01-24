@@ -13,6 +13,9 @@ ErrorDocument 404 /404.html
 Redirect 301 /taco https://www.paypal.me/jonmircha
 Redirect 301 /aprendejavascript https://aprendejavascript.org
 Redirect 301 /aprendejs https://aprendejavascript.org
+Redirect 301 /notas https://jonmircha.com/blog
+Redirect 301 /cv https://jonmircha.com/hola
+Redirect 301 /ahora https://jonmircha.com/hola
 
 # Codificación UTF-8
 AddDefaultCharset UTF-8

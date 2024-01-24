@@ -1,15 +1,15 @@
 {
   "name": "jonmircha",
-  "version": "8.0.0",
+  "version": "9.0.0",
   "description": "Hola, soy tu amigo y docente digital... Jonathan MirCha",
   "main": "index.html",
   "scripts": {
-    "dev": "sergey --watch",
-    "start": "sergey"
+    "start": "sergey",
+    "dev": "sergey --watch"
   },
   "author": "Jonathan MirCha <jonmircha@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "sergey": "0.0.13"
+    "sergey": "^0.0.13"
   }
 }

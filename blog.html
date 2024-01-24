@@ -2,27 +2,42 @@
 <html lang="es">
 
 <head>
-  <sergey-import src="metas/statics" />
-  <sergey-import src="metas/titles">Blog | jonmircha</sergey-import>
-  <sergey-import src="metas/descriptions">Aquí te comparto mis notas sobre temas de desarrollo web: artículos,
-    tutoriales, teoría, fragmentos de código, etc.</sergey-import>
-  <sergey-import src="metas/urls">https://jonmircha.com/blog</sergey-import>
-  <sergey-import src="metas/images"></sergey-import>
+  <sergey-import src="components/metatags">
+    <sergey-template name="title">Blog 🦊 jonmircha</sergey-template>
+    <sergey-template name="metatitle">"Blog 🦊 jonmircha"</sergey-template>
+    <sergey-template name="description">"Aquí te comparto mis notas sobre temas de desarrollo web: artículos,
+      tutoriales, teoría, fragmentos de código, presentaciones, etc."</sergey-template>
+    <sergey-template name="url">"https://jonmircha.com/blog"</sergey-template>
+    <sergey-template name="image"></sergey-template>
+  </sergey-import>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
-  <sergey-import src="components/header.html" />
-  <section class="container-sm">
-    <h1>Blog</h1>
-    <p class="fluid-1">
-      Aquí te comparto mis notas sobre temas de desarrollo <i>web</i>: artículos, tutoriales, teoría, fragmentos de
-      código, etc.
-    </p>
-  </section>
-  <section id="posts" class="container-sm section-bottom"></section>
-  <sergey-import src="components/youtube-playlist.html" />
-  <sergey-import src="components/sponsors.html" />
-  <sergey-import src="components/footer.html" />
+  <sergey-import src="components/header" />
+  <main class="section">
+    <section class="container-sm">
+      <h1>Blog</h1>
+      <p>
+        Aquí te comparto mis notas sobre temas de desarrollo <i>web</i>: artículos,
+        tutoriales, teoría, fragmentos de código, presentaciones y uno que otro pensamiento.
+      </p>
+    </section>
+    <section id="posts" class="container-sm">
+      <h2>Artículos</h2>
+    </section>
+    <section id="slides" class="container-sm">
+      <h2>Presentaciones</h2>
+    </section>
+    <section id="thoughts" class="container-sm">
+      <h2>Pensamientos</h2>
+    </section>
+    <section id="vlogs" class="container-sm">
+      <h2>Vlogs</h2>
+    </section>
+  </main>
+  <sergey-import src="components/footer" />
+  <script src="assets/index.js"></script>
 </body>
 
 </html>

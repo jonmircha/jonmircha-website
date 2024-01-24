@@ -2,40 +2,25 @@
 <html lang="es">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="application-name" content="jonmircha">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@jonmircha">
-  <meta property="og:type" content="website">
-  <meta name="theme-color" content="#fb6d43">
-  <meta name="msapplication-TileColor" content="#fb6d43">
-  <meta name="msapplication-TileImage" content="https://jonmircha.com/img/favicon.png">
-  <link rel="apple-touch-icon" href="https://jonmircha.com/img/favicon.png">
-  <link rel="icon" type="image/png" href="https://jonmircha.com/img/favicon.png">
-  <link rel="author" type="text/plain" href="humans.txt">
-  <link rel="manifest" href="manifest.json">
-  <title>HTML & CSS | jonmircha</title>
-  <meta name="twitter:title" property="og:title" content="HTML & CSS | jonmircha">
-  <meta content="Este artículo es una guía rápida sobre HTML & CSS para no programadores" name="description">
-  <meta content="Este artículo es una guía rápida sobre HTML & CSS para no programadores" name="twitter:description"
-    property="og:description">
-  <meta property="og:image" content="https://jonmircha.com/img/blog/html-for-babies.jpg">
-  <meta name="twitter:image" content="https://jonmircha.com/img/blog/html-for-babies.jpg">
-  <meta content="https://jonmircha.com/html" property="og:url">
-  <meta content="https://jonmircha.com/html" property="twitter:url">
-  <link rel="canonical" href="https://jonmircha.com/html">
+  <sergey-import src="components/metatags">
+    <sergey-template name="title">HTML & CSS 🦊 jonmircha</sergey-template>
+    <sergey-template name="metatitle">"HTML & CSS 🦊 jonmircha"</sergey-template>
+    <sergey-template name="description">"Este artículo es una guía rápida sobre HTML & CSS para no programadores"
+    </sergey-template>
+    <sergey-template name="url">"https://jonmircha.com/html"</sergey-template>
+    <sergey-template name="image">"https://jonmircha.com/img/blog/html-for-babies.jpg"</sergey-template>
+  </sergey-import>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+  <link rel="stylesheet" href="assets/prism.css">
   <style>
     :root {
       --html-color: #E44D26;
       --css-color: #1572B6;
       /* background-color: rgba(228, 77, 38);
-      color: rgb(21, 114, 182); */
+          color: rgb(21, 114, 182); */
     }
 
     html {
@@ -169,15 +154,15 @@
       }
 
       /*  .menu-sticky {
-        position: sticky;
-        top: 0;
-      }
-
-      .menu-sticky ul {
-        position: absolute;
-        width: 288px;
-        left: 992px;
-      } */
+            position: sticky;
+            top: 0;
+          }
+    
+          .menu-sticky ul {
+            position: absolute;
+            width: 288px;
+            left: 992px;
+          } */
     }
   </style>
 </head>
@@ -218,7 +203,7 @@
       <h2>Enlaces y Recursos</h2>
       <p>En esta sección encontrarán todos los enlaces y recursos que vayamos viendo a lo largo de las clases:</p>
       <ul>
-        <li>Presentación <a href="https://jonmircha.com/hablemos-de-programacion" target="_blank"><b>Hablemos de
+        <li>Presentación <a href="https://jonmircha.com/programacion" target="_blank"><b>Hablemos de
               Programación</b></a>.
         </li>
         <li>Lista de Cursos de <a href="https://www.youtube.com/playlist?list=PLvq-jIkSeTUZYcX9SYwVe7f66afwd9qk_"
@@ -253,10 +238,10 @@
         <b>picoparéntesis</b>.
       </p>
       <pre><code class="language-html">
-  &lt;etiqueta&gt;Contenido de la etiqueta&lt;/etiqueta&gt;
-
-  &lt;p&gt;Hola Mundo&lt;/p&gt;
-      </code></pre>
+    &lt;etiqueta&gt;Contenido de la etiqueta&lt;/etiqueta&gt;
+  
+    &lt;p&gt;Hola Mundo&lt;/p&gt;
+        </code></pre>
       <p>
         Las etiquetas van a tener <b>atributos</b>, estos describen alguna característica de las etiqueta.
       </p>
@@ -264,27 +249,27 @@
         La sintaxis de los atributos es la siguiente:
       </p>
       <pre><code class="language-html">
-  &lt;etiqueta atributo="valor"&gt;Contenido de la etiqueta&lt;/etiqueta&gt;
-
-  &lt;html lang="es"&gt;&lt;/html&gt;
-        </code></pre>
+    &lt;etiqueta atributo="valor"&gt;Contenido de la etiqueta&lt;/etiqueta&gt;
+  
+    &lt;html lang="es"&gt;&lt;/html&gt;
+          </code></pre>
       <p>Hay dos tipos de etiquetas:</p>
       <ol>
         <li>
           Las que abren y cierran en 2 etiquetas
           <pre><code class="language-html">
-  &lt;head&gt;&lt;/head&gt;
-  
-  &lt;body&gt;&lt;/body&gt;
-          </code></pre>
+    &lt;head&gt;&lt;/head&gt;
+    
+    &lt;body&gt;&lt;/body&gt;
+            </code></pre>
         </li>
         <li>
           Las que abren y cierran en 1 etiqueta
           <pre><code class="language-html">
-  &lt;meta charset="UTF-8" /&gt;
-  
-  &lt;img src"" alt="" /&gt;
-          </code></pre>
+    &lt;meta charset="UTF-8" /&gt;
+    
+    &lt;img src"" alt="" /&gt;
+            </code></pre>
         </li>
       </ol>
     </article>
@@ -292,17 +277,17 @@
     <article id="estructura-html" class="full-screen">
       <h2>Estructura básica del documento <i>HTML</i></h2>
       <pre><code class="language-html">
-  &lt;!DOCTYPE html&gt;
-  &lt;html lang="en"&gt;
-    &lt;head&gt;
-      &lt;meta charset="UTF-8" /&gt;
-      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
-      &lt;title&gt;Document&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-    &lt;/body&gt;
-  &lt;/html&gt;
-      </code></pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+      &lt;head&gt;
+        &lt;meta charset="UTF-8" /&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+        &lt;title&gt;Document&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+        </code></pre>
       <ul>
         <li>
           <h3><code class="language-html">&lt;!DOCTYPE html&gt;</code></h3>
@@ -386,13 +371,13 @@
       <ol>
         <li>
           <h3><code class="language-html">&lt;meta name="description"
-            content="Descripción del documento." /&gt;</code></h3>
+              content="Descripción del documento." /&gt;</code></h3>
           <p>
             La meta etiqueta <b><i>description</i></b>, es una breve descripción del contenido que se encontrará en el
             documento, también aparece en los resultados de los motores de búsqueda, debajo del enlace del resultado, no
             debe exceder los 165 caracteres.
           </p>
-          <img src="https://jonmircha.com/img/blog/html-title-description.jpg" alt="Título y Meta Descripción">
+          <img src="img/blog/html-title-description.jpg" alt="Título y Meta Descripción">
         </li>
         <li>
           <h3><code class="language-html">&lt;link rel="icon" href="img/favicon.png" /&gt;</code></h3>
@@ -400,7 +385,7 @@
             Un <b><i>favicon</i></b> es la imagen que se ve al lado del título de nuestro HTML en la pestaña del
             navegador, tiene
             que ser una imagen de <b>dimensiones cuadradas</b> y en <b>formato <i>.png</i></b>
-            <img src="https://jonmircha.com/img/blog/html-favicon.jpg" alt="Favicon">
+            <img src="img/blog/html-favicon.jpg" alt="Favicon">
           </p>
         </li>
         <li>
@@ -412,20 +397,20 @@
       </ol>
       <p>Entonces agregando estas 3 etiquetas la estructura básica quedaría así:</p>
       <pre><code class="language-html">
-  &lt;!DOCTYPE html&gt;
-  &lt;html lang="es"&gt;
-    &lt;head&gt;
-      &lt;meta charset="UTF-8" /&gt;
-      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
-      &lt;title&gt;Título del documento&lt;/title&gt;
-      &lt;meta name="description" content="Descripción del documento." /&gt;
-      &lt;link rel="icon" href="img/favicon.png" /&gt;
-      &lt;link rel="stylesheet" href="css/style.css" /&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-    &lt;/body&gt;
-  &lt;/html&gt;
-      </code></pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="es"&gt;
+      &lt;head&gt;
+        &lt;meta charset="UTF-8" /&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+        &lt;title&gt;Título del documento&lt;/title&gt;
+        &lt;meta name="description" content="Descripción del documento." /&gt;
+        &lt;link rel="icon" href="img/favicon.png" /&gt;
+        &lt;link rel="stylesheet" href="css/style.css" /&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+        </code></pre>
     </article>
     <hr>
     <article id="comentarios" class="full-screen">
@@ -436,26 +421,26 @@
       </p>
       <h3>Comentarios en <i>HTML</i></h3>
       <pre><code class="language-html">
-  &lt;!-- Esto es un comentario html por lo cual no se verá --&gt;
-  &lt;!-- 
-    Esto es
-    otro comentario html, 
-    en varías
-    líneas de 
-    código
-  --&gt;
-      </code></pre>
+    &lt;!-- Esto es un comentario html por lo cual no se verá --&gt;
+    &lt;!-- 
+      Esto es
+      otro comentario html, 
+      en varías
+      líneas de 
+      código
+    --&gt;
+        </code></pre>
       <h3>Comentarios en <i>CSS</i></h3>
       <pre><code class="language-css">
-  /* Esto es un comentario css por lo cual no se verá *;
-  /* 
-    Esto es
-    otro comentario css,
-    en varías
-    líneas de 
-    código
-  */
-            </code></pre>
+    /* Esto es un comentario css por lo cual no se verá *;
+    /* 
+      Esto es
+      otro comentario css,
+      en varías
+      líneas de 
+      código
+    */
+              </code></pre>
     </article>
     <hr>
     <article id="etiquetas" class="full-screen">
@@ -481,7 +466,7 @@
             d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-5.904 2.803a.5.5 0 1 0 .707-.707L6.707 6h2.768a.5.5 0 1 0 0-1H5.5a.5.5 0 0 0-.5.5v3.975a.5.5 0 0 0 1 0V6.707l4.096 4.096z" />
         </svg>
       </a>
-      <img src="https://jonmircha.com/img/blog/periodic-table-of-html-elements.png" alt="Etiquetas HTML">
+      <img src="img/blog/periodic-table-of-html-elements.png" alt="Etiquetas HTML">
       <section id="encabezados">
         <h3>Encabezados</h3>
         <p>
@@ -496,13 +481,13 @@
           Puedes tener tantos <i>h2, h3, h4, h5</i> y <i>h6</i> como requiera la jerarquía textual de tu contenido.
         </p>
         <pre><code class="language-html">
-  &lt;h1&gt;Encabezado 1&lt;/h1&gt;
-  &lt;h2&gt;Encabezado 2&lt;/h2&gt;
-  &lt;h3&gt;Encabezado 3&lt;/h3&gt;
-  &lt;h4&gt;Encabezado 4&lt;/h4&gt;
-  &lt;h5&gt;Encabezado 5&lt;/h5&gt;
-  &lt;h6&gt;Encabezado 6&lt;/h6&gt;
-          </code></pre>
+    &lt;h1&gt;Encabezado 1&lt;/h1&gt;
+    &lt;h2&gt;Encabezado 2&lt;/h2&gt;
+    &lt;h3&gt;Encabezado 3&lt;/h3&gt;
+    &lt;h4&gt;Encabezado 4&lt;/h4&gt;
+    &lt;h5&gt;Encabezado 5&lt;/h5&gt;
+    &lt;h6&gt;Encabezado 6&lt;/h6&gt;
+            </code></pre>
         <aside class="example">
           <h1>Encabezado 1</h1>
           <h2>Encabezado 2</h2>
@@ -531,39 +516,39 @@
           <li><b><i>hr</i></b>: define un salto semántico de contenido ( dibuja una línea horizontal ).</li>
         </ul>
         <pre><code class="language-html">
-  &lt;p&gt;
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea minus iusto hic aperiam ratione, reiciendis,
-    repellat sunt voluptatum deleniti inventore obcaecati, eaque ad! Quae excepturi sit unde, culpa
-    exercitationem nostrum?
-  &lt;/p&gt;
-  &lt;p&gt;
-    Todo este bloque de texto es un párrafo. &lt;b&gt;Este texto esta en negritas&lt;/b&gt;. &lt;i&gt;Este texto esta en
-      itálicas&lt;/i&gt;. &lt;u&gt;Este texto esta subrayado&lt;/u&gt;. &lt;mark&gt;Este texto esta remarcado&lt;/mark&gt;. &lt;small&gt;Este texto
-      esta en letras pequeñas.&lt;/small&gt;
-  &lt;/p&gt;
-  &lt;p&gt;
-    La fórmula de agua es &lt;b&gt;&lt;i&gt;H&lt;sub&gt;2&lt;/sub&gt;O&lt;/i&gt;&lt;/b&gt;.
-  &lt;/p&gt;
-  &lt;p&gt;
-    La fórmula de la relatividad introducida por &lt;i&gt;Einstein&lt;/i&gt; es &lt;b&gt;&lt;i&gt;E=mc&lt;sup&gt;2&lt;/sup&gt;&lt;/i&gt;&lt;/b&gt;.
-  &lt;/p&gt;
-  &lt;hr/&gt;
-  &lt;blockquote&gt;
-    "No hay necesidad de perturbar el alma por cosas que no puedes controlar".
-    &lt;br/&gt;
-    &lt;cite&gt;Marco Aurelio&lt;/cite&gt;
-  &lt;/blockquote&gt;
-  &lt;hr/&gt;
-  &lt;p&gt;
-    Esto es un &lt;span&gt;bloque génerico de texto en línea&lt;/span&gt;, que esta dentro de un párrafo que tiene más
-    texto.
-  &lt;/p&gt;
-  &lt;p&gt;
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. &lt;br/&gt; Aspernatur, aliquam. &lt;br/&gt;&lt;br/&gt;Eveniet beatae,
-    ullam repellendus molestias, et doloremque id dolorem omnis necessitatibus distinctio maxime magnam
-    perferendis quasi placeat rem harum provident.
-  &lt;/p&gt;
-        </code></pre>
+    &lt;p&gt;
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea minus iusto hic aperiam ratione, reiciendis,
+      repellat sunt voluptatum deleniti inventore obcaecati, eaque ad! Quae excepturi sit unde, culpa
+      exercitationem nostrum?
+    &lt;/p&gt;
+    &lt;p&gt;
+      Todo este bloque de texto es un párrafo. &lt;b&gt;Este texto esta en negritas&lt;/b&gt;. &lt;i&gt;Este texto esta en
+        itálicas&lt;/i&gt;. &lt;u&gt;Este texto esta subrayado&lt;/u&gt;. &lt;mark&gt;Este texto esta remarcado&lt;/mark&gt;. &lt;small&gt;Este texto
+        esta en letras pequeñas.&lt;/small&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      La fórmula de agua es &lt;b&gt;&lt;i&gt;H&lt;sub&gt;2&lt;/sub&gt;O&lt;/i&gt;&lt;/b&gt;.
+    &lt;/p&gt;
+    &lt;p&gt;
+      La fórmula de la relatividad introducida por &lt;i&gt;Einstein&lt;/i&gt; es &lt;b&gt;&lt;i&gt;E=mc&lt;sup&gt;2&lt;/sup&gt;&lt;/i&gt;&lt;/b&gt;.
+    &lt;/p&gt;
+    &lt;hr/&gt;
+    &lt;blockquote&gt;
+      "No hay necesidad de perturbar el alma por cosas que no puedes controlar".
+      &lt;br/&gt;
+      &lt;cite&gt;Marco Aurelio&lt;/cite&gt;
+    &lt;/blockquote&gt;
+    &lt;hr/&gt;
+    &lt;p&gt;
+      Esto es un &lt;span&gt;bloque génerico de texto en línea&lt;/span&gt;, que esta dentro de un párrafo que tiene más
+      texto.
+    &lt;/p&gt;
+    &lt;p&gt;
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. &lt;br/&gt; Aspernatur, aliquam. &lt;br/&gt;&lt;br/&gt;Eveniet beatae,
+      ullam repellendus molestias, et doloremque id dolorem omnis necessitatibus distinctio maxime magnam
+      perferendis quasi placeat rem harum provident.
+    &lt;/p&gt;
+          </code></pre>
         <aside class="example">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea minus iusto hic aperiam ratione, reiciendis,
@@ -621,54 +606,54 @@
           El atributo <b><i>start</i></b> permite cambiar el valor inicial de los elementos de una lista ordenada.
         </p>
         <pre><code class="language-html">
-  &lt;ol&gt;
-    &lt;li&gt;Primavera&lt;/li&gt;
-    &lt;li&gt;Verano&lt;/li&gt;
-    &lt;li&gt;Otoño&lt;/li&gt;
-    &lt;li&gt;Invierno&lt;/li&gt;
-  &lt;/ol&gt;
-
-  &lt;ol type="i"&gt;
-    &lt;li&gt;Primavera&lt;/li&gt;
-    &lt;li&gt;Verano&lt;/li&gt;
-    &lt;li&gt;Otoño&lt;/li&gt;
-    &lt;li&gt;Invierno&lt;/li&gt;
-  &lt;/ol&gt;
+    &lt;ol&gt;
+      &lt;li&gt;Primavera&lt;/li&gt;
+      &lt;li&gt;Verano&lt;/li&gt;
+      &lt;li&gt;Otoño&lt;/li&gt;
+      &lt;li&gt;Invierno&lt;/li&gt;
+    &lt;/ol&gt;
   
-  &lt;ol reversed&gt;
-    &lt;li&gt;Primavera&lt;/li&gt;
-    &lt;li&gt;Verano&lt;/li&gt;
-    &lt;li&gt;Otoño&lt;/li&gt;
-    &lt;li&gt;Invierno&lt;/li&gt;
-  &lt;/ol&gt;
-  
-  &lt;ol start="100"&gt;
-    &lt;li&gt;Primavera&lt;/li&gt;
-    &lt;li&gt;Verano&lt;/li&gt;
-    &lt;li&gt;Otoño&lt;/li&gt;
-    &lt;li&gt;Invierno&lt;/li&gt;
-  &lt;/ol&gt;
-  
-  &lt;ul&gt;
-    &lt;li&gt;Primavera&lt;/li&gt;
-    &lt;li&gt;Verano&lt;/li&gt;
-    &lt;li&gt;Otoño&lt;/li&gt;
-    &lt;li&gt;Invierno&lt;/li&gt;
-  &lt;/ul&gt;
-  
-  &lt;ul type="circle"&gt;
-    &lt;li&gt;Primavera&lt;/li&gt;
-    &lt;li&gt;Verano&lt;/li&gt;
-    &lt;li&gt;Otoño&lt;/li&gt;
-    &lt;li&gt;Invierno&lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;ul type="square"&gt;
-    &lt;li&gt;Primavera&lt;/li&gt;
-    &lt;li&gt;Verano&lt;/li&gt;
-    &lt;li&gt;Otoño&lt;/li&gt;
-    &lt;li&gt;Invierno&lt;/li&gt;
-  &lt;/ul&gt;
-        </code></pre>
+    &lt;ol type="i"&gt;
+      &lt;li&gt;Primavera&lt;/li&gt;
+      &lt;li&gt;Verano&lt;/li&gt;
+      &lt;li&gt;Otoño&lt;/li&gt;
+      &lt;li&gt;Invierno&lt;/li&gt;
+    &lt;/ol&gt;
+    
+    &lt;ol reversed&gt;
+      &lt;li&gt;Primavera&lt;/li&gt;
+      &lt;li&gt;Verano&lt;/li&gt;
+      &lt;li&gt;Otoño&lt;/li&gt;
+      &lt;li&gt;Invierno&lt;/li&gt;
+    &lt;/ol&gt;
+    
+    &lt;ol start="100"&gt;
+      &lt;li&gt;Primavera&lt;/li&gt;
+      &lt;li&gt;Verano&lt;/li&gt;
+      &lt;li&gt;Otoño&lt;/li&gt;
+      &lt;li&gt;Invierno&lt;/li&gt;
+    &lt;/ol&gt;
+    
+    &lt;ul&gt;
+      &lt;li&gt;Primavera&lt;/li&gt;
+      &lt;li&gt;Verano&lt;/li&gt;
+      &lt;li&gt;Otoño&lt;/li&gt;
+      &lt;li&gt;Invierno&lt;/li&gt;
+    &lt;/ul&gt;
+    
+    &lt;ul type="circle"&gt;
+      &lt;li&gt;Primavera&lt;/li&gt;
+      &lt;li&gt;Verano&lt;/li&gt;
+      &lt;li&gt;Otoño&lt;/li&gt;
+      &lt;li&gt;Invierno&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul type="square"&gt;
+      &lt;li&gt;Primavera&lt;/li&gt;
+      &lt;li&gt;Verano&lt;/li&gt;
+      &lt;li&gt;Otoño&lt;/li&gt;
+      &lt;li&gt;Invierno&lt;/li&gt;
+    &lt;/ul&gt;
+          </code></pre>
         <aside class="example">
           <ol>
             <li>Primavera</li>
@@ -727,29 +712,29 @@
             tabla, suele ser la fila de títulos de nuestra tabla.</li>
         </ul>
         <pre><code class="language-html">
-  &lt;table border="1"&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Ciudad&lt;/th&gt;
-      &lt;th&gt;País&lt;/th&gt;
-      &lt;th&gt;Continente&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Ciudad de México&lt;/td&gt;
-      &lt;td&gt;México&lt;/td&gt;
-      &lt;td&gt;América&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Tokyo&lt;/td&gt;
-      &lt;td&gt;Japón&lt;/td&gt;
-      &lt;td&gt;Asia&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Reikiavik&lt;/td&gt;
-      &lt;td&gt;Islandia&lt;/td&gt;
-      &lt;td&gt;Europa&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/table&gt;
-        </code></pre>
+    &lt;table border="1"&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Ciudad&lt;/th&gt;
+        &lt;th&gt;País&lt;/th&gt;
+        &lt;th&gt;Continente&lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Ciudad de México&lt;/td&gt;
+        &lt;td&gt;México&lt;/td&gt;
+        &lt;td&gt;América&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Tokyo&lt;/td&gt;
+        &lt;td&gt;Japón&lt;/td&gt;
+        &lt;td&gt;Asia&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Reikiavik&lt;/td&gt;
+        &lt;td&gt;Islandia&lt;/td&gt;
+        &lt;td&gt;Europa&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+          </code></pre>
         <aside class="example">
           <table border="1">
             <tr>
@@ -789,11 +774,11 @@
           pestaña, esto es muy útil cuando tenemos enlaces hacia sitios externos y redes sociales.
         </p>
         <pre><code class="language-html">
-  &lt;a href="cursos.html">Ir a la página Cursos&lt;/a&gt;
-  &lt;a href="https://youtube.com/jonmircha" target="_blank"&gt;Canal de YouTube&lt;/a&gt;
-  &lt;a href="#top"&gt;Regresar al Temario&lt;/a&gt;
-  &lt;a href="mailto:jonmircha@gmail.com"&gt;jonmircha@gmail.com&lt;/a&gt;
-        </code></pre>
+    &lt;a href="cursos.html">Ir a la página Cursos&lt;/a&gt;
+    &lt;a href="https://youtube.com/jonmircha" target="_blank"&gt;Canal de YouTube&lt;/a&gt;
+    &lt;a href="#top"&gt;Regresar al Temario&lt;/a&gt;
+    &lt;a href="mailto:jonmircha@gmail.com"&gt;jonmircha@gmail.com&lt;/a&gt;
+          </code></pre>
         <aside class="example">
           <a href="cursos.html">Ir a la página Cursos</a>
           <a href="https://youtube.com/jonmircha" target="_blank">Canal de YouTube</a>
@@ -825,16 +810,16 @@
           <li>svg</li>
         </ol>
         <pre><code class="language-html">
-  &lt;img src="img/hemisferios-cerebro.jpg" alt="Hemisferios del Cerebro" /&gt;
-  &lt;img src="img/diseno-interaccion.png" alt="Diseño de Interacción" /&gt;
-  &lt;img src="img/this-is-fine.gif" alt="This is Fine" /&gt;
-  &lt;img src="img/html5.svg" alt="HTML5" /&gt;
-        </code></pre>
+    &lt;img src="img/hemisferios-cerebro.jpg" alt="Hemisferios del Cerebro" /&gt;
+    &lt;img src="img/diseno-interaccion.png" alt="Diseño de Interacción" /&gt;
+    &lt;img src="img/this-is-fine.gif" alt="This is Fine" /&gt;
+    &lt;img src="img/html5.svg" alt="HTML5" /&gt;
+          </code></pre>
         <aside class="example">
-          <img src="https://jonmircha.com/img/blog/hemisferios-cerebro.jpg" alt="Hemisferios del Cerebro">
-          <img src="https://jonmircha.com/img/blog/diseno-interaccion.png" alt="Diseño de Interacción">
-          <img src="https://jonmircha.com/img/blog/this-is-fine.gif" alt="This is Fine">
-          <img src="https://jonmircha.com/img/category/html5.svg" alt="HTML5">
+          <img src="img/blog/hemisferios-cerebro.jpg" alt="Hemisferios del Cerebro">
+          <img src="img/blog/diseno-interaccion.png" alt="Diseño de Interacción">
+          <img src="img/blog/this-is-fine.gif" alt="This is Fine">
+          <img src="img/category/html5.svg" alt="HTML5">
         </aside>
       </section>
       <section id="audio-video">
@@ -859,13 +844,12 @@
           El atributo <b><i>poster</i></b> define una imagen previa que se visualizara antes de reproducir el video.
         </p>
         <pre><code class="language-html">
-  &lt;audio src="assets/feels-patrick-patrikios.mp3" controls preload&gt;&lt;/audio&gt;
-  &lt;video src="assets/kenai.mp4" poster="img/puesta-de-sol.jpg" controls preload&gt;&lt;/video&gt;
-        </code></pre>
+    &lt;audio src="assets/feels-patrick-patrikios.mp3" controls preload&gt;&lt;/audio&gt;
+    &lt;video src="assets/kenai.mp4" poster="img/puesta-de-sol.jpg" controls preload&gt;&lt;/video&gt;
+          </code></pre>
         <aside class="example">
-          <audio src="https://jonmircha.com/img/media/feels-patrick-patrikios.mp3" controls preload></audio>
-          <video src="https://jonmircha.com/img/media/kenai.mp4"
-            poster="https://jonmircha.com/img/blog/puesta-de-sol.jpg" controls preload></video>
+          <audio src="img/media/feels-patrick-patrikios.mp3" controls preload></audio>
+          <video src="img/media/kenai.mp4" poster="img/blog/puesta-de-sol.jpg" controls preload></video>
         </aside>
       </section>
       <section id="iframe">
@@ -876,17 +860,18 @@
           etc.
         </p>
         <pre><code class="language-html">
-  &lt;iframe width="100%" height="600px" src="media/emmet-cheat-sheet.pdf"&gt;&lt;/iframe&gt;
-        </code></pre>
+    &lt;iframe width="100%" height="600px" src="media/emmet-cheat-sheet.pdf"&gt;&lt;/iframe&gt;
+          </code></pre>
         <aside class="example">
-          <iframe width="100%" height="600px" src="https://jonmircha.com/img/media/emmet-cheat-sheet.pdf"></iframe>
+          <iframe width="100%" height="600px" src="img/media/emmet-cheat-sheet.pdf"></iframe>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/-oK6zL01fNM" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.175828102953!2d-99.20612398459593!3d19.40480754659592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201f6aad357f7%3A0x4310c21ddec6384d!2sCENTRO%20-%20Dise%C3%B1o%20Cine%20Televisi%C3%B3n!5e0!3m2!1ses-419!2smx!4v1628689757583!5m2!1ses-419!2smx"
-            width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.7967633746757!2d-99.16456534929854!3d19.3779508473825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffa3f9df712d%3A0xd3da5bca9ec18776!2sParque%20Arboledas!5e0!3m2!1ses-419!2smx!4v1654916688853!5m2!1ses-419!2smx"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </aside>
       </section>
       <section id="etiquetas-semanticas">
@@ -895,7 +880,7 @@
           Definen la estructura semántica de las partes que conforman la interfaz del documento <i>html</i>, es decir,
           proporcionan sentido y significado a cada una de las etiquetas con su contenido.
         </p>
-        <img src="https://jonmircha.com/img/blog/html5-semantic-tags.png" alt="Etiquetas Semánticas HTML5">
+        <img src="img/blog/html5-semantic-tags.png" alt="Etiquetas Semánticas HTML5">
         <p>
           Algunas de estas etiquetas son:
         </p>
@@ -912,31 +897,31 @@
           <li><b><i>footer</i></b>: Pié de página del sitio o de una sección.</li>
         </ul>
         <pre><code class="language-html">
-  &lt;div&gt;
-    Esto es una div
-  &lt;/div&gt;
-  &lt;header&gt;
-    Esto es un header
-  &lt;/header&gt;
-  &lt;nav&gt;
-    Esto es un nav
-  &lt;/nav&gt;
-  &lt;main&gt;
-    Esto es un main
-  &lt;/main&gt;
-  &lt;aside&gt;
-    Esto es un aside
-  &lt;/aside&gt;
-  &lt;article&gt;
-    Esto es un article
-  &lt;/article&gt;
-  &lt;section&gt;
-    Esto es una section
-  &lt;/section&gt;
-  &lt;footer&gt;
-    Esto es un footer
-  &lt;/footer&gt;
-        </code></pre>
+    &lt;div&gt;
+      Esto es una div
+    &lt;/div&gt;
+    &lt;header&gt;
+      Esto es un header
+    &lt;/header&gt;
+    &lt;nav&gt;
+      Esto es un nav
+    &lt;/nav&gt;
+    &lt;main&gt;
+      Esto es un main
+    &lt;/main&gt;
+    &lt;aside&gt;
+      Esto es un aside
+    &lt;/aside&gt;
+    &lt;article&gt;
+      Esto es un article
+    &lt;/article&gt;
+    &lt;section&gt;
+      Esto es una section
+    &lt;/section&gt;
+    &lt;footer&gt;
+      Esto es un footer
+    &lt;/footer&gt;
+          </code></pre>
         <aside class="example">
           <div>
             Esto es una div
@@ -983,35 +968,35 @@
           El atributo <b><i>open</i></b> hace que el contenido del detalle permanezca visible cuando el documento carga.
         </p>
         <pre><code class="language-html">
-  &lt;details&gt;
-    &lt;summary&gt;Resumen del Detalle&lt;/summary&gt;
-    &lt;div&gt;
-      &lt;p&gt;
-        Contenido oculto del detalle
-      &lt;/p&gt;
-      &lt;img src="img/this-is-fine.gif" alt="This is Fine"&gt;
-      &lt;p&gt;
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, quasi quo! Autem, mollitia voluptate
-        necessitatibus optio quam, nisi dolorum ducimus magni unde illum perspiciatis soluta ipsa vitae fuga
-        inventore reprehenderit!
-      &lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/details&gt;
-  &lt;details open&gt;
-    &lt;summary&gt;Resumen del Detalle&lt;/summary&gt;
-    &lt;div&gt;
-      &lt;p&gt;
-        Este detalle tiene el atributo &lt;b&gt;&lt;i&gt;open&lt;/i&gt;&lt;/b&gt;, por lo que comienza abierto al cargar el documento.
-      &lt;/p&gt;
-      &lt;img src="img/this-is-fine.gif" alt="This is Fine"&gt;
-      &lt;p&gt;
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, quasi quo! Autem, mollitia voluptate
-        necessitatibus optio quam, nisi dolorum ducimus magni unde illum perspiciatis soluta ipsa vitae fuga
-        inventore reprehenderit!
-      &lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/details&gt;
-        </code></pre>
+    &lt;details&gt;
+      &lt;summary&gt;Resumen del Detalle&lt;/summary&gt;
+      &lt;div&gt;
+        &lt;p&gt;
+          Contenido oculto del detalle
+        &lt;/p&gt;
+        &lt;img src="img/this-is-fine.gif" alt="This is Fine"&gt;
+        &lt;p&gt;
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, quasi quo! Autem, mollitia voluptate
+          necessitatibus optio quam, nisi dolorum ducimus magni unde illum perspiciatis soluta ipsa vitae fuga
+          inventore reprehenderit!
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/details&gt;
+    &lt;details open&gt;
+      &lt;summary&gt;Resumen del Detalle&lt;/summary&gt;
+      &lt;div&gt;
+        &lt;p&gt;
+          Este detalle tiene el atributo &lt;b&gt;&lt;i&gt;open&lt;/i&gt;&lt;/b&gt;, por lo que comienza abierto al cargar el documento.
+        &lt;/p&gt;
+        &lt;img src="img/this-is-fine.gif" alt="This is Fine"&gt;
+        &lt;p&gt;
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, quasi quo! Autem, mollitia voluptate
+          necessitatibus optio quam, nisi dolorum ducimus magni unde illum perspiciatis soluta ipsa vitae fuga
+          inventore reprehenderit!
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/details&gt;
+          </code></pre>
         <aside class="example">
           <details>
             <summary>Resumen del Detalle</summary>
@@ -1019,7 +1004,7 @@
               <p>
                 Contenido oculto del detalle
               </p>
-              <img src="https://jonmircha.com/img/blog/this-is-fine.gif" alt="This is Fine">
+              <img src="img/blog/this-is-fine.gif" alt="This is Fine">
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, quasi quo! Autem, mollitia voluptate
                 necessitatibus optio quam, nisi dolorum ducimus magni unde illum perspiciatis soluta ipsa vitae fuga
@@ -1033,7 +1018,7 @@
               <p>
                 Este detalle tiene el atributo <b><i>open</i></b>, por lo que comienza abierto al cargar el documento.
               </p>
-              <img src="https://jonmircha.com/img/blog/this-is-fine.gif" alt="This is Fine">
+              <img src="img/blog/this-is-fine.gif" alt="This is Fine">
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, quasi quo! Autem, mollitia voluptate
                 necessitatibus optio quam, nisi dolorum ducimus magni unde illum perspiciatis soluta ipsa vitae fuga
@@ -1066,20 +1051,20 @@
         <li>El <b>bloque de declaraciones</b> de estilos.</li>
       </ol>
       <pre><code class="language-css">
-  selector {
-    propiedad: valor;
-    otra-propiedad: otro-valor;
-  }
-      </code></pre>
+    selector {
+      propiedad: valor;
+      otra-propiedad: otro-valor;
+    }
+        </code></pre>
       <p>Por ejemplo:</p>
       <pre><code class="language-css">
-  html {
-    font-family: sans-serif;
-    font-size: 16px;
-    background-color: black;
-    color: white;
-  }
-      </code></pre>
+    html {
+      font-family: sans-serif;
+      font-size: 16px;
+      background-color: black;
+      color: white;
+    }
+        </code></pre>
     </article>
     <hr>
     <article id="selectores-css" class="full-screen">
@@ -1111,21 +1096,21 @@
         <h3>Selectores de Etiquetas</h3>
         <p>Es cualquier etiqueta <i>HTML</i>.</p>
         <pre><code class="language-css">
-  /* En el CSS */
-  li {
-    background-color: lavender;
-    color: deeppink;
-  }
-        </code></pre>
+    /* En el CSS */
+    li {
+      background-color: lavender;
+      color: deeppink;
+    }
+          </code></pre>
         <pre><code class="language-html">
-  &lt;!-- En el HTML --&gt;
-  &lt;ul&gt;
-    &lt;li&gt;Primavera&lt;/li&gt;
-    &lt;li&gt;Verano&lt;/li&gt;
-    &lt;li&gt;Otoño&lt;/li&gt;
-    &lt;li&gt;Invierno&lt;/li&gt;
-  &lt;/ul&gt;
-        </code></pre>
+    &lt;!-- En el HTML --&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Primavera&lt;/li&gt;
+      &lt;li&gt;Verano&lt;/li&gt;
+      &lt;li&gt;Otoño&lt;/li&gt;
+      &lt;li&gt;Invierno&lt;/li&gt;
+    &lt;/ul&gt;
+          </code></pre>
         <aside class="example">
           <style>
             .example-tag li {
@@ -1151,21 +1136,21 @@
           <b><i>#</i></b> antes de su nombre.
         </p>
         <pre><code class="language-css">
-  /* En el CSS */
-  #titulo-principal {
-    font-family: sans-serif;
-    font-size: 30px;
-    text-align: center;
-    background-color: teal;
-    color: springgreen;
-  }
-        </code></pre>
+    /* En el CSS */
+    #titulo-principal {
+      font-family: sans-serif;
+      font-size: 30px;
+      text-align: center;
+      background-color: teal;
+      color: springgreen;
+    }
+          </code></pre>
         <pre><code class="language-html">
-  &lt;!-- En el HTML --&gt;
-  &lt;h1 id="titulo-principal"&gt;
-    Título Principal
-  &lt;/h1&gt;
-        </code></pre>
+    &lt;!-- En el HTML --&gt;
+    &lt;h1 id="titulo-principal"&gt;
+      Título Principal
+    &lt;/h1&gt;
+          </code></pre>
         <aside class="example">
           <style>
             #titulo-principal {
@@ -1190,27 +1175,27 @@
           En la hoja de estilos para definir una clase se antepone el símbolo del <b><i>.</i></b> antes de su nombre.
         </p>
         <pre><code class="language-css">
-  /* En el CSS */
-  .bg-khaki {
-    background-color: khaki;
-  }
-
-  .text-chocolte {
-    color: chocolate;
-  }
-
-  .text-right {
-    text-align: right;
-  }
-        </code></pre>
+    /* En el CSS */
+    .bg-khaki {
+      background-color: khaki;
+    }
+  
+    .text-chocolte {
+      color: chocolate;
+    }
+  
+    .text-right {
+      text-align: right;
+    }
+          </code></pre>
         <pre><code class="language-html">
-  &lt;!-- En el HTML --&gt;
-  &lt;p class="bg-khaki text-chocolte text-right"&gt;
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt quaerat iure error est perferendis,
-    consectetur nesciunt dignissimos molestias voluptates molestiae ex! Provident voluptates quasi dolor magni eum
-    minus quis quae.
-  &lt;/p&gt;
-              </code></pre>
+    &lt;!-- En el HTML --&gt;
+    &lt;p class="bg-khaki text-chocolte text-right"&gt;
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt quaerat iure error est perferendis,
+      consectetur nesciunt dignissimos molestias voluptates molestiae ex! Provident voluptates quasi dolor magni eum
+      minus quis quae.
+    &lt;/p&gt;
+                </code></pre>
         <aside class="example">
           <style>
             .bg-khaki {
@@ -1237,11 +1222,11 @@
         <h3>Selector Universal</h3>
         <p>Aplica los estilos a todas las etiquetas del documento <i>HTML</i>.</p>
         <pre><code class="language-css">
-  /* En el CSS */
-  * {
-    box-sizing: border-box;
-  }
-        </code></pre>
+    /* En el CSS */
+    * {
+      box-sizing: border-box;
+    }
+          </code></pre>
       </section>
       <section id="pseudo-clases">
         <h3>Pseudo Clases</h3>
@@ -1255,37 +1240,37 @@
           <li>Cuando el elemento es el <i>enésimo</i> descendiente del contendor ( <b><i>nth-child</i></b> ).</li>
         </ul>
         <pre><code class="language-css">
-  /* En el CSS */
-  a {
-  color: dodgerblue;
-  }
-
-  a:hover {
-  color: orangered;
-  }
-
-  li:first-child {
-  background-color: turquoise;
-  }
-
-  li:last-child {
-  background-color: powderblue;
-  }
-
-  li:nth-child(3) {
-  background-color: skyblue;
-  }
-        </code></pre>
+    /* En el CSS */
+    a {
+    color: dodgerblue;
+    }
+  
+    a:hover {
+    color: orangered;
+    }
+  
+    li:first-child {
+    background-color: turquoise;
+    }
+  
+    li:last-child {
+    background-color: powderblue;
+    }
+  
+    li:nth-child(3) {
+    background-color: skyblue;
+    }
+          </code></pre>
         <pre><code class="language-html">
-  &lt;!-- En el HTML --&gt;
-  &lt;a href="https://youtube.com/jonmircha" target="_blank"&gt;Ir a &lt;i&gt;YouTube&lt;/i&gt;&lt;/a&gt;
-  &lt;ol&gt;
-    &lt;li&gt;Primavera&lt;/li&gt;
-    &lt;li&gt;Verano&lt;/li&gt;
-    &lt;li&gt;Otoño&lt;/li&gt;
-    &lt;li&gt;Invierno&lt;/li&gt;
-  &lt;/ol&gt;
-        </code></pre>
+    &lt;!-- En el HTML --&gt;
+    &lt;a href="https://youtube.com/jonmircha" target="_blank"&gt;Ir a &lt;i&gt;YouTube&lt;/i&gt;&lt;/a&gt;
+    &lt;ol&gt;
+      &lt;li&gt;Primavera&lt;/li&gt;
+      &lt;li&gt;Verano&lt;/li&gt;
+      &lt;li&gt;Otoño&lt;/li&gt;
+      &lt;li&gt;Invierno&lt;/li&gt;
+    &lt;/ol&gt;
+          </code></pre>
         <aside class="example">
           <style>
             a.pseudo-link {
@@ -1326,35 +1311,35 @@
           encuentra contenido dentro del primero, en la estructura del documento <i>HTML</i>.
         </p>
         <pre><code class="language-css">
-  /* En el CSS */
-  .seasons h4 {
-    background-color: yellowgreen;
-  }
-  
-  .seasons li:first-child {
-    background-color: springgreen;
-  }
-  
-  .seasons li:last-child {
-    background-color: palegreen;
-  }
-  
-  .seasons li:nth-child(3) {
-    background-color: darkseagreen;
-  }
-        </code></pre>
+    /* En el CSS */
+    .seasons h4 {
+      background-color: yellowgreen;
+    }
+    
+    .seasons li:first-child {
+      background-color: springgreen;
+    }
+    
+    .seasons li:last-child {
+      background-color: palegreen;
+    }
+    
+    .seasons li:nth-child(3) {
+      background-color: darkseagreen;
+    }
+          </code></pre>
         <pre><code class="language-html">
-  &lt;!-- En el HTML --&gt;
-  &lt;div class="seasons"&gt;
-    &lt;h4&gt;Las Estaciones del Año&lt;/h4&gt;
-    &lt;ol&gt;
-      &lt;li&gt;Primavera&lt;/li&gt;
-      &lt;li&gt;Verano&lt;/li&gt;
-      &lt;li&gt;Otoño&lt;/li&gt;
-      &lt;li&gt;Invierno&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/div&gt;
-              </code></pre>
+    &lt;!-- En el HTML --&gt;
+    &lt;div class="seasons"&gt;
+      &lt;h4&gt;Las Estaciones del Año&lt;/h4&gt;
+      &lt;ol&gt;
+        &lt;li&gt;Primavera&lt;/li&gt;
+        &lt;li&gt;Verano&lt;/li&gt;
+        &lt;li&gt;Otoño&lt;/li&gt;
+        &lt;li&gt;Invierno&lt;/li&gt;
+      &lt;/ol&gt;
+    &lt;/div&gt;
+                </code></pre>
         <aside class="example">
           <style>
             .seasons h4 {
@@ -1400,27 +1385,27 @@
         Para usar una variable se hace uso de la función <b><i>var()</i></b>.
       </p>
       <pre><code class="language-css">
-  /* En el CSS */
-  :root {
-    --first-color: rgb(40, 167, 226);
-    --second-color: rgb(23, 18, 38);
-    --black-color: rgb(0, 0, 0);
-    --white-color: rgb(255, 255, 255);
-  }
-
-  html {
-    background-color: var(--black-color);
-    color: var(--white-color);
-  }
-
-  .bg-first-color {
-    background-color: var(--first-color);
-  }
-    
-  .bg-second-color {
-    background-color: var(--second-color);
-  }
-      </code></pre>
+    /* En el CSS */
+    :root {
+      --first-color: rgb(40, 167, 226);
+      --second-color: rgb(23, 18, 38);
+      --black-color: rgb(0, 0, 0);
+      --white-color: rgb(255, 255, 255);
+    }
+  
+    html {
+      background-color: var(--black-color);
+      color: var(--white-color);
+    }
+  
+    .bg-first-color {
+      background-color: var(--first-color);
+    }
+      
+    .bg-second-color {
+      background-color: var(--second-color);
+    }
+        </code></pre>
     </article>
     <hr>
     <article id="orden-codigo-css" class="full-screen">
@@ -1440,62 +1425,62 @@
       </ol>
       <p>Por ejemplo:</p>
       <pre><code class="language-css">
-  /* ********** VARIBLES ********** */
-  :root {
-    --first-color: rgb(40, 167, 226);
-    --second-color: rgb(23, 18, 38);
-    --black-color: rgb(0, 0, 0);
-    --white-color: rgb(255, 255, 255);
-  }
-
-  /* ********** ETIQUETAS HTML ********** */
-  html {
-    font-family: sans-serif;
-    font-size: 16px;
-  }
-
-  a {
-    color: var(--first-color);
-  }
-
-  a:hover {
-    color: var(--second-color);
-  }
-
-  img {
-    max-width: 100%;
-  }
-
-  /* ********** SECCIONES o COMPONENTES de UI ********** */
-  .logo {
-    width: 200px;
-    height: auto;
-    background-color: var(--second-color);
-    border: 5px solid var(--first-color);
-    border-radius: 50%;
-  }
-
-  /* ********** CLASES UTILITARIAS ********** */
-  .bg-first-color {
-    background-color: var(--first-color);
-  }
-
-  .bg-second-color {
-    background-color: var(--second-color);
-  }
-
-  .border-first-color {
-    border: 5px solid var(--first-color);
-  }
-
-  .border-second-color {
-    border: 5px solid var(--second-color);
-  }
-
-  .rounded {
-    border-radius: 50%;
-  }
-      </code></pre>
+    /* ********** VARIBLES ********** */
+    :root {
+      --first-color: rgb(40, 167, 226);
+      --second-color: rgb(23, 18, 38);
+      --black-color: rgb(0, 0, 0);
+      --white-color: rgb(255, 255, 255);
+    }
+  
+    /* ********** ETIQUETAS HTML ********** */
+    html {
+      font-family: sans-serif;
+      font-size: 16px;
+    }
+  
+    a {
+      color: var(--first-color);
+    }
+  
+    a:hover {
+      color: var(--second-color);
+    }
+  
+    img {
+      max-width: 100%;
+    }
+  
+    /* ********** SECCIONES o COMPONENTES de UI ********** */
+    .logo {
+      width: 200px;
+      height: auto;
+      background-color: var(--second-color);
+      border: 5px solid var(--first-color);
+      border-radius: 50%;
+    }
+  
+    /* ********** CLASES UTILITARIAS ********** */
+    .bg-first-color {
+      background-color: var(--first-color);
+    }
+  
+    .bg-second-color {
+      background-color: var(--second-color);
+    }
+  
+    .border-first-color {
+      border: 5px solid var(--first-color);
+    }
+  
+    .border-second-color {
+      border: 5px solid var(--second-color);
+    }
+  
+    .rounded {
+      border-radius: 50%;
+    }
+        </code></pre>
     </article>
     <hr>
     <article id="modelo-caja" class="full-screen">
@@ -1506,7 +1491,7 @@
       <p>
         Dentro del modelo de caja intervienen las siguientes propiedades <i>CSS</i>:
       </p>
-      <img src="https://jonmircha.com/img/blog/box-model.jpg" alt="Modelo de Caja CSS">
+      <img src="img/blog/box-model.jpg" alt="Modelo de Caja CSS">
       <ol>
         <li><b><i>width</i></b>: Define el ancho del <b>contenido</b> de la caja.</li>
         <li><b><i>height</i></b>: Define el alto del <b>contenido</b> de la caja.</li>
@@ -1679,52 +1664,52 @@
             <i>YouTube</i></b></a>.
       </p>
       <pre><code class="language-css">
-  /* En CSS */
-  .grid-3 {
-    display: grid;
-    grid-template-columns: 20% 30% 50%;
-  }
-  
-  .col {
-    border: thin solid black;
-    padding: 1rem;
-  }
-      </code></pre>
+    /* En CSS */
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 20% 30% 50%;
+    }
+    
+    .col {
+      border: thin solid black;
+      padding: 1rem;
+    }
+        </code></pre>
       <pre><code class="language-html">
-  &lt;!-- En HTML --&gt;
-  &lt;section class="grid-3"&gt;
-    &lt;div class="col"&gt;
-      &lt;h4&gt;Columna 1&lt;/h4&gt;
-      &lt;p&gt;
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nobis unde ullam modi non quae voluptatum placeat!
-      &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class="col"&gt;
-      &lt;h4&gt;Columna 2&lt;/h4&gt;
-      &lt;p&gt;
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nobis unde ullam modi non quae voluptatum placeat!
-      &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class="col"&gt;
-      &lt;h4&gt;Columna 3&lt;/h4&gt;
-      &lt;p&gt;
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nobis unde ullam modi non quae voluptatum placeat!
-      &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class="col"&gt;
-      &lt;h4&gt;Columna 4&lt;/h4&gt;
-      &lt;p&gt;
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nobis unde ullam modi non quae voluptatum placeat!
-      &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class="col"&gt;
-      &lt;h4&gt;Columna 5&lt;/h4&gt;
-      &lt;p&gt;
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nobis unde ullam modi non quae voluptatum placeat!
-      &lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-      </code></pre>
+    &lt;!-- En HTML --&gt;
+    &lt;section class="grid-3"&gt;
+      &lt;div class="col"&gt;
+        &lt;h4&gt;Columna 1&lt;/h4&gt;
+        &lt;p&gt;
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nobis unde ullam modi non quae voluptatum placeat!
+        &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="col"&gt;
+        &lt;h4&gt;Columna 2&lt;/h4&gt;
+        &lt;p&gt;
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nobis unde ullam modi non quae voluptatum placeat!
+        &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="col"&gt;
+        &lt;h4&gt;Columna 3&lt;/h4&gt;
+        &lt;p&gt;
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nobis unde ullam modi non quae voluptatum placeat!
+        &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="col"&gt;
+        &lt;h4&gt;Columna 4&lt;/h4&gt;
+        &lt;p&gt;
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nobis unde ullam modi non quae voluptatum placeat!
+        &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="col"&gt;
+        &lt;h4&gt;Columna 5&lt;/h4&gt;
+        &lt;p&gt;
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nobis unde ullam modi non quae voluptatum placeat!
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+        </code></pre>
       <aside class="example">
         <style>
           .grid-3 {
@@ -1778,8 +1763,7 @@
     </article>
     <hr>
   </main>
-  <footer></footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+  <script src="assets/prism.js"></script>
 </body>
 
 </html>

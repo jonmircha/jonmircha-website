@@ -1,0 +1,30 @@
+<section class="post section post-with-menu">
+  <aside id="post-blog" class="post-info text-center"></aside>
+  <article class="post-content">
+    <hr>
+    <sergey-import src="blog/<sergey-slot />.md" as="markdown" />
+  </article>
+</section>
+<sergey-import src="components/footer" />
+<script>
+  (function (d, w) {
+    if (d.getElementById("temas")) {
+      const mq = window.matchMedia('(min-width: 62em)');
+      mq.addEventListener('change', mqHandler);
+
+      function mqHandler(e) {
+        if (e.matches) {
+          d.querySelectorAll('a[href="#temas"').forEach((el) => {
+            el.setAttribute("href", "#");
+          });
+        } else {
+          d.querySelectorAll('a[href="#"').forEach((el) => {
+            el.setAttribute("href", "#temas");
+          });
+        }
+      }
+
+      mqHandler(mq);
+    }
+  })(document, window);
+</script>

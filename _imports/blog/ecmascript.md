@@ -1,34 +1,38 @@
-## _ECMAScript_
+<aside class="post-menu">
 
-1. [Qué es](#qué-es)
-1. [_Babel_](#babel)
-1. [Variables de bloque y constantes](#variables-de-bloque-y-constantes)
-1. [Nivel de Bloques](#nivel-de-bloques)
-1. [Plantillas de cadenas de texto](#plantillas-de-cadenas-de-texto)
-1. [Funciones flecha](#funciones-flecha)
-1. [Objetos literales](#objetos-literales)
-1. [Destructuración](#destructuración)
-1. [Parámetros por defecto](#parámetros-por-defecto)
-1. [Parámetros _Rest_](#parámetros-rest)
-1. [Operador de propagación](#operador-de-propagación)
-1. [Clases](#clases)
-1. [Módulos](#módulos)
-1. [Promesas](#promesas)
-1. [Iteradores](#iteradores)
-1. [Símbolos](#símbolos)
-1. [Generadores](#generadores)
-1. [_Proxies_](#proxies)
-1. [Reflexión](#reflexión)
-1. [Decoradores](#decoradores)
-1. [Funciones Asíncronas](#funciones-asíncronas)
-1. [Métodos clase _String_](#métodos-clase-string)
-1. [Números octales y binarios](#números-octales-y-binarios)
-1. [Métodos clase _Math_](#métodos-clase-math)
-1. [Métodos clase _Array_](#métodos-clase-array)
-1. [Métodos clase _Object_](#métodos-clase-object)
-1. [_Maps_ _Sets_ y _Weaks_](#maps-sets-y-weaks)
+## Temas
+
+- [Qué es](#qué-es)
+- [_Babel_](#babel)
+- [Variables y Constantes](#variables-y-constantes)
+- [Nivel de Bloques](#nivel-de-bloques)
+- [Plantillas de Cadenas](#plantillas-de-cadenas)
+- [Funciones flecha](#funciones-flecha)
+- [Objetos literales](#objetos-literales)
+- [Destructuración](#destructuración)
+- [Parámetros por defecto](#parámetros-por-defecto)
+- [Parámetros _Rest_](#parámetros-rest)
+- [Operador de propagación](#operador-de-propagación)
+- [Clases](#clases)
+- [Módulos](#módulos)
+- [Promesas](#promesas)
+- [Iteradores](#iteradores)
+- [Símbolos](#símbolos)
+- [Generadores](#generadores)
+- [_Proxies_](#proxies)
+- [Reflexión](#reflexión)
+- [Decoradores](#decoradores)
+- [Funciones Asíncronas](#funciones-asíncronas)
+- [Métodos clase _String_](#métodos-clase-string)
+- [Números octales y binarios](#números-octales-y-binarios)
+- [Métodos clase _Math_](#métodos-clase-math)
+- [Métodos clase _Array_](#métodos-clase-array)
+- [Métodos clase _Object_](#métodos-clase-object)
+- [_Maps_ _Sets_ y _Weaks_](#maps-sets-y-weaks)
 
 ---
+
+</aside>
 
 ## Qué es
 
@@ -53,7 +57,7 @@
 |    10    |    2019     | _ES2019_ _aka_ [_ES10_](http://www.ecma-international.org/ecma-262/10.0/).                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | _ESNext_ |    2020     | A partir del 2020 las nuevas actualizaciones al estándar simplemente se bautizarán como [_ESNext_](http://www.ecma-international.org/ecma-262/11.0/).                                                                                                                                                                                                                                                                                                                                                                           |
 
-[🔙 Regresar](#ecmascript)
+[🔼 Regresar](#temas)
 
 ---
 
@@ -69,22 +73,22 @@ Es un compilador de _JavaScript_, te permite usar el _JavaScript_ del futuro, **
 
 Instalación de paquetes:
 
-```Terminal
+```bash
 npm install -D babel-cli babel-core babel-preset-env
 ```
 
 Crear el archivo de configuarción **`.babelrc`**
 
-```JSON
+```js
 {
-  "presets": [ "env" ],
+  "presets": ["env"],
   "plugins": []
 }
 ```
 
 Crear el _script_ necesario para compilar _ES_ con _Babel_ en el archivo **`.package.json`**:
 
-```JSON
+```js
 {
   "name": "taller-es",
   "version": "1.0.0",
@@ -103,15 +107,15 @@ Crear el _script_ necesario para compilar _ES_ con _Babel_ en el archivo **`.pac
 
 Ejecutar el _script_ en la terminal:
 
-```Terminal
+```bash
 npm run es6
 ```
 
-[🔙 Regresar](#ecmascript)
+[🔼 Regresar](#temas)
 
 ---
 
-## Variables de bloque y constantes
+## Variables y Constantes
 
 ### Variables de bloque
 
@@ -160,7 +164,7 @@ console.log(D); //Imprime el objeto document
 console.log(D.documentElement); //Imprime el elemento <html>
 ```
 
-[🔙 Regresar](#ecmascript)
+[🔼 Regresar](#temas)
 
 ---
 
@@ -196,11 +200,11 @@ function f() { return 1; }
 console.log( f() ); //Imprime 1
 ```
 
-[🔙 Regresar](#ecmascript)
+[🔼 Regresar](#temas)
 
 ---
 
-## Plantillas de cadenas de texto
+## Plantillas de Cadenas
 
 Los _template string_ son una forma más fácil de crear:
 
@@ -255,7 +259,7 @@ let otroNombre = 'Ulises';
 etiqueta`Hola ${otroNombre}`;
 ```
 
-[🔙 Regresar](#ecmascript)
+[🔼 Regresar](#temas)
 
 ---
 
@@ -425,7 +429,7 @@ console.log(jon); //Imprime el valor de edad más uno por cada segundo que pasa
 console.log(jon.edad); //Imprime la edad
 ```
 
-[🔙 Regresar](#ecmascript)
+[🔼 Regresar](#temas)
 
 ---
 
@@ -484,7 +488,7 @@ console.log(perro); //Imprime Object {nombre: "kEnAi", edad: 4}
 perro.ladrar(); //Manda alerta
 ```
 
-[🔙 Regresar](#ecmascript)
+[🔼 Regresar](#temas)
 
 ---
 
@@ -525,7 +529,7 @@ console.log(email); //Imprime jonmircha@gmail.com
 console.log(phone); //Imprime 5566778899
 ```
 
-[🔙 Regresar](#ecmascript)
+[🔼 Regresar](#temas)
 
 ---
 
@@ -552,7 +556,7 @@ pais(); //Imprime Terrestre
 pais('México'); //Imprime México
 ```
 
-[🔙 Regresar](#ecmascript)
+[🔼 Regresar](#temas)
 
 ---
 
@@ -577,7 +581,7 @@ sumar(1,2,3,4); //Imprime 10
 sumar(1,2,3,4,5); //Imprime 15
 ```
 
-[🔙 Regresar](#ecmascript)
+[🔼 Regresar](#temas)
 
 ---
 
@@ -604,7 +608,7 @@ console.log(cuerpo); //Imprime ["cabeza", "hombros", "brazos", "tronco", "pelvis
 console.log(...cuerpo); //Imprime cabeza hombros brazos tronco pelvis piernas rodillas pies
 ```
 
-[🔙 Regresar](#ecmascript)
+[🔼 Regresar](#temas)
 
 ---
 
@@ -711,7 +715,7 @@ console.log(jon.nacionalidad); //Imprime México
 console.log(jon); //Imprime Humano {nombre: "Jonathan", edad: 32, genero: "Macho", razonar: true, _nacionalidad: "México"}
 ```
 
-[🔙 Regresar](#ecmascript)
+[🔼 Regresar](#temas)
 
 ---
 
@@ -854,7 +858,7 @@ import React, { Component, PropTypes } from "react";
 
 > **Nota**: Los valores que se exportan son **enlaces**, no referencias. Por lo tanto, cambiar el enlace de una variable en un módulo, afectará su valor. Evita cambiar la interfaz pública de módulos exportados.
 
-[🔙 Regresar](#ecmascript)
+[🔼 Regresar](#temas)
 
 ---
 
@@ -930,7 +934,7 @@ promise
   .catch((err) => { console.log(err.message); });
 ```
 
-[🔙 Regresar](#ecmascript)
+[🔼 Regresar](#temas)
 
 ---
 
@@ -983,7 +987,7 @@ for ( let character of aString ) {
 }
 ```
 
-[🔙 Regresar](#ecmascript)
+[🔼 Regresar](#temas)
 
 ---
 
@@ -1046,7 +1050,7 @@ for (let item of iterable) {
 }
 ```
 
-[🔙 Regresar](#ecmascript)
+[🔼 Regresar](#temas)
 
 ---
 
@@ -1135,7 +1139,7 @@ for ( let persona of gente.alias() ){
 }
 ```
 
-[🔙 Regresar](#ecmascript)
+[🔼 Regresar](#temas)
 
 ---
 
@@ -1177,7 +1181,7 @@ console.log( persona.edad ); //Imprime 33
 persona.edad = -10; //Imprime Error: Valor inválido para la propiedad edad
 ```
 
-[🔙 Regresar](#ecmascript)
+[🔼 Regresar](#temas)
 
 ---
 
@@ -1212,7 +1216,7 @@ console.log( Reflect.has( obj, 'x' ) ); //Imprime false
 console.log( obj ); //Imprime Object {y: 2}
 ```
 
-[🔙 Regresar](#ecmascript)
+[🔼 Regresar](#temas)
 
 ---
 
@@ -1270,7 +1274,7 @@ alguien.nombrar = () => {
 } //Ejecutará Cannot assign to read only property 'nombrar' of object '#<Persona>'
 ```
 
-[🔙 Regresar](#ecmascript)
+[🔼 Regresar](#temas)
 
 ---
 
@@ -1348,7 +1352,7 @@ async function copyFile() {
 copyFile();
 ```
 
-[🔙 Regresar](#ecmascript)
+[🔼 Regresar](#temas)
 
 ---
 
@@ -1374,7 +1378,7 @@ console.log( nombre.includes('th') ); //Imprime true
 console.log( nombre.repeat(3) ); //Imprime JonathanJonathanJonathan}
 ```
 
-[🔙 Regresar](#ecmascript)
+[🔼 Regresar](#temas)
 
 ---
 
@@ -1388,7 +1392,7 @@ console.log(0o17); //Imprime 15
 console.log(0b100); //Imprime 4
 ```
 
-[🔙 Regresar](#ecmascript)
+[🔼 Regresar](#temas)
 
 ---
 
@@ -1434,7 +1438,7 @@ console.log( Math.tanh(19) ); //Imprime 0.9999999999999999
 console.log( Math.trunc(40.56) ); //Imprime 40
 ```
 
-[🔙 Regresar](#ecmascript)
+[🔼 Regresar](#temas)
 
 ---
 
@@ -1476,7 +1480,7 @@ console.log( [1, 2, 3].includes(2) ); //Imprime true
 console.log( [1, 2, 3].includes(4) ); //Imprime false
 ```
 
-[🔙 Regresar](#ecmascript)
+[🔼 Regresar](#temas)
 
 ---
 
@@ -1503,7 +1507,7 @@ console.log( Object.values(c) ); //Imprime [1, 2]
 console.log( Object.entries(c) ); //Imprime [ ["a", 1], ["b", 2] ]
 ```
 
-[🔙 Regresar](#ecmascript)
+[🔼 Regresar](#temas)
 
 ---
 
@@ -1663,6 +1667,6 @@ weakset.delete(objs);
 console.log( weakset.has(objs) ); //Imprime false
 ```
 
-[🔙 Regresar](#ecmascript)
+[🔼 Regresar](#temas)
 
 ---

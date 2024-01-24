@@ -1,23 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <sergey-import src="components/metatags">
+      <sergey-template name="title">404 Not Found 🦊 jonmircha</sergey-template>
+      <sergey-template name="metatitle"
+        >"404 Not Found 🦊 jonmircha"</sergey-template
+      >
+      <sergey-template name="description"
+        >"Error 404: No Encontrado. Lamentablemente, esta página no existe"
+      </sergey-template>
+      <sergey-template name="url">"https://jonmircha.com/404"</sergey-template>
+      <sergey-template name="image"
+        >"https://jonmircha.com/img/404.png"</sergey-template
+      >
+    </sergey-import>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
 
-<head>
-  <sergey-import src="metas/statics" />
-  <sergey-import src="metas/titles">404 Not Found | jonmircha</sergey-import>
-  <sergey-import src="metas/descriptions">Error 404: No Encontrado. Lamentablemente, esta página no existe
-  </sergey-import>
-  <sergey-import src="metas/urls">https://jonmircha.com/cursos</sergey-import>
-  <sergey-import src="metas/images">https://jonmircha.com/img/posters/404.png</sergey-import>
-</head>
-
-<body>
-  <sergey-import src="components/header.html" />
-  <article class="container-sm section-bottom text-center">
-    <p class="fluid-2">Lamentablemente, esta página no existe.</p>
-    <img src="img/404.png" alt="Error 404" loading="lazy">
-    <p class="fluid-2">¯\_(ツ)_/¯</p>
-  </article>
-  <sergey-import src="components/footer.html" />
-</body>
-
+  <body>
+    <main class="full-screen-center zoom-out-fade-in delay-4">
+      <article class="container-sm text-center e-404">
+        <div style="display: inline-block; transform: scale(2)">
+          <sergey-import src="components/theme-toggle" />
+        </div>
+        <p class="step-1">Lamentablemente, esta página no existe.</p>
+        <a href="./"
+          ><img class="pulse" src=" img/404.png" alt="Error 404" loading="lazy"
+        /></a>
+        <p class="step-3"><b>¯\_(ツ)_/¯</b></p>
+        <img
+          class="kenai-404 zoom-out-fade-in delay-10"
+          src="img/kEnAi.png"
+          alt="kEnAi"
+        />
+      </article>
+    </main>
+    <script src="assets/index.js"></script>
+  </body>
 </html>

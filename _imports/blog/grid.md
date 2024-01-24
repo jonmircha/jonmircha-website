@@ -25,7 +25,7 @@ Así que _Grid CSS_ no reemplaza a _Flexbox_, lo complementa y ambas herramienta
 - Celda de Cuadrícula ( _**Grid Cell**_ ).
 - Área de Cuadrícula ( _**Grid Area**_ ).
 
-![Conceptos Básicos Grid CSS](https://jonmircha.com/img/blog/grid-conceptos.png)
+![Conceptos Básicos Grid CSS](img/blog/grid-conceptos.png)
 
 ## Aprende _Grid CSS_
 
@@ -76,3 +76,5 @@ Aquí te dejo algunos enlaces interesantes para que puedas aprender más sobre _
 - [Curso _Grid CSS_](https://youtube.com/playlist?list=PLvq-jIkSeTUY628cyd9LVbXSXi2xG9mUl): En esta serie de videos en mi canal de _YouTube_ te enseño todo lo que necesitas saber sobre _Grid CSS_ para maquetar sitios y aplicaciones _web_.
 - Descarga este [archivo](https://gist.github.com/jonmircha/7209b51d1fe76877d9edeb5af2850783) para comenzar el curso de _Grid CSS_.
 - [Códigos en _GitHub_](https://github.com/jonmircha/youtube-grid): En este repositorio te dejo los códigos que realice en el curso sobre _Grid CSS_ que hice en mi canal de _YouTube_.
+
+---

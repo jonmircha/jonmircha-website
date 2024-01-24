@@ -10,9 +10,32 @@ El Modelo de Objetos del Documento es un _API_ para documentos _HTML_ y _XML_.
 
 [Ver Video](https://www.youtube.com/watch?v=VlMiHqTR-7s&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA)
 
+<aside class="post-menu">
+
+## Temas
+
+- [Elementos del Documento](#elementos-del-documento)
+- [Nodos, Elementos y Selectores](#nodos-elementos-y-selectores)
+- [Atributos y _Data-Attributes_](#atributos-y-data-attributes)
+- [Estilos y Variables _CSS_](#estilos-y-variables-css)
+- [Clases _CSS_](#clases-css)
+- [Texto y _HTML_](#texto-y-html)
+- [_DOM Traversing_ - Recorriendo el _DOM_](#dom-traversing---recorriendo-el-dom)
+- [Creando Elementos y Fragmentos](#creando-elementos-y-fragmentos)
+- [_Templates HTML_](#templates-html)
+- [Modificando Elementos (_Old Style_)](#modificando-elementos-old-style)
+- [Modificando Elementos (_Cool Style_)](#modificando-elementos-cool-style)
+- [Eventos](#eventos)
+- [_BOM: Browser Object Model_](#bom-browser-object-model)
+- [Objetos: _URL_, Historial y Navegador](#objetos-url-historial-y-navegador)
+
 ---
 
-### Elementos del Documento:
+</aside>
+
+---
+
+### Elementos del Documento
 
 ```js
 console.log(window.document);
@@ -36,9 +59,11 @@ document.write("<h2>Hola Mundo desde el DOM</h2>");
 
 [Ver Video](https://www.youtube.com/watch?v=dF7lp_qBfV0&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA)
 
+[🔼 Regresar](#temas)
+
 ---
 
-### Nodos, Elementos y Selectores:
+### Nodos, Elementos y Selectores
 
 [Más información en _MDN_](https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType).
 
@@ -61,9 +86,11 @@ console.log(document.querySelectorAll("#menu li"));
 
 [Ver Video](https://www.youtube.com/watch?v=zBmtmlB5b5g&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA)
 
+[🔼 Regresar](#temas)
+
 ---
 
-### Atributos y _Data-Attributes_:
+### Atributos y _Data-Attributes_
 
 ```js
 console.log(document.documentElement.lang);
@@ -100,9 +127,11 @@ console.log($linkDOM.hasAttribute("data-id"));
 
 [Ver Video](https://www.youtube.com/watch?v=l6npGZa_vgc&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA)
 
+[🔼 Regresar](#temas)
+
 ---
 
-### Estilos y Variables _CSS_:
+### Estilos y Variables _CSS_
 
 ```js
 const $linkDOM = document.querySelector(".link-dom");
@@ -147,9 +176,11 @@ $body.style.setProperty("background-color", varDarkColor);
 
 [Ver Video](https://www.youtube.com/watch?v=asR6_XGzI3s&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA)
 
+[🔼 Regresar](#temas)
+
 ---
 
-### Clases _CSS_:
+### Clases _CSS_
 
 ```js
 const $card = document.querySelector(".card");
@@ -177,9 +208,11 @@ $card.classList.toggle("opacity-80", "sepia");
 
 [Ver Video](https://www.youtube.com/watch?v=x1bzRMEH89A&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA)
 
+[🔼 Regresar](#temas)
+
 ---
 
-### Texto y _HTML_:
+### Texto y _HTML_
 
 ```js
 const $whatIsDOM = document.getElementById("que-es");
@@ -203,9 +236,11 @@ $whatIsDOM.outerHTML = text;
 
 [Ver Video](https://www.youtube.com/watch?v=ezjxA4o2-Ck&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA)
 
+[🔼 Regresar](#temas)
+
 ---
 
-### _DOM Traversing_ - Recorriendo el _DOM_:
+### _DOM Traversing_ - Recorriendo el _DOM_
 
 ```js
 const $cards = document.querySelector(".cards");
@@ -225,9 +260,11 @@ console.log($cards.children[3].closest("section"));
 
 [Ver Video](https://www.youtube.com/watch?v=m50UZkgV9-Q&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA)
 
+[🔼 Regresar](#temas)
+
 ---
 
-### Creando Elementos y Fragmentos:
+### Creando Elementos y Fragmentos
 
 ```js
 const $figure = document.createElement("figure"),
@@ -304,9 +341,11 @@ document.body.appendChild($ul3);
 
 [Ver Video](https://www.youtube.com/watch?v=tFSFX37Yah4&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA)
 
+[🔼 Regresar](#temas)
+
 ---
 
-### _Templates HTML_:
+### _Templates HTML_
 
 ```html
 <template id="template-card">
@@ -358,9 +397,11 @@ $cards.appendChild($fragment);
 
 [Ver Video](https://www.youtube.com/watch?v=Q9y9BugN8-s&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA)
 
+[🔼 Regresar](#temas)
+
 ---
 
-### Modificando Elementos (_Old Style_):
+### Modificando Elementos (_Old Style_)
 
 ```js
 const $cards = document.querySelector(".cards"),
@@ -381,9 +422,11 @@ document.body.appendChild($cloneCards);
 
 [Ver Video](https://www.youtube.com/watch?v=epMoFp_2ay8&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA)
 
+[🔼 Regresar](#temas)
+
 ---
 
-### Modificando Elementos (_Cool Style_):
+### Modificando Elementos (_Cool Style_)
 
 ```js
 /*
@@ -420,6 +463,8 @@ $newCard.querySelector("figcaption").insertAdjacentText("afterbegin", "Any"); */
 
 [Ver Video](https://www.youtube.com/watch?v=tqqw2b1kasg&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA)
 
+[🔼 Regresar](#temas)
+
 ---
 
 ## Eventos
@@ -432,7 +477,7 @@ Los eventos son los mecanismos que tenemos en _JavaScript_ para controlar las ac
 
 ---
 
-### Manejadores de Eventos:
+### Manejadores de Eventos
 
 Las funciones que se ejecutan en un evento se llaman _**Event Handler**_ (Manejador de Eventos).
 
@@ -485,7 +530,7 @@ $eventoRemover.addEventListener("dblclick", removerDobleClick);
 
 ---
 
-### Flujo de Eventos (Burbuja y Captura):
+### Flujo de Eventos (Burbuja y Captura)
 
 El método _**addEventListener()**_ tiene un tercer párametro que puede ser de tipo _**boolean**_, si no se especifica, el valor por defecto es _**false**_.
 
@@ -521,7 +566,7 @@ $divsEventos.forEach((div) => {
 
 ---
 
-### _stopPropagation & preventDefault_:
+### _stopPropagation & preventDefault_
 
 ```js
 const $divsEventos = document.querySelectorAll(".eventos-flujo div"),
@@ -559,7 +604,7 @@ $linkEventos.addEventListener("click", (e) => {
 
 ---
 
-### Delegación de Eventos:
+### Delegación de Eventos
 
 ```js
 function flujoEventos(e) {
@@ -584,6 +629,8 @@ document.addEventListener("click", (e) => {
 
 [Ver Video](https://www.youtube.com/watch?v=j2fWSgOrxRs&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA)
 
+[🔼 Regresar](#temas)
+
 ---
 
 ## _BOM: Browser Object Model_
@@ -594,7 +641,7 @@ Mediante el _BOM_, es posible redimensionar y mover la ventana del navegador y r
 
 El mayor inconveniente del _BOM_ es que, a diferencia del _DOM_, no es un _API_ estándar, cada navegador lo puede interpretar de diferente manera, sin embargo, en los últimos años los navegadores están más estandarizados entre sí.
 
-### Propiedades y Eventos del _BOM_:
+### Propiedades y Eventos del _BOM_
 
 ```js
 window.addEventListener("resize", (e) => {
@@ -642,7 +689,7 @@ Peticiones asíncronas pausan el parseo del _DOM_.
 
 ---
 
-### Métodos del _BOM_:
+### Métodos del _BOM_
 
 ```js
 window.alert("Alerta");
@@ -670,9 +717,11 @@ $btnImprimir.addEventListener("click", (e) => window.print());
 
 [Ver Video](https://www.youtube.com/watch?v=EqLVoofiXVs&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA)
 
+[🔼 Regresar](#temas)
+
 ---
 
-### Objetos: _URL_, Historial y Navegador:
+### Objetos: _URL_, Historial y Navegador
 
 ```js
 console.log("********** Objeto URL (location) **********");
@@ -709,5 +758,7 @@ console.log(navigator.userAgent);
 ```
 
 [Ver Video](https://www.youtube.com/watch?v=P5VxI53U_WI&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA)
+
+[🔼 Regresar](#temas)
 
 ---

@@ -2,18 +2,23 @@
 <html lang="es">
 
 <head>
-  <sergey-import src="metas/statics" />
-  <sergey-import src="metas/titles">Programar es un arte | jonmircha</sergey-import>
-  <sergey-import src="metas/descriptions">En esta nota te comparto mi visión de porqué pienso que la programación es un
-    arte</sergey-import>
-  <sergey-import src="metas/urls">https://jonmircha.com/programar-es-un-arte</sergey-import>
-  <sergey-import src="metas/images">https://jonmircha.com/img/blog/programar-es-un-arte.jpg</sergey-import>
+  <sergey-import src="components/metatags">
+    <sergey-template name="title">Programar es un arte 🦊 jonmircha</sergey-template>
+    <sergey-template name="metatitle">"Programar es un arte 🦊 jonmircha"</sergey-template>
+    <sergey-template name="description">"En esta nota te comparto mi visión de porqué pienso que la programación es un
+      arte"</sergey-template>
+    <sergey-template name="url">"https://jonmircha.com/programar-es-un-arte"</sergey-template>
+    <sergey-template name="image">"https://jonmircha.com/img/blog/programar-es-un-arte.jpg"</sergey-template>
+  </sergey-import>
+  <link rel="stylesheet" href="assets/prism.css">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
-  <sergey-import src="components/header.html" />
-  <sergey-import src="components/template-notes.html">programar-es-un-arte</sergey-import>
-  <sergey-import src="components/footer.html" />
+  <sergey-import src="components/header" />
+  <sergey-import src="components/post">programar-es-un-arte</sergey-import>
+  <script src="assets/prism.js"></script>
+  <script src="assets/index.js"></script>
 </body>
 
 </html>

@@ -2,12 +2,16 @@
 <html lang="es">
 
 <head>
-  <sergey-import src="metas/statics" />
-  <sergey-import src="metas/titles">API REST | jonmircha</sergey-import>
-  <sergey-import src="metas/descriptions">En esta nota te explico qué es una API REST y cómo funcionan en JavaScript
-    para el desarrollo de aplicaciones web</sergey-import>
-  <sergey-import src="metas/urls">https://jonmircha.com/api-rest</sergey-import>
-  <sergey-import src="metas/images">https://jonmircha.com/img/blog/rest-arquitectura.jpg</sergey-import>
+  <sergey-import src="components/metatags">
+    <sergey-template name="title">API REST 🦊 jonmircha</sergey-template>
+    <sergey-template name="metatitle">"API REST 🦊 jonmircha"</sergey-template>
+    <sergey-template name="description">"En esta nota te explico qué es una API REST y cómo funcionan en JavaScript
+      para el desarrollo de aplicaciones web"</sergey-template>
+    <sergey-template name="url">"https://jonmircha.com/api-rest"</sergey-template>
+    <sergey-template name="image"></sergey-template>
+  </sergey-import>
+  <link rel="stylesheet" href="assets/prism.css">
+  <link rel="stylesheet" href="assets/style.css">
   <style>
     @media only screen and (max-width: 779px),
     (min-device-width: 768px) and (max-device-width: 992px) {
@@ -24,9 +28,10 @@
 </head>
 
 <body>
-  <sergey-import src="components/header.html" />
-  <sergey-import src="components/template-blog.html">api-rest</sergey-import>
-  <sergey-import src="components/footer.html" />
+  <sergey-import src="components/header" />
+  <sergey-import src="components/post">api-rest</sergey-import>
+  <script src="assets/prism.js"></script>
+  <script src="assets/index.js"></script>
 </body>
 
 </html>

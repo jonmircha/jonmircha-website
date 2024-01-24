@@ -1,8 +1,8 @@
-Es una aplicación para diseñar interfaces ( [_UX_ y _UI_](/diseno-ux-ui) ) que se ejecuta en el navegador _web_, lo que significa que puedes trabajar desde una computadora _Windows_, _Mac_ o _Linux_. Adicionalmente también puedes instalar su versión para escritorio en equipos _Windows_ o _Mac_ y su herramienta para vista previa en dispositivos _Android_ o _iOS_.
+Es una aplicación para diseñar interfaces ( [_UX_ y _UI_](/ux-ui) ) que se ejecuta en el navegador _web_, lo que significa que puedes trabajar desde una computadora _Windows_, _Mac_ o _Linux_. Adicionalmente también puedes instalar su versión para escritorio en equipos _Windows_ o _Mac_ y su herramienta para vista previa en dispositivos _Android_ o _iOS_.
 
 [Opciones de Descarga](https://www.figma.com/downloads/)
 
-![Descargas de Figma](https://jonmircha.com/img/blog/figma-descargas.jpg)
+![Descargas de Figma](img/blog/figma-descargas.jpg)
 
 ---
 
@@ -94,3 +94,5 @@ Si estás interesado en aprender esta poderosa herramienta de prototipado de _UI
 El prototipo que ves a continuación, lo diseñamos paso a paso en el curso, puedes descargar los recursos en el siguiente [enlace](https://github.com/jonmircha/youtube-figma).
 
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F8T65vTpkmTi9phvNafUNax%2FCV-Portafolio%3Fnode-id%3D118%3A85" allowfullscreen></iframe>
+
+---

@@ -1,18 +1,26 @@
 /* jonmircha - https://jonmircha.com */
 
+
+
 /* TEAM */
 Design & Develop: Jonathan MirCha
 Contact: hola [at] jonmircha.com
 Twitter: @jonmircha
 Location: CDMX, México
 
-/* RESOURCES */
 
-https://jeffhuang.com/designed_to_last/
-https://css-tricks.com/the-simplest-ways-to-handle-html-includes/
-https://simpleicons.org/
-https://utopia.fyi/
-https://sergey.cool/
-https://www.svgrepo.com/svg/232740/fox
-https://ethanmarcotte.com/
-https://www.taniarascia.com/
+
+/* RESOURCES */
+- https://sergey.cool/
+- https://utopia.fyi/
+- https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript+bash+git+markdown+markup-templating+php+python+jsx+sql
+- https://simpleicons.org/
+
+
+
+/* INSPIRATION */
+- https://jeffhuang.com/designed_to_last/
+- https://ethanmarcotte.com/
+- https://www.taniarascia.com/
+- https://www.oddbird.net/susy/
+- https://dejan.works/

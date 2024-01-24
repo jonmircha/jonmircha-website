@@ -2,18 +2,23 @@
 <html lang="es">
 
 <head>
-  <sergey-import src="metas/statics" />
-  <sergey-import src="metas/titles">Webpack | jonmircha</sergey-import>
-  <sergey-import src="metas/descriptions">En esta nota te explico qué es Webpack y para que te sirve en el desarrollo
-    web</sergey-import>
-  <sergey-import src="metas/urls">https://jonmircha.com/webpack</sergey-import>
-  <sergey-import src="metas/images">https://jonmircha.com/img/blog/webpack.png</sergey-import>
+  <sergey-import src="components/metatags">
+    <sergey-template name="title">Webpack 🦊 jonmircha</sergey-template>
+    <sergey-template name="metatitle">"Webpack 🦊 jonmircha"</sergey-template>
+    <sergey-template name="description">"En esta nota te explico qué es Webpack y para que te sirve en el desarrollo
+      web"</sergey-template>
+    <sergey-template name="url">"https://jonmircha.com/webpack"</sergey-template>
+    <sergey-template name="image"></sergey-template>
+  </sergey-import>
+  <link rel="stylesheet" href="assets/prism.css">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
-  <sergey-import src="components/header.html" />
-  <sergey-import src="components/template-blog.html">webpack</sergey-import>
-  <sergey-import src="components/footer.html" />
+  <sergey-import src="components/header" />
+  <sergey-import src="components/post-menu">webpack</sergey-import>
+  <script src="assets/prism.js"></script>
+  <script src="assets/index.js"></script>
 </body>
 
 </html>

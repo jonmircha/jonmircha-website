@@ -2,12 +2,16 @@
 <html lang="es">
 
 <head>
-  <sergey-import src="metas/statics" />
-  <sergey-import src="metas/titles">ECMAScript | jonmircha</sergey-import>
-  <sergey-import src="metas/descriptions">En esta nota te explico qué es ECMAScript y su importancia desde el año 2015
-    en el ecosistema de JavaScript</sergey-import>
-  <sergey-import src="metas/urls">https://jonmircha.com/ecmascript</sergey-import>
-  <sergey-import src="metas/images">https://jonmircha.com/img/blog/ecmascript.png</sergey-import>
+  <sergey-import src="components/metatags">
+    <sergey-template name="title">ECMAScript 🦊 jonmircha</sergey-template>
+    <sergey-template name="metatitle">"ECMAScript 🦊 jonmircha"</sergey-template>
+    <sergey-template name="description">"En esta nota te explico qué es ECMAScript y su importancia desde el año 2015
+      en el ecosistema de JavaScript"</sergey-template>
+    <sergey-template name="url">"https://jonmircha.com/ecmascript"</sergey-template>
+    <sergey-template name="image"></sergey-template>
+  </sergey-import>
+  <link rel="stylesheet" href="assets/prism.css">
+  <link rel="stylesheet" href="assets/style.css">
   <style>
     @media only screen and (max-width: 779px),
     (min-device-width: 768px) and (max-device-width: 992px) {
@@ -41,9 +45,10 @@
 </head>
 
 <body>
-  <sergey-import src="components/header.html" />
-  <sergey-import src="components/template-blog.html">ecmascript</sergey-import>
-  <sergey-import src="components/footer.html" />
+  <sergey-import src="components/header" />
+  <sergey-import src="components/post-menu">ecmascript</sergey-import>
+  <script src="assets/prism.js"></script>
+  <script src="assets/index.js"></script>
 </body>
 
 </html>

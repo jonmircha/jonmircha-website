@@ -1,84 +1,688 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <sergey-import src="components/metatags">
+      <sergey-template name="title">Cursos 🦊 jonmircha</sergey-template>
+      <sergey-template name="metatitle">"Cursos 🦊 jonmircha"</sergey-template>
+      <sergey-template name="description"
+        >"Tengo varios años generando contenido digital sobre el maravilloso
+        mundo de la web. Aquí te comparto mis cursos y
+        tutoriales"</sergey-template
+      >
+      <sergey-template name="url"
+        >"https://jonmircha.com/cursos"</sergey-template
+      >
+      <sergey-template name="image"></sergey-template>
+    </sergey-import>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
 
-<head>
-  <sergey-import src="metas/statics" />
-  <sergey-import src="metas/titles">Cursos | jonmircha</sergey-import>
-  <sergey-import src="metas/descriptions">Tengo varios años generando contenido digital sobre el maravilloso mundo de la
-    web. Aquí te comparto mis cursos y tutoriales</sergey-import>
-  <sergey-import src="metas/urls">https://jonmircha.com/cursos</sergey-import>
-  <sergey-import src="metas/images">https://jonmircha.com/img/posters/cursos.jpg</sergey-import>
-</head>
-
-<body>
-  <sergey-import src="components/header.html" />
-  <article class="container-sm">
-    <h1 id="rutas">Mis Cursos</h1>
-    <p class="fluid-1">
-      Tengo varios años generando contenido digital sobre el maravilloso mundo de la <i>web</i>.
-    </p>
-    <p class="fluid-1">Aquí te comparto mi contenido clasificados por rutas de aprendizaje:</p>
-    <ul class="fluid-1">
-      <li><a href="#frontend-designer"><i>Frontend Designer</i></a></li>
-      <li><a href="#fullstack-js"><i>FullStack JavaScript Dev</i></a></li>
-      <li><a href="#backend-php"><i>Backend PHP Dev</i></a></li>
-      <li><a href="#otros">Otros</a></li>
-      <!-- <li><a href="#obsoletos">Cursos Obsoletos</a></li> -->
-    </ul>
-    <p class="fluid-1">Dependiendo del perfil que
-      te interese, ve los cursos en el orden que te los muestro.</p>
-  </article>
-  <hr>
-  <article class="container-md">
-    <h2 id="frontend-designer" class="text-center"><i>Frontend Designer</i></h2>
-    <p class="fluid-1">Si te interesa el mundo del diseño <i>web</i>, <i>UI</i>, <i>UX</i>, te encanta la maquetación,
-      el <i>responsive</i>, la accesibilidad, los efectos y las interacciones visuales de las interfaces <i>web</i>, lo
-      tuyo es ser un <i>Frontend Designer</i>.</p>
-  </article>
-  <section id="path-frontend" class="container-lg flex-grid-center"></section>
-  <a href="#rutas" class="fluid-2 text-center box-shadow-none">🔼</a>
-  <hr>
-  <article class="container-md">
-    <h2 id="fullstack-js" class="text-center"><i>FullStack JavaScript Dev</i></h2>
-    <p class="fluid-1">Si te interesa el mundo del desarrollo <i>web</i> y quieres dominar su lenguaje:
-      <i>JavaScript</i>, tanto en el <i>Frontend</i> como en el <i>Backend</i>, lo tuyo es ser un <i>FullStack
-        JavaScript Developer</i>.
-    </p>
-  </article>
-  <section id="path-js" class="container-lg flex-grid-center section-bottom"></section>
-  <a href="#rutas" class="fluid-2 text-center box-shadow-none">🔼</a>
-  <hr>
-  <article class="container-md">
-    <h2 id="backend-php" class="text-center"><i>Backend PHP Dev</i></h2>
-    <p class="fluid-1">Si te interesa el mundo del desarrollo <i>web</i> y quieres dominar uno de los lenguaje más
-      populares de <i>Backend</i>: <i>PHP</i>, lo tuyo es ser un <i>Backend PHP Developer</i>.
-    </p>
-  </article>
-  <section id="path-php" class="flex-grid-center section-bottom"></section>
-  <a href="#rutas" class="fluid-2 text-center box-shadow-none">🔼</a>
-  <hr>
-  <article class="container-md">
-    <h2 id="otros" class="text-center">Otros</h2>
-    <p class="fluid-1">Estos contenidos no tienen una ruta de aprendizaje. Generalmente encontrarás videos sobre la
-      instalación y configuración de <i>software</i> y herramientas que usamos en otros
-      cursos. O contenido diverso que como tal no tiene una categoría particular, pero que seguro te servirá.</p>
-  </article>
-  <section id="path-none" class="container-lg flex-grid-center section-bottom"></section>
-  <a href="#rutas" class="fluid-2 text-center box-shadow-none">🔼</a>
-  <hr>
-  <!-- <article class="container-md">
-    <h2 id="obsoletos" class="text-center">Cursos Obsoletos</h2>
-    <p class="fluid-1">Si has llegado a mi contenido por alguno de estos cursos, te pido de favor que <strong>ya no los
-        veas</strong>, pues su contenido actualmente es obsoleto. </p>
-    <p class="fluid-1">Pero no te preocupes, la mayoría de estos cursos ya tienen su reemplazo en las rutas de
-      aprendizaje que previamente te he mostrado.</p>
-  </article>
-  <section id="deprecated-courses" class="flex-grid-center section-bottom"></section>
-  <a href="#rutas" class="fluid-2 text-center box-shadow-none">🔼</a>
-  <hr> -->
-  <sergey-import src="components/youtube-playlist.html" />
-  <sergey-import src="components/sponsors.html" />
-  <sergey-import src="components/footer.html" />
-</body>
-
+  <body>
+    <sergey-import src="components/header" />
+    <main class="section">
+      <section class="container-md">
+        <h1>Mis Cursos</h1>
+        <p>
+          Tengo varios años generando contenido digital sobre el maravilloso
+          mundo de la <i>web</i>.
+        </p>
+        <p>
+          Aquí te comparto mi contenido clasificados cómo lo deberías consumir.
+        </p>
+        <p>Si eres nuevo sigue esta ruta de aprendizaje.</p>
+        <p>
+          Si ya tienes experiencia en este maravilloso mundo de la
+          <i>web</i>, consume los cursos que te sirvan, de acuerdo a tu interés
+          o perfil.
+        </p>
+        <p>Buena suerte 👋🏻😉.</p>
+      </section>
+      <section class="container-lg">
+              <article class="timeline">
+          <details class="timeline-panel">
+            <summary>
+              <h2>Próximos Cursos</h2>
+            </summary>
+            <aside>
+              <p>
+                Estos son algunos cursos en los que estoy trabajando y pronto
+                saldrán en mi canal de <i>YouTube</i>:
+              </p>
+              <ol>
+                <li>
+                  <i>Node.js</i> <i>APIs</i> y Bases de Datos -
+                  <small><b>Octubre 2023</b></small>
+                </li>
+                <li>
+                  <i>Node.js</i> Aplicaciones en Tiempo Real -
+                  <small><b>Noviembre 2023</b></small>
+                </li>
+                <li>
+                  <i>PHP</i> Básico -
+                  <small><b>Noviembre 2023</b></small>
+                </li>
+                <li>
+                  <i>PHP</i> Avanzado -
+                  <small><b>Diciembre 2023</b></small>
+                </li>
+              </ol>
+            </aside>
+          </details>
+          <div class="timeline-icon"></div>
+        </article>
+        <article class="timeline">
+          <details class="timeline-panel">
+            <summary>
+              <h2>Básicos de la <i>Web</i></h2>
+            </summary>
+            <aside>
+              <p>
+                No importa el perfil al que te quieras dedicar en desarrollo
+                <i>web</i>, estos cursos son esenciales, independientemente del
+                camino que quieras seguir:
+              </p>
+              <h3>Contenido Obligatorio</h3>
+              <ol>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=BjYrguKBfCo"
+                    target="_blank"
+                    >Hablemos de Programación</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=-oK6zL01fNM"
+                    target="_blank"
+                    >Fundamentos de <i>HTML</i></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=KpgVF0mXOUs"
+                    target="_blank"
+                    ><i>Visual Studio Code</i> y <i>Emmet</i></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=K3xmRF8ab1o"
+                    target="_blank"
+                    >Fundamentos de <i>CSS</i></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=p_lT7AgpEMU"
+                    target="_blank"
+                    >Unidades y Estilos <i>CSS</i></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=Pi0KVD4xTbc"
+                    target="_blank"
+                    >Terminal de Comandos</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=FlsoBiteuPM"
+                    target="_blank"
+                    >Sintaxis <i>Markdown</i></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=suzMNqDQiyU"
+                    target="_blank"
+                    >Fundamentos de <i>Git</i> y <i>GitHub</i></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/playlist?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA"
+                    target="_blank"
+                    >Curso de <i>JavaScript</i></a
+                  >
+                </li>
+              </ol>
+              <h3>Contenido Complementario</h3>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=TGZN4VOHD9I"
+                    target="_blank"
+                    >Levantar un servidor <i>web</i></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=IMmYetRolcA"
+                    target="_blank"
+                    ><i>CodeSandbox</i>, un editor en línea</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=nJBRGemrqUM"
+                    target=" _blank"
+                    >Instalación de <i>Git</i> y <i>Git Bash</i> en
+                    <i>Windows</i></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=_DQP6UxKEn8"
+                    target="_blank"
+                    >Instalación <i>Node.js</i></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=iG4u1MK7N3I"
+                    target="_blank"
+                    >Instalación de <i>NVM</i></a
+                  >
+                </li>
+                <li>
+                  <a href="https://aprendejavascript.org" target="_blank"
+                    >Aprende <i>JavaScript</i></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=AEtBSN_FVr0"
+                    target="_blank"
+                    >¿Cómo grabar en <i>OBS Studio</i>?</a
+                  >
+                </li>
+              </ul>
+            </aside>
+          </details>
+          <div class="timeline-icon"></div>
+        </article>
+        <article class="timeline">
+          <details class="timeline-panel">
+            <summary>
+              <h2>Consejos para <i>Devs</i></h2>
+            </summary>
+            <aside>
+              <p>
+                En esta sección encontrarás videos donde comparto consejos para
+                abordar este maravilloso mundo del desarrollo <i>web</i> 🤓.
+              </p>
+              <p>
+                También contesto a la mayoría de dudas que seguramente te haces
+                en estos momentos 🤔.
+              </p>
+              <p>
+                Date la oportunidad de escuchar mi contenido. Estoy seguro que
+                algo te va a servir 😉.
+              </p>
+              <h3>Vlogs</h3>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=F55LNTW3GE0&list=PLvq-jIkSeTUaourms9u_1KfoMtCWuLgvv"
+                    target="_blank"
+                    >Programar es un Arte</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=oB_JBZRGwNs&list=PLvq-jIkSeTUaourms9u_1KfoMtCWuLgvv"
+                    target="_blank"
+                    >Consejos para programadores</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=K_yzlIfxGNc&list=PLvq-jIkSeTUaourms9u_1KfoMtCWuLgvv"
+                    target="_blank"
+                    >Mi opinión sobre los <i>Bootcamps</i></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=VUlI16qmQuQ&list=PLvq-jIkSeTUaourms9u_1KfoMtCWuLgvv"
+                    target="_blank"
+                    >¿Necesito un título universitario como <i>Dev</i>?</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=MXdbnQspb_A&list=PLvq-jIkSeTUaourms9u_1KfoMtCWuLgvv"
+                    target="_blank"
+                    >¿Estás desmotivado? ¡Está bien!</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=fhgrL8hPW7E&list=PLvq-jIkSeTUaourms9u_1KfoMtCWuLgvv"
+                    target="_blank"
+                    >Niveles que puede alcanzar un desarrollador</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=wnQMcZjXIME&list=PLvq-jIkSeTUaourms9u_1KfoMtCWuLgvv"
+                    target="_blank"
+                    >Preguntas frecuentes en una entrevista técnica</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=8yZYy4IM1is&list=PLvq-jIkSeTUaourms9u_1KfoMtCWuLgvv"
+                    target="_blank"
+                    >Evita este tipo de ofertas laborales</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=qtfCxS_Q20g&list=PLvq-jIkSeTUaourms9u_1KfoMtCWuLgvv"
+                    target="_blank"
+                    >Mi truco para aprender INGLÉS</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=AAdWich1ArQ&list=PLvq-jIkSeTUaourms9u_1KfoMtCWuLgvv"
+                    target="_blank"
+                    >5 <i>Soft Skills</i> para Trabajo Remoto</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=tp8LpAbg6m8&list=PLvq-jIkSeTUaourms9u_1KfoMtCWuLgvv"
+                    target="_blank"
+                    >¿<i>Vanilla JS</i> en grandes proyectos?</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=AJ8YtVD3764&list=PLvq-jIkSeTUaourms9u_1KfoMtCWuLgvv"
+                    target="_blank"
+                    >¿Deberías seguir usando <i>jQuery</i>?</a
+                  >
+                </li>
+              </ul>
+              <h3>Lives</h3>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=a6dA26ebweY&list=PLvq-jIkSeTUaA8VZr01P5nxtW73jrSrLi"
+                    target="_blank"
+                    >Consejos para conseguir trabajo remoto</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=oBiux8i1aDY&list=PLvq-jIkSeTUaA8VZr01P5nxtW73jrSrLi"
+                    target="_blank"
+                    >Rutas de Aprendizaje en Desarrollo <i>Web</i></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=7Q05mXgSF7M&list=PLvq-jIkSeTUaA8VZr01P5nxtW73jrSrLi"
+                    target="_blank"
+                    >El estado de <i>JavaScript</i> en 2022</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=LYL7ShNgim8&list=PLvq-jIkSeTUaA8VZr01P5nxtW73jrSrLi"
+                    target="_blank"
+                    >El estado de <i>CSS</i> en 2022</a
+                  >
+                </li>
+              </ul>
+            </aside>
+          </details>
+          <div class="timeline-icon"></div>
+        </article>
+        <article class="timeline">
+          <details class="timeline-panel">
+            <summary>
+              <h2>Diseño <i>Frontend</i></h2>
+            </summary>
+            <aside>
+              <p>
+                Si quieres especializarte como diseñador <i>frontend</i> es
+                fundamental que domines <i>HTML</i>, <i>CSS</i>, conceptos y
+                herramientas de diseño <i>UI / UX</i>, maquetación <i>web</i>,
+                <i>responsive design</i>, efectos y animaciones, entre algunas
+                otras cosas.
+              </p>
+              <p>
+                Aquí te dejo mis contenidos para que comiences tu camino como
+                <i>Frontend Designer</i>.
+              </p>
+              <h3>Contenido Obligatorio</h3>
+              <ol>
+                <li>
+                  <a
+                    href="https://www.youtube.com/playlist?list=PLvq-jIkSeTUbQc3dGsssp8lxAi5npMrys"
+                    target="_blank"
+                    >Curso de <i>Flexbox CSS</i></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/playlist?list=PLvq-jIkSeTUY628cyd9LVbXSXi2xG9mUl"
+                    target="_blank"
+                    >Curso de <i>Grid CSS</i></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=udGrXWeJp1Y"
+                    target="_blank"
+                    ><i>Responsive Design</i> y Arquitectura <i>CSS</i></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=mVhoGXkDbMw"
+                    target="_blank"
+                    >Efectos Visuales y Movimiento en <i>CSS</i></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/playlist?list=PLvq-jIkSeTUbpfewvbKLhHctdkgadAy-K"
+                    target="_blank"
+                    >Curso de <i>Figma</i></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=ng8ur8KNrpU"
+                    target="_blank"
+                    >Curso de <i>Bootstrap</i></a
+                  >
+                </li>
+              </ol>
+              <h3>Contenido Complementario</h3>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=ErtR07GLq54&list=PLvq-jIkSeTUbf3LXzO2QQa3P-oRMcrTAp&index=3"
+                    target="_blank"
+                    >Taller de Maquetación <i>Web</i></a
+                  >
+                </li>
+              </ul>
+            </aside>
+          </details>
+          <div class="timeline-icon"></div>
+        </article>
+        <article class="timeline">
+          <details class="timeline-panel">
+            <summary>
+              <h2>Desarrollo <i>Frontend</i></h2>
+            </summary>
+            <aside>
+              <p>
+                Si quieres especializarte como desarrollador <i>frontend</i> es
+                fundamental que domines <i>JavaScript</i> y algunas de sus
+                librerías y <i>frameworks</i>, en los últimos años
+                <i>React</i> y su ecosistema de herramientas dominan el mercado
+                laboral.
+              </p>
+              <p>
+                Aquí te dejo mis contenidos para que comiences tu camino como
+                <i>Frontend Developer</i>.
+              </p>
+              <h3>Contenido Obligatorio</h3>
+              <ol>
+                <li>
+                  <a
+                    href="https://www.youtube.com/playlist?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA"
+                    target="_blank"
+                    >Curso de <i>JavaScript</i></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/playlist?list=PLvq-jIkSeTUZ5XcUw8fJPTBKEHEKPMTKk"
+                    target="_blank"
+                    >Curso de <i>React</i></a
+                  >
+                </li>
+              </ol>
+              <h3>Contenido Complementario</h3>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=-bp3q-YTr4Q"
+                    target="_blank"
+                    >Curso de <i>Webpack</i></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/playlist?list=PLvq-jIkSeTUYIw8CP2AP7QJs4GeeZdvs6"
+                    target="_blank"
+                    >Taller de <i>Progressive Web Apps</i></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=DC6-4E9bsjM&list=PLvq-jIkSeTUaA8VZr01P5nxtW73jrSrLi"
+                    target="_blank"
+                    >Programación Minimalista</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=ZSsizV8Tz80&list=PLvq-jIkSeTUaA8VZr01P5nxtW73jrSrLi"
+                    target="_blank"
+                    >Introducción al <i>JAM Stack</i></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=r5pfaxVCatU&list=PLvq-jIkSeTUaA8VZr01P5nxtW73jrSrLi"
+                    target="_blank"
+                    >Primeros pasos con <i>Sergey</i> un
+                    <i>SSG</i> minimalista</a
+                  >
+                </li>
+              </ul>
+            </aside>
+          </details>
+          <div class="timeline-icon"></div>
+        </article>
+        <article class="timeline">
+          <details class="timeline-panel">
+            <summary>
+              <h2>Bases de Datos</h2>
+            </summary>
+            <aside>
+              <p>
+                Las bases de datos son la columna vertebral de todo sistema o
+                aplicación, no importa si es <i>web</i>, móvil o de escritorio.
+                La información de todo proyecto se almacena en estos bancos de
+                información. No importa si eres <i>frontend</i> o
+                <i>backend</i> es fundamental que aprendas a manejar, entender y
+                conceptualizar bases de datos.
+              </p>
+              <h3>Contenido Obligatorio</h3>
+              <ol>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=HXE169-n5pM"
+                    target="_blank"
+                    >Curso de Diseño de Bases de Datos</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=aFgHVE_Y_YU"
+                    target="_blank"
+                    >Curso de Modelado de Bases de Datos</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=UAuZvxPTi58"
+                    target="_blank"
+                    >Curso de <i>SQL</i></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=3MWt3CCjHG8"
+                    target="_blank"
+                    >Curso de <i>NoSQL</i></a
+                  >
+                </li>
+            </aside>
+          </details>
+          <div class="timeline-icon"></div>
+        </article>
+        <article class="timeline">
+          <details class="timeline-panel">
+            <summary>
+              <h2>Desarrollo <i>Backend</i> con <i>JS</i></h2>
+            </summary>
+            <aside>
+              <p>
+                Si ya dominas <i>JavaScript</i> en el <i>frontend</i>, entonces
+                ahora usa tus conocimientos en este lenguaje para dominarlo en
+                el <i>backend</i> y así convertirte en un desarrollador
+                <i>Fullstack</i>, aquí te dejo mis contenidos de
+                <i>Node.js</i> el entorno del lado del servidor más popular de
+                <i>JavaScript</i>.
+              </p>
+              <h3>Contenido Obligatorio</h3>
+              <ol>
+                <li>
+                  <a
+                    href="https://www.youtube.com/playlist?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA"
+                    target="_blank"
+                    >Curso de <i>JavaScript</i></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=0f26_Enlv38"
+                    target="_blank"
+                    >Cursos de Fundamentos de <i>Node.js</i></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=tDF644vI-gs"
+                    target="_blank"
+                    >Curso Desarrollo <i>Web</i> con <i>Node.js</i> y <i>Express.js</i></a
+                  >
+                </li>
+              </ol>
+              <h3>Contenido Complementario</h3>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=_DQP6UxKEn8"
+                    target="_blank"
+                    >Instalación <i>Node.js</i></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=iG4u1MK7N3I"
+                    target="_blank"
+                    >Instalación de <i>NVM</i></a
+                  >
+                </li>
+              </ul>
+            </aside>
+          </details>
+          <div class="timeline-icon"></div>
+        </article>
+        <article class="timeline">
+          <details class="timeline-panel">
+            <summary>
+              <h2>Desarrollo <i>Backend</i> con <i>PHP</i></h2>
+            </summary>
+            <aside>
+              <p>
+                Si quieres dedicarte al desarrollo <i>backend</i> con
+                <i>PHP</i>, el lenguaje más instalado en el mundo en los
+                entornos de servidor, aquí te dejo mis contenidos que te
+                servirán para que aprendas las bases de esta tecnología.
+              </p>
+              <h3>Contenido Obligatorio</h3>
+              <ol>
+                <li>
+                  <a
+                    href="https://www.youtube.com/playlist?list=PL469D93BF3AE1F84F"
+                    target="_blank"
+                    >Curso <i>PHP</i> básico</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/playlist?list=PLvq-jIkSeTUZEHvKw7Gx3g5CjlcvA3jr1"
+                    target="_blank"
+                    >Curso Programación Orientada a Objetos con <i>PHP</i></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/playlist?list=PLvq-jIkSeTUZDOcKsQz79wnYlTvmAdLkj"
+                    target="_blank"
+                    >Desarrollo de <i>Themes</i> en <i>WordPress</i></a
+                  >
+                </li>
+              </ol>
+              <h3>Contenido Complementario</h3>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=4FrhMTAquuQ&list=PLvq-jIkSeTUY7b6mTNigrfZxXNkk0aJd2"
+                    target="_blank"
+                    >Instalación de <i>Bitnami XAMPP</i></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=txZCsFDEF1M&list=PLvq-jIkSeTUY7b6mTNigrfZxXNkk0aJd2"
+                    target="_blank"
+                    >Cambiar la carpeta <i>htdocs</i> de <i>XAMPP</i></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=bW3fHwU13go&list=PLvq-jIkSeTUY7b6mTNigrfZxXNkk0aJd2"
+                    target="_blank"
+                    >Configurar el <i>cache</i> y los errores en <i>XAMPP</i></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/playlist?list=PLvq-jIkSeTUZWYh18UN6Q9rfkoqy5A9Xn"
+                    target="_blank"
+                    ><i>Mini Framework KISS PHP</i></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=S25UUKl0N7w&list=PLvq-jIkSeTUaourms9u_1KfoMtCWuLgvv"
+                    target="_blank"
+                    ><i>WordPress</i> y el editor <i>Gutenberg</i></a
+                  >
+                </li>
+              </ul>
+            </aside>
+          </details>
+          <div class="timeline-icon"></div>
+        </article>
+      </section>
+    </main>
+    <sergey-import src="components/footer" />
+    <script src="assets/index.js"></script>
+  </body>
 </html>

@@ -1,4 +1,6 @@
-## Temas a tratar
+<aside class="post-menu">
+
+## Temas
 
 - [Introducción](#introducción)
 - [_Create React App_](#create-react-app)
@@ -14,7 +16,9 @@
 - [_Hooks_](#hooks)
 - [Aprende más](#aprende-más)
 
-<hr>
+---
+
+</aside>
 
 ## Introducción
 
@@ -83,9 +87,9 @@ _React_ es una librería y no técnicamente un _framework_. Por lo que sólo man
 - _**[React Dev Tools Firefox](https://addons.mozilla.org/es/firefox/addon/react-devtools/)**_: Es una extensión para _Firefox_ que agrega de herramientas de depuración para _React_.
 - _**[Simple React Snippets for VSCode](https://marketplace.visualstudio.com/items?itemName=burkeholland.simple-react-snippets)**_: Es una extensión para _Visual Studio Code_ que nos permite usar atajos para agilizar la escritura de código _React_.
 
-[🔼](#temas-a-tratar)
+[🔼 Regresar](#temas)
 
-<hr>
+---
 
 ## Create React App
 
@@ -171,9 +175,9 @@ En la carpeta del proyecto puedes ejecutar los siguientes comandos:
 
 Una de las funcionalidades más importantes de los proyectos creados con _create-react-app_ es la capacidad de hacer cambios en vivo sin necesidad de reiniciar el servidor. Si haces un cambio en algún archivo en _**src**_ o _**public**_ el navegador se refresca automáticamente.
 
-[🔼](#temas-a-tratar)
+[🔼 Regresar](#temas)
 
-<hr>
+---
 
 ## _JSX_
 
@@ -222,7 +226,7 @@ Por debajo _**JSX**_ se transforma en código _JavaScript_. Por ejemplo, el sigu
 
 se transforma en el siguiente código _JavaScript_:
 
-```javascript
+```js
 React.createElement("div", { className: "active" }, "Hola mundo");
 ```
 
@@ -233,13 +237,13 @@ La ventaja de _**JSX**_ es que, como es _JavaScript_, podemos:
 1. Ver algunos errores en tiempo de compilación.
 1. Asignar _**JSX**_ a variables. Por ejemplo:
 
-   ```javascript
+   ```js
    const el = <p>Hola</p>;
    ```
 
 1. Retornar _**JSX**_ desde métodos. Por ejemplo:
 
-   ```javascript
+   ```js
     renderText() {
       if (someCondition) {
         return <p>Hola</p>;
@@ -251,7 +255,7 @@ La ventaja de _**JSX**_ es que, como es _JavaScript_, podemos:
 
 Una restricción de _**JSX**_ es que siempre debes tener un elemento raíz:
 
-```javascript
+```js
 const el = (
   <div>
     <p>Hola</p>
@@ -266,7 +270,7 @@ Este es un patrón muy común en las aplicaciones de React.
 
 Para mezclar código JavaScript en _**JSX**_ utiliza llaves \(**{}**\):
 
-```javascript
+```jsx
 const style = "active";
 const title = "Hola Mundo";
 
@@ -277,19 +281,13 @@ Una restricción de _**JSX**_ es que no puedes utilizar _**if**_, _**else**_, _*
 
 Para agregar condicionales utiliza el **operador ternario**:
 
-```markup
-<div>
-  {
-    condition
-      ? <h1>Hola Mundo</h1>
-      : null
-  }
-</div>
+```jsx
+<div>{condition ? <h1>Hola Mundo</h1> : null}</div>
 ```
 
 Para mostrar elementos de un arreglo o un objeto utiliza _**map**_:
 
-```javascript
+```jsx
 const names = ["Jon", "Irma", "kEnAi"];
 
 const jsx = (
@@ -305,7 +303,7 @@ const jsx = (
 
 Es posible definir y utilizar estilos _inline_ en _**JSX**_:
 
-```javascript
+```jsx
 let styles = {
   borderColor: "#999",
 };
@@ -317,7 +315,7 @@ const jsx = <div style={styles}>Hola mundo</div>;
 
 En _**JSX**_ se utilizan los eventos estándar del _DOM_ como _**onclick**_, _**onchange**_, _**onkeydown**_, ... pero utilizando _camelCase_: _**onClick**_, _**onChange**_, _**onKeyDown**_, ...
 
-```javascript
+```jsx
 <button onClick={alert("Hola")}></button>
 ```
 
@@ -325,7 +323,7 @@ Fíjate que utilizamos corchetes \(**{}**\) para escribir nuestro código _JavaS
 
 También podríamos pasar una función que es invocada cuando se genere el evento:
 
-```javascript
+```jsx
 const saludar = () => alert("Hola!");
 
 <button onClick={saludar}></button>;
@@ -333,9 +331,9 @@ const saludar = () => alert("Hola!");
 
 Fíjate que no estamos invocando la función _**saludar**_, sólo la estamos pasando para que _React_ la invoque cuando ocurra el evento.
 
-[🔼](#temas-a-tratar)
+[🔼 Regresar](#temas)
 
-<hr>
+---
 
 ## Componentes
 
@@ -355,7 +353,7 @@ _React_ te permite definir componentes como **clases** o como **funciones**.
 
 Como una clase que extiende de _**Component**_ con un método _**render**_:
 
-```javascript
+```jsx
 import React, { Component } from "react";
 
 class Title extends Component {
@@ -367,7 +365,7 @@ class Title extends Component {
 
 O como una función que retorna lo que se va a renderizar:
 
-```javascript
+```jsx
 const Title = () => {
   return <h1>Hola Mundo</h1>;
 };
@@ -377,7 +375,7 @@ const Title = () => {
 
 Para utilizar un componente debes importarlo y después incluirlo en tu _**JSX**_ como se muestra en el siguiente ejemplo:
 
-```javascript
+```jsx
 import React from "react";
 import Title from "./Title";
 
@@ -386,9 +384,9 @@ function App {
 }
 ```
 
-[🔼](#temas-a-tratar)
+[🔼 Regresar](#temas)
 
-<hr>
+---
 
 ## Propiedades
 
@@ -409,7 +407,7 @@ El componente las recibe como atributos que se pasan a través de _**JSX**_.
 
 Por ejemplo, podemos pasar un atributo _**name**_ al componente _**Welcome**_:
 
-```html
+```jsx
 <Welcome name="Jon" />
 
 <Welcome name="Irma" />
@@ -417,7 +415,7 @@ Por ejemplo, podemos pasar un atributo _**name**_ al componente _**Welcome**_:
 
 Si defines el componente en una clase, las _**props**_ se reciben en el constructor de la clase:
 
-```javascript
+```jsx
 class Welcome extends Component {
   constructor(props) {
     super(props);
@@ -431,15 +429,15 @@ class Welcome extends Component {
 
 Si defines el componente como una función, las _**props**_ se reciben como un parámetro de la función:
 
-```javascript
+```jsx
 const Welcome = (props) => {
   return <h1>{props.name}</h1>;
 };
 ```
 
-[🔼](#temas-a-tratar)
+[🔼 Regresar](#temas)
 
-<hr>
+---
 
 ## Estado
 
@@ -463,7 +461,7 @@ Cada componente que se defina como una clase cuenta con un objeto para almacenar
 
 Cada vez que cambia el _**state**_ _React_ vuelve a renderizar \(pintar\) el componente en la vista.
 
-```javascript
+```jsx
 class Welcome extends Component {
   constructor() {
     super();
@@ -483,15 +481,15 @@ En este ejemplo estamos definiendo una componente _**Welcome**_ que inicializa e
 
 Para cambiar el estado utiliza el método _**setState**_:
 
-```javascript
+```jsx
 this.setState({
   title: "Hello World",
 });
 ```
 
-[🔼](#temas-a-tratar)
+[🔼 Regresar](#temas)
 
-<hr>
+---
 
 ## Renderizado condicional
 
@@ -501,13 +499,13 @@ El renderizado condicional en _React_ funciona de la misma forma que lo hacen la
 
 Considera estos dos componentes:
 
-```javascript
+```jsx
 function SaludoUsuario(props) {
   return <h1>¡Bienvenid@ nuevamente!</h1>;
 }
 ```
 
-```javascript
+```jsx
 function SaludoInvitado(props) {
   return <h1>Por favor, regístrate.</h1>;
 }
@@ -515,7 +513,7 @@ function SaludoInvitado(props) {
 
 Vamos a crear un componente _**Saludar**_ que muestra cualquiera de estos componentes dependiendo si el usuario ha iniciado sesión o no:
 
-```javascript
+```jsx
 function Saludar(props) {
   const isLoggedIn = props.isLoggedIn;
 
@@ -534,7 +532,7 @@ ReactDOM.render(
 
 Con el **operador ternario** el código quedaría de la siguiente manera:
 
-```javascript
+```jsx
 function Saludar(props) {
   const isLoggedIn = props.isLoggedIn;
 
@@ -548,9 +546,9 @@ ReactDOM.render(
 );
 ```
 
-[🔼](#temas-a-tratar)
+[🔼 Regresar](#temas)
 
-<hr>
+---
 
 ## Renderizado de elementos
 
@@ -560,20 +558,20 @@ Recorriendo los elementos de un _**array**_ y usando la función _**map()**_ de 
 
 Por ejemplo:
 
-```javascript
+```jsx
 const numeros = [1, 2, 3, 4, 5];
 const listaElementos = numeros.map((numero) => <li>{numero}</li>);
 ```
 
 Incluimos el _**array listaElementos**_ dentro de un elemento _**&lt;ul&gt;**_, y lo renderizamos en el _DOM_:
 
-```javascript
+```jsx
 ReactDOM.render(<ul>{listaElementos}</ul>, document.getElementById("root"));
 ```
 
 Refactorizamos el ejemplo anterior en un componente que acepte un _**array**_ de numeros e imprima una lista de elementos.
 
-```javascript
+```jsx
 function ListaNumeros(props) {
   const numeros = props.numeros;
   const listaElementos = numeros.map((numero) => <li>{numero}</li>);
@@ -601,7 +599,7 @@ Las _**keys**_ usadas dentro de _**arrays**_ deberían ser únicas entre sus her
 
 Entonces refactorizando nuestro código anterior quedaría así:
 
-```javascript
+```jsx
 function ListaNumeros(props) {
   const numeros = props.numeros;
   const listaElementos = numeros.map((numero, indice) => (
@@ -617,9 +615,9 @@ ReactDOM.render(
 );
 ```
 
-[🔼](#temas-a-tratar)
+[🔼 Regresar](#temas)
 
-<hr>
+---
 
 ## Eventos
 
@@ -630,13 +628,13 @@ Manejar eventos en _React_ es muy similar a manejar eventos en el _DOM_. Sin emb
 
 Ejemplo, en _HTML_:
 
-```html
+```jsx
 <button onclick="cambiarIdioma()">Cambiar idioma</button>
 ```
 
 Ejemplo, en _React_:
 
-```html
+```jsx
 <button onClick="{cambiarIdioma}">Cambiar idioma</button>
 ```
 
@@ -644,7 +642,7 @@ Otra diferencia es que en _React_ no puedes retornar _**false**_ para prevenir e
 
 Por ejemplo, en nuestro ejemplo del componente _**Welcome**_ visto en el tema del **Estado** podemos cambiarlo para que cuando hagan click sobre el _**h1**_ cambie el texto. Para eso vamos a definir un método _**updateText**_ que vamos a invocar cuando hagan _**click**_ sobre el _**h1**_:
 
-```javascript
+```jsx
 class Welcome extends Component {
   constructor() {
     super();
@@ -669,9 +667,9 @@ class Welcome extends Component {
 }
 ```
 
-[🔼](#temas-a-tratar)
+[🔼 Regresar](#temas)
 
-<hr>
+---
 
 ## Comunicación entre componentes
 
@@ -685,7 +683,7 @@ Tenemos 3 casos de comunicación entre los componentes de _React_:
 
 Éste es el caso más natural en el mundo de _React_ y se hace a través del paso de _**props**_ de un componente padre a uno hijo.
 
-```js
+```jsx
 import React, { Component } from "react";
 
 class Padre extends Component {
@@ -712,7 +710,7 @@ Cuando tenemos la necesidad de que un componente hijo mande datos a su padre los
 
 En este ejemplo, cambiaremos el estado del componente padre pasando una función al componente hijo e invocando esa función dentro del componente hijo.
 
-```js
+```jsx
 import React, { Component } from "react";
 
 class Padre extends Component {
@@ -774,9 +772,9 @@ Otra manera de compartir datos entre componentes sin que tengan una relación pa
 1. _**Redux**_: librería externa a _React_ para el manejo del estado.
 1. _**Context**_: un _API_ interna de _React_ que provee una forma de pasar datos a través del árbol de componentes sin tener que pasar _props_ manualmente en cada nivel. Esta _API_ la retomaremos cuando veamos el tema de _Hooks_.
 
-[🔼](#temas-a-tratar)
+[🔼 Regresar](#temas)
 
-<hr>
+---
 
 ## Ciclo de Vida
 
@@ -807,9 +805,9 @@ Estos métodos son ejecutados una vez que el componente ha sido eliminado del á
 
 - _**componentWillUnmount()**_: Se ejecuta antes de destruir el componente del árbol del _DOM_, es un método útil para hacer tareas de limpieza.
 
-[🔼](#temas-a-tratar)
+[🔼 Regresar](#temas)
 
-<hr>
+---
 
 ## _Hooks_
 
@@ -857,7 +855,7 @@ Permite manipular el estado de un componente funcional, se comporta como el obje
 
 Para usarlo, debemos importarlo desde la librería de React.
 
-```js
+```jsx
 import React, { useState } from "react";
 ```
 
@@ -868,7 +866,7 @@ Ahora, en nuestro componente funcional, vamos a inicializar el _hook_, para ello
 
 Adicionalmente le pasaremos como parámetro el valor inicial del estado al método _useState_.
 
-```js
+```jsx
 import React, { useState } from "react";
 
 export default function Componente() {
@@ -880,7 +878,7 @@ export default function Componente() {
 
 Para actualizar el estado tenemos que utilizar el método resultante de la destructuración de _useState_ y pasarle el nuevo valor.
 
-```js
+```jsx
 import React, { useState } from "react";
 
 export default function Componente() {
@@ -896,7 +894,7 @@ export default function Componente() {
 
 Un detalle del estado en los _Hooks_, es que no debe ser tratado como un objeto como en los componentes de clases, si necesitas más de un valor cada uno debe ser almacenado en una variable diferente y usar la destructurción de _useState_.
 
-```js
+```jsx
 import React, { useState } from "react";
 
 export default function Componente() {
@@ -925,13 +923,13 @@ _useEffect_ recibe como parámetro una función que se ejecutará cada vez que n
 
 Para usarlo, debemos importarlo desde la librería de _React_.
 
-```js
+```jsx
 import React, { useEffect } from "react";
 ```
 
 Para añadir un efecto que se ejecutará cada vez que nuestro componente se renderice, se debe pasar como parámetro una función al _hook_ _useEffect_ misma que se ejecutará al renderizarse el componente.
 
-```js
+```jsx
 import React, { useEffect } from "react";
 
 export default function Efecto() {
@@ -947,7 +945,7 @@ Con _useEffect_ también podemos suscribirnos y desuscribirnos a eventos, tempor
 
 Para ello hay que escribir el código de la suscripción en el cuerpo de la función de _useEffect_ y para evitar problemas de rendimiento o aumento indiscriminado de la memoria y recursos de nuestra aplicación retornar en una función el código que desuscriba o cancele lo que se ejecuto en el cuerpo de la función.
 
-```js
+```jsx
 import React, { useEffect, useState } from "react";
 
 export default function ScrollYNavegador() {
@@ -983,7 +981,7 @@ Por defecto los efectos se ejecutan cada vez que se realiza un renderizado, si q
 
 El parámetro debe ser un _array_ con todos los valores de los que dependerá el efecto, de forma que sólo se ejecutará cuando ese valor cambie.
 
-```js
+```jsx
 import React, { useEffect, useState } from "react";
 
 export default function ScrollYNavegador() {
@@ -1017,7 +1015,7 @@ export default function ScrollYNavegador() {
 
 Si le pasamos un _array_ vacío, eso hará que el efecto no dependa de ningún valor, por lo que sólo se ejecutará al montarse y desmontarse el componente.
 
-```js
+```jsx
 import React, { useEffect, useState } from "react";
 
 export default function ScrollYNavegador() {
@@ -1049,12 +1047,12 @@ export default function ScrollYNavegador() {
 }
 ```
 
-[🔼](#temas-a-tratar)
+[🔼 Regresar](#temas)
 
-<hr>
+---
 
 ## Aprende más
 
 [Ve mi Curso](https://www.youtube.com/playlist?list=PLvq-jIkSeTUZ5XcUw8fJPTBKEHEKPMTKk)
 
-[🔼](#temas-a-tratar)
+[🔼 Regresar](#temas)

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <sergey-import src="components/metatags">
+    <sergey-template name="title">Responsive Design 🦊 jonmircha</sergey-template>
+    <sergey-template name="metatitle">"Responsive Design 🦊 jonmircha"</sergey-template>
+    <sergey-template name="description">"En esta presentación te expongo el tema del Responsive Design"
+    </sergey-template>
+    <sergey-template name="url">"https://jonmircha.com/responsive"</sergey-template>
+    <sergey-template name="image"></sergey-template>
+  </sergey-import>
+  <link rel="stylesheet" href="assets/prism.css">
+  <link rel="stylesheet" href="assets/slides.css">
+</head>
+
+<body>
+  <main class="slides">
+    <section class="slide">
+      <article class="slide-container">
+        <h1><i>Responsive Design</i></h1>
+        <img src="img/blog/responsive-design-devices.png" alt="Responsive Design">
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h2>Un poco de historia</h2>
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h3>En 1998</h3>
+        <h4><i>WML - Wireless Markup Language</i><br><i>WPA - Wireless Application Protocol</i></h4>
+        <img src="img/blog/wml.jpg" alt="WML">
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h3>Dispositivos Móviles de Primera Generación</h3>
+        <img src="img/blog/old-mobile-devices.jpg" alt="Dispositivos Móviles de Primera Generación">
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h3>En 2007</h3>
+        <h4>Nace el <i>iPhone</i></h4>
+        <img src="img/blog/steve-jobs-iphone.jpg" alt="Steve Jobs presenta el Iphone en 2007">
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h3>En 2008</h3>
+        <h4><i>W3C Mobile Web Initiative</i></h4>
+        <a href="https://www.w3.org/TR/mobile-bp/" target="_blank">
+          <img class="img-fluid" src="img/blog/W3C-MWI.png" alt="W3C Mobile Web Initiative">
+        </a>
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h3>En 2010</h3>
+        <h4><i>Ethan Marcotte</i></h4>
+        <a href="https://alistapart.com/article/responsive-web-design/" target="_blank">
+          <img src="img/blog/ethan-marcotte.jpg" alt="Ethan Marcotte">
+        </a>
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h3>En 2011</h3>
+        <h4><i>Responsive Web Design</i></h4>
+        <a href="https://abookapart.com/products/responsive-web-design" target="_blank">
+          <img src="img/blog/responsive-design-book.jpg" alt="Responsive Design Book">
+        </a>
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h3>3 principios del <i>Responsive Design</i></h3>
+        <ol class="w-50">
+          <li><i>Grids</i> Flexibles</li>
+          <li>Imágenes Flexibles</li>
+          <li><i>Media Queries</i></li>
+        </ol>
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h3><i>Responsive Design</i></h3>
+        <p class="font-big"><b>No sólo</b> es pensar en <b>adaptar</b> el <b>contenido</b> al tamaño de la
+          <b>pantalla</b>.
+        </p>
+        <p class="font-big">...También es considerar:</p>
+        <ul class="w-80 font-medium">
+          <li>Conexión de Red ( <small><i>Wifi, 2G, 3G, 4G, 5G,</i> etc</small> ).</li>
+          <li><i>Hardware</i> y <i>Software</i> de los dispositivos <br> ( <small>S.O., Versiones, Memoria,
+              Procesador,
+              Sensores, etc</small> ).</li>
+          <li>Interacciones ( <small>con teclado y ratón, táctiles, por voz</small> ).</li>
+          <li>Accesibilidad <i>web</i> ( <small>soporte a discapacidades</small> ).</li>
+        </ul>
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h3>¿Por qué?</h3>
+        <p>Te recuerdo que en 2007, nace el <b><i>iPhone</i></b></p>
+        <img src="img/blog/steve-jobs-iphone.jpg" alt="Steve Jobs presenta el Iphone en 2007">
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h3>Y entonces pasamos de esto...</h3>
+        <img src="img/blog/computers.png" alt="Computadoras">
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h3>... a esto...</h3>
+        <img src="img/blog/many-devices.jpg" alt="Dispositivos Móviles">
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h3>...y esto...</h3>
+        <img src="img/blog/wearables.jpg" alt="Wearables">
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h3>...y ¿quién sabe que más?...</h3>
+        <img src="img/blog/future-devices.jpg" alt="Futuros Dispositivos">
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h2>Estrategias de Diseño Multidispositivos</h2>
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <ul>
+          <li><i>Responsive Design - ( <small><a href="http://alistapart.com/article/responsive-web-design"
+                  target="_blank">Ethan Marcotte, 2010</a></small> )</i></li>
+          <li><i>Adaptive Design</i> - ( <small><a
+                href="http://blog.easy-designs.net/archives/on-adaptive-vs-responsive-web-design/" target="_blank">Aaron
+                Gustafson, 2011</a></small> )</li>
+          <li><i>Responsive + Server Side ( RESS )</i> - ( <small><a href="http://www.lukew.com/ff/entry.asp?1392"
+                target="_blank">Luke Wroblewski, 2011</a></small> )</li>
+          <li><i>Responsible Responsive Design</i> - ( <small><a
+                href="http://abookapart.com/products/responsible-responsive-design" target="_blank">Scott Jehl,
+                2014</a></small> )</li>
+          <li><i>Fluid Design</i> - ( <small><a href="https://utopia.fyi/" target="_blank">Trys Mudford,
+                2020</a></small>
+            )</li>
+          <li>Más información ( <small><a href="http://iconos.edu.mx/qrtesis/140171MV.html" target="_blank">Diseño
+                <i>Web</i> en la Era Móvil</a></small> )</li>
+        </ul>
+      </article>
+    </section>
+    <section class="slide">
+      <article class="slide-container">
+        <h2>Muchas gracias</h2>
+        <a href="https://jonmircha.com">
+          <img src="img/kEnAi.svg" alt="kEnAi">
+        </a>
+      </article>
+    </section>
+  </main>
+  <script src="assets/prism.js"></script>
+</body>
+
+</html>
